@@ -1,0 +1,159 @@
+{
+  "executadoEm": "2026-06-20T21:39:30.831Z",
+  "totalProdutos": 10,
+  "relatorio": [
+    {
+      "id": 1,
+      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "Não informado",
+          "para": "24% OFF"
+        },
+        {
+          "campo": "frete",
+          "de": "Frete grátis acima de R$ 19",
+          "para": "Frete grátis"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "59% OFF no PIX",
+          "para": "55% OFF"
+        },
+        {
+          "campo": "frete",
+          "de": "Frete gratis",
+          "para": "Frete grátis"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Magnow Pack Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável Viagem Organização",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "53% OFF",
+          "para": "51% OFF"
+        },
+        {
+          "campo": "frete",
+          "de": "Frete grátis acima de R$ 19",
+          "para": "Frete grátis"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nome": "Jogo De Cama Casal Padrão 3 Peças Fronha Ponto Palito C/ Elástico 400 Fios Toque Acetinado",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "43 OFF",
+          "para": "43% OFF"
+        },
+        {
+          "campo": "frete",
+          "de": "Frete gratis acima de R$ 19",
+          "para": "Frete grátis"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "nome": "Kit 2 Travesseiros 45x65 Antialérgico Lavável Fibra Siliconada Toque de Pluma",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "43% OFF",
+          "para": "39% OFF"
+        },
+        {
+          "campo": "frete",
+          "de": "Frete grátis acima de R$ 19",
+          "para": "Frete grátis"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "nome": "Kit 3 Camisas Regatas Dry-fit Masculina Sandrini Academia",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "37% OFF",
+          "para": "56% OFF"
+        },
+        {
+          "campo": "frete",
+          "de": "Frete grátis acima de R$ 19",
+          "para": "Frete grátis"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "11% OFF",
+          "para": "16% OFF"
+        },
+        {
+          "campo": "frete",
+          "de": "Frete grátis acima de R$ 19",
+          "para": "Frete grátis"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "17% OFF no PIX",
+          "para": "5% OFF"
+        },
+        {
+          "campo": "frete",
+          "de": "Frete grátis acima de R$ 19",
+          "para": "Frete grátis"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "61% OFF",
+          "para": "57% OFF"
+        },
+        {
+          "campo": "frete",
+          "de": "Frete grátis acima de R$ 19",
+          "para": "Frete grátis"
+        }
+      ]
+    }
+  ]
+}
