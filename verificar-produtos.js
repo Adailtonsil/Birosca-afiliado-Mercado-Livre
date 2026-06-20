@@ -96,25 +96,28 @@ function extrairDadosDaPagina(html) {
     frete: null,
   };
 
-  // --- Preço atual ---
-  // Padrão comum: <meta itemprop="price" content="123.45">
-  let match = html.match(/itemprop="price"\s+content="([\d.]+)"/);
+  // --- Preço atual (com desconto Pix), dentro do bloco "poly-price__current" ---
+  // Exemplo real encontrado na página:
+  // <span class="... poly-price__current ..." aria-label="Agora: 49 reais com 12 centavos" ...>
+  let match = extrairBlocoComAriaLabel(html, "poly-price__current", /Agora:\s*([\d.,]+)\s*reais?(?:\s*com\s*(\d{1,2})\s*centavos?)?/i);
   if (match) {
-    dados.precoPor = formatarMoeda(match[1]);
+    dados.precoPor = formatarMoedaReaisCentavos(match[1], match[2]);
   }
 
-  // --- Preço original (antes do desconto) ---
-  // Padrão comum em trechos JSON embutidos na página: "original_price":1234.56
-  match = html.match(/"original_price"\s*:\s*([\d.]+)/);
+  // --- Preço original (antes do desconto), no elemento <s> com classe "andes-money-amount--previous" ---
+  // Exemplo real encontrado na página:
+  // <s class="... andes-money-amount--previous ..." aria-label="Antes: 109 reais com 99 centavos" ...>
+  match = extrairBlocoComAriaLabel(html, "andes-money-amount--previous", /Antes:\s*([\d.,]+)\s*reais?(?:\s*com\s*(\d{1,2})\s*centavos?)?/i);
   if (match) {
-    dados.precoDe = formatarMoeda(match[1]);
+    dados.precoDe = formatarMoedaReaisCentavos(match[1], match[2]);
   }
 
-  // --- Desconto em porcentagem ---
-  // Procura por algo como "33% OFF" ou "33%OFF" no texto visível
-  match = html.match(/(\d{1,3})\s*%\s*OFF/i);
+  // --- Desconto em porcentagem, no rótulo "poly-price__disc_label" ---
+  // Exemplo real encontrado na página:
+  // <span class="poly-price__disc_label ...">55% OFF no Pix</span>
+  match = html.match(/poly-price__disc_label[^>]*>([^<]*\d{1,3}%[^<]*)</i);
   if (match) {
-    dados.desconto = `${match[1]}% OFF`;
+    dados.desconto = match[1].trim();
   }
 
   // --- Frete grátis ---
@@ -125,10 +128,35 @@ function extrairDadosDaPagina(html) {
   return dados;
 }
 
-function formatarMoeda(valorTexto) {
-  const numero = parseFloat(valorTexto);
-  if (Number.isNaN(numero)) return null;
-  return `R$ ${numero.toFixed(2).replace(".", ",")}`;
+/**
+ * Procura a primeira ocorrência da classe indicada (ex: "poly-price__current")
+ * e, a partir dali, procura o PRIMEIRO atributo aria-label que aparece depois
+ * -- geralmente em um elemento filho (ex: a div com a classe envolve um span
+ * que tem o aria-label com o valor por extenso).
+ *
+ * A busca é limitada a uma janela pequena (200 caracteres) IMEDIATAMENTE
+ * DEPOIS da classe, e nunca olha para trás. Isso evita pegar por engano
+ * o aria-label de um elemento anterior ou de produtos recomendados.
+ */
+function extrairBlocoComAriaLabel(html, classeBusca, regexAriaLabel) {
+  const posClasse = html.indexOf(classeBusca);
+  if (posClasse === -1) return null;
+
+  const janelaDepois = html.slice(posClasse, posClasse + 300);
+
+  const matchAria = janelaDepois.match(/aria-label="([^"]*)"/);
+  if (!matchAria) return null;
+
+  const textoAriaLabel = matchAria[1];
+  return textoAriaLabel.match(regexAriaLabel);
+}
+
+function formatarMoedaReaisCentavos(reaisTexto, centavosTexto) {
+  const reais = parseInt(reaisTexto.replace(/\D/g, ""), 10);
+  if (Number.isNaN(reais)) return null;
+  const centavos = centavosTexto ? parseInt(centavosTexto, 10) : 0;
+  const centavosFormatado = String(centavos).padStart(2, "0");
+  return `R$ ${reais},${centavosFormatado}`;
 }
 
 /**
