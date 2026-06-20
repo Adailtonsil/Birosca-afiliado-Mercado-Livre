@@ -1,0 +1,38 @@
+name: Verificar produtos no Mercado Livre
+
+# Quando este robô roda:
+# 1. Todo dia, automaticamente, no horário definido abaixo (cron)
+# 2. Manualmente, quando você quiser (aba "Actions" no GitHub, botão "Run workflow")
+on:
+  schedule:
+    # Roda às 09:00 no horário de Brasília (12:00 UTC).
+    # Para mudar o horário, ajuste o valor de "cron" (formato: minuto hora * * *, em UTC).
+    - cron: "0 12 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar o código do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Executar verificação de produtos
+        run: node verificar-produtos.js
+
+      - name: Salvar (commit) o produtos.json atualizado, se houver mudanças
+        run: |
+          git config user.name "Robo Verificador"
+          git config user.email "robo-verificador@users.noreply.github.com"
+          git add produtos.json ultima-verificacao.json
+          git diff --staged --quiet && echo "Nenhuma mudança para salvar." || git commit -m "Atualização automática de produtos ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+          git push
