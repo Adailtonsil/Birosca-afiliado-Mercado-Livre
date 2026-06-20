@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos Testados – Afiliado Mercado Livre</title>
+  <link rel="icon" type="image/png" href="favicon-32.png">
+  <style>
+    :root {
+      --card: #fffaf2;
+      --text: #221d16;
+      --muted: #6f6254;
+      --accent: #1f8f4e;
+      --accent-hover: #176c3b;
+      --link: #8a4b15;
+      --link-hover: #6d3810;
+      --shadow: 0 24px 60px rgba(34, 29, 22, 0.14);
+      --warm: #eadfce;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      padding: 0 24px 24px;
+      padding-top: 168px;
+      font-family: "Segoe UI", "Trebuchet MS", Arial, sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(255, 255, 255, 0.82), transparent 35%),
+        linear-gradient(180deg, #f8f1e7 0%, var(--warm) 100%);
+      color: var(--text);
+    }
+
+    .hero {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 1000;
+      margin: 0;
+      padding: 0;
+      background:
+        radial-gradient(circle at top right, rgba(255, 231, 138, 0.65), transparent 28%),
+        linear-gradient(135deg, #ffcf33 0%, #ffb100 45%, #f28c00 100%);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .hero-top {
+      padding: 16px 28px 14px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+    }
+
+    .hero-title {
+      margin: 0;
+      color: #1f1200;
+      font-family: "Arial Black", "Segoe UI", sans-serif;
+      font-size: clamp(1.6rem, 4vw, 3.5rem);
+      line-height: 1.05;
+      letter-spacing: 0.02em;
+      text-shadow: 0 2px 0 rgba(255, 255, 255, 0.18);
+    }
+
+    .hero-nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 0 20px;
+      color: #f6c900;
+    }
+
+    .hero-nav a {
+      display: inline-block;
+      padding: 10px 14px;
+      color: #1f1200;
+      font-size: 0.97rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 6px 6px 0 0;
+      transition: background 0.18s;
+    }
+
+    .hero-nav a:hover {
+      background: rgba(0, 0, 0, 0.123);
+    }
+
+    .hero-nav a.active {
+      background: #fdd629;
+      font-weight: 800;
+    }
+
+    .page-shell {
+      width: min(100%, 1400px);
+      margin: 0 auto;
+      padding: 0 0 24px;
+    }
+
+    .catalog {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      background: var(--card);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(34, 29, 22, 0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      transform: scale(0.96);
+      box-shadow: 0 10px 30px rgba(34, 29, 22, 0.10);
+    }
+
+    .image-wrap {
+      aspect-ratio: 1 / 1;
+      background: #f0e6d8;
+      overflow: hidden;
+      display: block;
+    }
+
+    .image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .content {
+      padding: 16px;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .em-breve-label {
+      color: var(--muted);
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 0.04em;
+    }
+
+    .notice {
+      width: min(100%, 1400px);
+      margin: 28px auto 18px;
+      padding: 18px 20px;
+      background: rgba(255, 250, 242, 0.92);
+      border: 1px solid rgba(34, 29, 22, 0.08);
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(34, 29, 22, 0.08);
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .footer {
+      width: min(100%, 1400px);
+      margin: 0 auto;
+      padding: 22px 20px 28px;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+
+    .footer p+p {
+      margin-top: 12px;
+    }
+
+    @media (max-width: 1200px) {
+      .catalog {
+        grid-template-columns: repeat(4, minmax(180px, 1fr));
+      }
+    }
+
+    @media (max-width: 920px) {
+      .catalog {
+        grid-template-columns: repeat(2, minmax(180px, 1fr));
+      }
+    }
+
+    @media (max-width: 520px) {
+      body {
+        padding: 0 16px 16px;
+        padding-top: 130px;
+      }
+
+      .catalog {
+        grid-template-columns: 1fr;
+      }
+
+      .notice,
+      .footer {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero-top">
+      <h1 class="hero-title">Pagina de afiliado do Mercado Livre.</h1>
+    </div>
+    <nav class="hero-nav">
+      <a href="index.html">Melhores Ofertas</a>
+      <a href="produtos-testados.html" class="active">Produtos testados</a>
+    </nav>
+  </header>
+
+  <div class="page-shell">
+    <main id="app" class="catalog"></main>
+  </div>
+
+  <section class="notice">
+    <strong style="font-size:14px; margin-bottom:4px;">
+      AVISO:
+    </strong>
+    Este site participa de programas de afiliados. Ao clicar nos links, você será redirecionado para plataformas
+    parceiras, onde a compra é realizada. Podemos receber comissão sem custo adicional para você.
+  </section>
+
+  <footer class="footer">
+    <p>
+      <strong style="font-size:14px; margin-bottom:4px;">
+        ISENÇÃO DE RESPONSABILIDADE:
+      </strong>
+      Não nos responsabilizamos por preços, prazos de entrega ou condições dos produtos, que são definidos pela
+      plataforma de destino.
+    </p>
+
+    <p style="margin-top:12px;">
+      <strong style="font-size:14px; margin-bottom:4px;">
+        PRIVACIDADE:
+      </strong>
+      Este site não coleta dados pessoais diretamente. Eventuais dados podem ser coletados automaticamente por serviços
+      de hospedagem ou navegação padrão.
+    </p>
+  </footer>
+
+  <script>
+    const EM_BREVE = "https://ariturtturismo.com.br/wp-content/uploads/2024/01/em-breve-1.png";
+    const TOTAL_CARDS = 10;
+
+    const app = document.getElementById("app");
+
+    for (let i = 0; i < TOTAL_CARDS; i++) {
+      const card = document.createElement("article");
+      card.className = "card";
+      card.innerHTML = `
+        <div class="image-wrap">
+          <img src="${EM_BREVE}" alt="Em breve">
+        </div>
+        <div class="content">
+          <span class="em-breve-label">Em desenvolvimento...</span>
+        </div>
+      `;
+      app.appendChild(card);
+    }
+  </script>
+</body>
+
+</html>
