@@ -1,5 +1,122 @@
 {
-  "executadoEm": "2026-06-20T22:03:26.108Z",
+  "executadoEm": "2026-06-20T23:27:29.652Z",
   "totalProdutos": 10,
-  "relatorio": []
+  "relatorio": [
+    {
+      "id": 1,
+      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoDe",
+          "de": "R$Não informado",
+          "para": "R$ 109,90"
+        },
+        {
+          "campo": "desconto",
+          "de": "24% OFF",
+          "para": "24% OFF no Pix"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 44,10",
+          "para": "R$ 49,12"
+        },
+        {
+          "campo": "desconto",
+          "de": "55% OFF",
+          "para": "55% OFF no Pix"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Magnow Pack Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável Viagem Organização",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 51,19",
+          "para": "R$ 52,99"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "nome": "Kit 2 Travesseiros 45x65 Antialérgico Lavável Fibra Siliconada Toque de Pluma",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 35,88",
+          "para": "R$ 37,99"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "nome": "Kit 3 Camisas Regatas Dry-fit Masculina Sandrini Academia",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 79,99",
+          "para": "R$ 56,01"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 78,62",
+          "para": "R$ 74,34"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 659",
+          "para": "R$ 659,00"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 799,99",
+          "para": "R$ 699,00"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 60,66",
+          "para": "R$ 66,90"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 159",
+          "para": "R$ 159,00"
+        }
+      ]
+    }
+  ]
 }
