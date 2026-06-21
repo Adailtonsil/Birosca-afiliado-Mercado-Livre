@@ -1,35 +1,5 @@
 {
-  "executadoEm": "2026-06-21T22:06:31.394Z",
+  "executadoEm": "2026-06-21T22:22:18.486Z",
   "totalProdutos": 10,
-  "relatorio": [
-    {
-      "id": 1,
-      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "desconto",
-          "de": "5% OFF no Pix",
-          "para": "26% OFF no Pix"
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "desconto",
-          "de": "26% OFF no Pix",
-          "para": "Desconto expirou"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 109,90",
-          "para": null
-        }
-      ]
-    }
-  ]
+  "relatorio": []
 }
