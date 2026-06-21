@@ -29,10 +29,13 @@ jobs:
       - name: Executar verificação de produtos
         run: node verificar-produtos.js
 
-      - name: Salvar (commit) o produtos.json atualizado, se houver mudanças
+      - name: Gerar páginas otimizadas para SEO (catálogo + páginas de produto)
+        run: node gerar-paginas-seo.js
+
+      - name: Salvar (commit) os arquivos atualizados, se houver mudanças
         run: |
           git config user.name "Robo Verificador"
           git config user.email "robo-verificador@users.noreply.github.com"
-          git add produtos.json ultima-verificacao.json
-          git diff --staged --quiet && echo "Nenhuma mudança para salvar." || git commit -m "Atualização automática de produtos ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+          git add produtos.json ultima-verificacao.json index.html produto/ sitemap.xml
+          git diff --staged --quiet && echo "Nenhuma mudança para salvar." || git commit -m "Atualização automática de produtos e páginas SEO ($(date -u +'%Y-%m-%d %H:%M UTC'))"
           git push
