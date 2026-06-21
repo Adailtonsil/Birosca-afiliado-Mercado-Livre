@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Birosca Afiliado</title>
+  <title>Afiliado Mercado Livre</title>
   <link rel="icon" type="image/png" href="favicon-32.png">
   <style>
     :root {
@@ -579,9 +579,9 @@
         <div class="content">
           <a class="product-link" href="?produto=${produto.id}">${produto.nome}</a>
           <div class="price-wrap">
-            <span class="old-price">${produto.precoDe}</span>
+            ${produto.precoDe ? `<span class="old-price">${produto.precoDe}</span>` : ""}
             <span class="current-price">${produto.precoPor}</span>
-            <span class="discount-badge">${produto.desconto}</span>
+            ${produto.desconto ? `<span class="discount-badge">${produto.desconto}</span>` : ""}
           </div>
           <p class="shipping">${produto.frete}</p>
 
@@ -641,9 +641,9 @@
           <h1 class="detail-title">${produto.nome}</h1>
 
           <div class="detail-price-wrap">
-            <span class="detail-old-price">${produto.precoDe}</span>
+            ${produto.precoDe ? `<span class="detail-old-price">${produto.precoDe}</span>` : ""}
             <span class="detail-current-price">${produto.precoPor}</span>
-            <span class="detail-discount">${produto.desconto}</span>
+            ${produto.desconto ? `<span class="detail-discount">${produto.desconto}</span>` : ""}
           </div>
 
           <p class="detail-shipping">${produto.frete}</p>
