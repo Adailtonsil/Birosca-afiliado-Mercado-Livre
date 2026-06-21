@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afiliado Mercado Livre</title>
+  <link rel="icon" type="image/png" href="favicon-32.png">
+  <style>
+    :root {
+      --card: #fffaf2;
+      --text: #221d16;
+      --muted: #6f6254;
+      --accent: #1f8f4e;
+      --accent-hover: #176c3b;
+      --link: #8a4b15;
+      --link-hover: #6d3810;
+      --shadow: 0 24px 60px rgba(34, 29, 22, 0.14);
+      --warm: #eadfce;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      padding: 0 24px 24px;
+      padding-top: 168px;
+        font-family: "Segoe UI", "Trebuchet MS", Arial, sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(255, 255, 255, 0.82), transparent 35%),
+        linear-gradient(180deg, #f8f1e7 0%, var(--warm) 100%);
+      color: var(--text);
+    }
+
+    .hero {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 1000;
+      margin: 0;
+      padding: 0;
+      background:
+        radial-gradient(circle at top right, rgba(255, 231, 138, 0.65), transparent 28%),
+        linear-gradient(135deg, #ffcf33 0%, #ffb100 45%, #f28c00 100%);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .hero-top {
+      padding: 16px 28px 14px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+    }
+
+    .hero-title {
+      margin: 0;
+      color: #1f1200;
+      font-family: "Arial Black", "Segoe UI", sans-serif;
+      font-size: clamp(1.6rem, 4vw, 3.5rem);
+      line-height: 1.05;
+      letter-spacing: 0.02em;
+      text-shadow: 0 2px 0 rgba(255, 255, 255, 0.18);
+    }
+
+    .hero-nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 0 20px;
+      color: #f6c900;
+    }
+
+    .hero-nav a {
+      display: inline-block;
+      padding: 10px 14px;
+      color: #1f1200;
+      font-size: 0.97rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 6px 6px 0 0;
+      transition: background 0.18s;
+    }
+
+    .hero-nav a:hover {
+      background: rgba(0, 0, 0, 0.123);
+    }
+
+    .hero-nav a.active {
+      background:#fdd629;
+      font-weight: 800;
+    }
+
+    .page-shell {
+      width: min(100%, 1400px);
+      margin: 0 auto;
+      padding: 0 0 24px;
+    }
+
+    .catalog {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .product-page {
+      width: min(100%, 1180px);
+      margin: 0 auto;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      background: var(--card);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(34, 29, 22, 0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      transform: scale(0.96);
+      box-shadow: 0 10px 30px rgba(34, 29, 22, 0.10);
+    }
+
+    .image-wrap {
+      aspect-ratio: 1 / 1;
+      background: #f0e6d8;
+      overflow: hidden;
+      display: block;
+      cursor: pointer;
+    }
+
+    .image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .content {
+      padding: 16px;
+    }
+
+    .product-link {
+      display: inline-block;
+      margin-bottom: 10px;
+      color: var(--text);
+      font-size: 1rem;
+      font-weight: 800;
+      line-height: 1.35;
+      text-decoration: none;
+    }
+
+    .product-link:hover {
+      color: var(--link-hover);
+    }
+
+    .price-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+
+    .old-price {
+      color: var(--muted);
+      text-decoration: line-through;
+      font-size: 0.92rem;
+    }
+
+    .current-price {
+      color: var(--text);
+      font-size: 1.35rem;
+      font-weight: 800;
+    }
+
+    .discount-badge {
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+    }
+
+    .discount-badge.is-neutral {
+      background: #e4dccb;
+      color: #8a7c64;
+      font-weight: 700;
+    }
+
+    .shipping {
+      margin-bottom: 14px;
+      color: var(--accent);
+      font-size: 0.95rem;
+      font-weight: 800;
+    }
+
+    .info-line {
+      margin-bottom: 8px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.45;
+    }
+
+    .info-line strong {
+      color: var(--text);
+    }
+
+    .buy-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 56px;
+      border: 0;
+      border-radius: 16px;
+      background: var(--accent);
+      color: #ffffff;
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-decoration: none;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .buy-button:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+    }
+
+    .buy-button:active {
+      transform: translateY(0);
+    }
+
+    .unavailable-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 56px;
+      border: 0;
+      border-radius: 16px;
+      background: #c0392b;
+      color: #fff;
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      cursor: not-allowed;
+    }
+
+    .card.is-unavailable {
+      opacity: 0.78;
+    }
+
+    .card.is-unavailable .image-wrap {
+      position: relative;
+    }
+
+    .card.is-unavailable .image-wrap::after {
+      content: "PRODUTO REMOVIDO";
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: rgba(192, 57, 43, 0.82);
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      padding: 12px;
+    }
+
+    .detail-card {
+      display: grid;
+      grid-template-columns: minmax(320px, 560px) minmax(320px, 1fr);
+      align-items: start;
+      gap: 24px;
+      background: var(--card);
+      border-radius: 28px;
+      overflow: visible;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(34, 29, 22, 0.08);
+      padding: 24px;
+    }
+
+    .detail-image-wrap {
+      aspect-ratio: 4 / 5;
+      background: #f0e6d8;
+      overflow: hidden;
+      border-radius: 24px;
+    }
+
+    .detail-image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .detail-content {
+      padding: 8px 8px 8px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .back-link {
+      align-self: flex-start;
+      margin-bottom: 20px;
+      color: var(--link);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .back-link:hover {
+      color: var(--link-hover);
+      text-decoration: underline;
+    }
+
+    .removed-banner {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+      padding: 12px 18px;
+      background: #c0392b;
+      color: #fff;
+      font-size: 1.05rem;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(192, 57, 43, 0.35);
+    }
+
+    .detail-title {
+      margin-bottom: 12px;
+      font-size: 2rem;
+      line-height: 1.14;
+    }
+
+    .detail-subtitle {
+      margin-bottom: 18px;
+      color: var(--muted);
+      line-height: 1.5;
+      font-size: 0.98rem;
+    }
+
+    .detail-price-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+
+    .detail-old-price {
+      color: var(--muted);
+      text-decoration: line-through;
+      font-size: 1rem;
+    }
+
+    .detail-current-price {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    .detail-discount {
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.88rem;
+      font-weight: 800;
+    }
+
+    .detail-discount.is-neutral {
+      background: #e4dccb;
+      color: #8a7c64;
+      font-weight: 700;
+    }
+
+    .detail-shipping {
+      margin-bottom: 18px;
+      color: var(--accent);
+      font-size: 1rem;
+      font-weight: 800;
+    }
+
+    .detail-variants {
+      margin-bottom: 24px;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 0.96rem;
+    }
+
+    .detail-variants strong {
+      color: var(--text);
+    }
+
+    .variant-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .variant-chip {
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: #f3eadf;
+      color: var(--text);
+      font-size: 0.9rem;
+      font-weight: 700;
+      border: 1px solid rgba(34, 29, 22, 0.08);
+    }
+
+    .detail-description-box {
+      margin-top: 28px;
+      padding: 28px;
+      background: rgba(255, 250, 242, 0.96);
+      border: 1px solid rgba(34, 29, 22, 0.08);
+      border-radius: 24px;
+      box-shadow: 0 14px 34px rgba(34, 29, 22, 0.08);
+    }
+
+    .detail-description-box h2 {
+      margin-bottom: 18px;
+      font-size: 1.6rem;
+    }
+
+    .detail-description-box h3 {
+      margin: 20px 0 10px;
+      font-size: 1.05rem;
+      color: var(--text);
+    }
+
+    .detail-description-box ul {
+      margin: 8px 0 0 18px;
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: 0.98rem;
+    }
+
+    .detail-description-box li+li {
+      margin-top: 6px;
+    }
+
+    .detail-description-box p {
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: 0.98rem;
+    }
+
+    .detail-description-box p+p {
+      margin-top: 12px;
+    }
+
+    .notice {
+      width: min(100%, 1400px);
+      margin: 28px auto 18px;
+      padding: 18px 20px;
+      background: rgba(255, 250, 242, 0.92);
+      border: 1px solid rgba(34, 29, 22, 0.08);
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(34, 29, 22, 0.08);
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .footer {
+      width: min(100%, 1400px);
+      margin: 0 auto;
+      padding: 22px 20px 28px;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+
+    .footer p+p {
+      margin-top: 12px;
+    }
+
+    @media (max-width: 1200px) {
+      .catalog {
+        grid-template-columns: repeat(4, minmax(180px, 1fr));
+      }
+    }
+
+    @media (max-width: 920px) {
+      .catalog {
+        grid-template-columns: repeat(2, minmax(180px, 1fr));
+      }
+
+      .detail-card {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 18px;
+      }
+
+      .detail-image-wrap img {
+        min-height: 0;
+      }
+    }
+
+    @media (max-width: 520px) {
+      body {
+        padding: 0 16px 16px;
+        padding-top: 130px;
+      }
+
+      .catalog {
+        grid-template-columns: 1fr;
+      }
+
+      .detail-content,
+      .detail-description-box {
+        padding: 22px;
+      }
+
+      .detail-card {
+        padding: 14px;
+      }
+
+      .detail-title {
+        font-size: 1.6rem;
+      }
+
+      .notice,
+      .footer {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero-top">
+      <h1 class="hero-title">Pagina de afiliado do Mercado Livre.</h1>
+    </div>
+    <nav class="hero-nav">
+      <a href="index.html" class="active">Melhores Ofertas</a>
+      <a href="produtos-testados.html">Produtos testados</a>
+    </nav>
+  </header>
+
+  <div class="page-shell">
+    <main id="app"></main>
+  </div>
+
+  <section class="notice">
+    <strong style="font-size:14px; margin-bottom:4px;">
+      AVISO:
+    </strong>
+    Este site participa de programas de afiliados. Ao clicar nos links, você será redirecionado para plataformas
+    parceiras, onde a compra é realizada. Podemos receber comissão sem custo adicional para você.
+  </section>
+
+  <footer class="footer">
+    <p>
+      <strong style="font-size:14px; margin-bottom:4px;">
+        ISENÇÃO DE RESPONSABILIDADE:
+      </strong>
+      Não nos responsabilizamos por preços, prazos de entrega ou condições dos produtos, que são definidos pela
+      plataforma de destino.
+    </p>
+
+    <p style="margin-top:12px;">
+      <strong style="font-size:14px; margin-bottom:4px;">
+        PRIVACIDADE:
+      </strong>
+      Este site não coleta dados pessoais diretamente. Eventuais dados podem ser coletados automaticamente por serviços
+      de hospedagem ou navegação padrão.
+    </p>
+  </footer>
+  </footer>
+
+  <script>
+    let produtos = [];
+    const app = document.getElementById("app");
+    const params = new URLSearchParams(window.location.search);
+    const produtoId = Number(params.get("produto"));
+    const catalogUrl = window.location.pathname;
+
+    function renderCatalog() {
+      app.className = "catalog";
+      app.innerHTML = "";
+
+      produtos.forEach((produto) => {
+        const card = document.createElement("article");
+        card.className = produto.indisponivel ? "card is-unavailable" : "card";
+
+        card.innerHTML = `
+        <a class="image-wrap" href="?produto=${produto.id}">
+          <img src="${produto.imagem}" alt="${produto.nome}">
+        </a>
+        <div class="content">
+          <a class="product-link" href="?produto=${produto.id}">${produto.nome}</a>
+          <div class="price-wrap">
+            ${produto.precoDe ? `<span class="old-price">${produto.precoDe}</span>` : ""}
+            <span class="current-price">${produto.precoPor}</span>
+            ${produto.desconto ? `<span class="discount-badge${produto.desconto === "Desconto expirou" ? " is-neutral" : ""}">${produto.desconto}</span>` : ""}
+          </div>
+          <p class="shipping">${produto.frete}</p>
+
+          ${produto.variacoes
+            ? Object.entries(produto.variacoes)
+              .map(
+                ([nome, valores]) => `
+              <p class="info-line"><strong>${nome}:</strong> ${valores.join(", ")}</p>
+            `
+              )
+              .join("")
+            : ""
+          }
+
+          ${produto.indisponivel
+            ? `<span class="unavailable-badge">PRODUTO REMOVIDO</span>`
+            : `<a
+                class="buy-button"
+                href="${produto.checkout}"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                COMPRAR
+              </a>`
+          }
+        </div>
+      `;
+
+        app.appendChild(card);
+      });
+    }
+
+    function renderProductPage(produto) {
+      const variacoesHtml = produto.variacoes
+        ? Object.entries(produto.variacoes)
+          .map(
+            ([nome, valores]) => `
+        <p style="margin-top: 16px;"><strong>${nome}:</strong></p>
+        <div class="variant-chips">
+          ${valores
+                .map((v) => `<span class="variant-chip">${v}</span>`)
+                .join("")}
+        </div>
+      `
+          )
+          .join("")
+        : "";
+
+      app.className = "product-page";
+      app.innerHTML = `
+      <section class="detail-card">
+        <div class="detail-image-wrap">
+          <img src="${produto.imagem}" alt="${produto.nome}">
+        </div>
+        <div class="detail-content">
+          <a class="back-link" href="${catalogUrl}">Voltar para o catalogo</a>
+
+          ${produto.indisponivel
+            ? `<div class="removed-banner">⚠ PRODUTO REMOVIDO</div>`
+            : ""
+          }
+
+          <h1 class="detail-title">${produto.nome}</h1>
+
+          <div class="detail-price-wrap">
+            ${produto.precoDe ? `<span class="detail-old-price">${produto.precoDe}</span>` : ""}
+            <span class="detail-current-price">${produto.precoPor}</span>
+            ${produto.desconto ? `<span class="detail-discount${produto.desconto === "Desconto expirou" ? " is-neutral" : ""}">${produto.desconto}</span>` : ""}
+          </div>
+
+          <p class="detail-shipping">${produto.frete}</p>
+
+          <div class="detail-variants">
+            ${variacoesHtml}
+          </div>
+
+          ${produto.indisponivel
+            ? `<span class="unavailable-badge">PRODUTO REMOVIDO</span>`
+            : `<a
+                class="buy-button"
+                href="${produto.checkout}"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                COMPRAR NO MERCADO LIVRE
+              </a>`
+          }
+        </div>
+      </section>
+
+      <section class="detail-description-box">
+        ${produto.detalhesHtml}
+      </section>
+    `;
+    }
+
+    function renderizarPagina() {
+      const produtoSelecionado = produtos.find(
+        (produto) => produto.id === produtoId
+      );
+
+      if (produtoSelecionado) {
+        renderProductPage(produtoSelecionado);
+      } else {
+        renderCatalog();
+      }
+    }
+
+    app.innerHTML = "<p style='padding:24px;'>Carregando produtos...</p>";
+
+    fetch("produtos.json")
+      .then((resposta) => {
+        if (!resposta.ok) {
+          throw new Error("Não foi possível carregar produtos.json (status " + resposta.status + ")");
+        }
+        return resposta.json();
+      })
+      .then((dados) => {
+        produtos = dados;
+        renderizarPagina();
+      })
+      .catch((erro) => {
+        console.error("Erro ao carregar produtos.json:", erro);
+        app.innerHTML =
+          "<p style='padding:24px;'>Não foi possível carregar os produtos agora. Tente novamente em instantes.</p>";
+      });
+  </script>
+</body>
+
+</html>
