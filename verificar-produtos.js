@@ -151,44 +151,21 @@ function extrairDadosDaPagina(html) {
   }
 
   if (!dados.desconto) {
-  const posVolumeTags = html.indexOf("ui-pdp-price__volume-tags");
-
-  if (posVolumeTags !== -1) {
-    const janela = html.slice(posVolumeTags, posVolumeTags + 2000);
-
-    // Captura todos os spans da área de promoções
-    const spans = [...janela.matchAll(/<span[^>]*>(.*?)<\/span>/gi)];
-
-    for (const span of spans) {
-      const texto = span[1]
-        .replace(/<[^>]+>/g, "")
-        .replace(/\s+/g, " ")
-        .trim();
-
-      if (!texto) continue;
-
-      // Ignora textos irrelevantes
-      if (
-        texto.toLowerCase().includes("ver participantes") ||
-        texto.toLowerCase().includes("participantes")
-      ) {
-        continue;
-      }
-
-      // Encontrou qualquer benefício comercial
-      if (
-        /off|desconto|leve|levando|compre|unidades|quantidade/i.test(texto)
-      ) {
-        dados.desconto = texto;
-        break;
+    // Exemplo real encontrado na página:
+    // <div class="ui-pdp-price__volume-tags">...<span>20% OFF levando 3</span>...
+    const posVolumeTags = html.indexOf("ui-pdp-price__volume-tags");
+    if (posVolumeTags !== -1) {
+      const janela = html.slice(posVolumeTags, posVolumeTags + 600);
+      const matchVolume = janela.match(/<span>([^<]*\d{1,3}%[^<]*)<\/span>/i);
+      if (matchVolume) {
+        dados.desconto = matchVolume[1].trim();
       }
     }
   }
-}
 
   if (!dados.desconto) {
-  dados.desconto = null;
-}
+    dados.desconto = "Desconto não aplicável";
+  }
 
   // --- Frete grátis ---
   if (/frete\s+gr[áa]tis/i.test(html)) {
