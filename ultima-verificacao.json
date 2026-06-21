@@ -1,16 +1,38 @@
 {
-  "executadoEm": "2026-06-21T23:30:02.918Z",
+  "executadoEm": "2026-06-21T23:59:31.597Z",
   "totalProdutos": 10,
   "relatorio": [
     {
-      "id": 2,
-      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
+      "id": 1,
+      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 40,12",
-          "para": "R$ 49,12"
+          "de": "R$ 50,00",
+          "para": "R$ 54,00"
+        },
+        {
+          "campo": "desconto",
+          "de": "Desconto não aplicável",
+          "para": "26% OFF no Pix"
+        },
+        {
+          "campo": "precoDe",
+          "de": null,
+          "para": "R$ 109,90"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "Desconto não aplicável",
+          "para": "Desconto expirou"
         }
       ]
     }
