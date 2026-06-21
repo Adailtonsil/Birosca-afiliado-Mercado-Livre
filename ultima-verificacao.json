@@ -1,5 +1,11 @@
 {
-  "executadoEm": "2026-06-21T22:22:18.486Z",
+  "executadoEm": "2026-06-21T22:29:54.672Z",
   "totalProdutos": 10,
-  "relatorio": []
+  "relatorio": [
+    {
+      "id": 1,
+      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
+      "status": "marcado_indisponivel"
+    }
+  ]
 }
