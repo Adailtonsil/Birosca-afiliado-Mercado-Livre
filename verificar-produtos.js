@@ -156,7 +156,7 @@ function extrairDadosDaPagina(html) {
   }
 
   if (!dados.desconto) {
-    dados.desconto = "Desconto não aplicável ou desconto expirou";
+    dados.desconto = "Desconto expirou";
   }
 
   // --- Desconto por quantidade (ex: "20% OFF levando 3") ---
