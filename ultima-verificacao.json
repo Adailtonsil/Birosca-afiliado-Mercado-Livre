@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-06-21T20:06:07.697Z",
+  "executadoEm": "2026-06-21T20:36:08.736Z",
   "totalProdutos": 10,
   "relatorio": [
     {
@@ -8,9 +8,31 @@
       "status": "atualizado",
       "mudancas": [
         {
+          "campo": "precoPor",
+          "de": "R$ 70,00",
+          "para": "R$ 54,00"
+        },
+        {
           "campo": "desconto",
-          "de": "Desconto não aplicável ou desconto expirou",
-          "para": "Desconto expirou"
+          "de": "Desconto expirou",
+          "para": "26% OFF no Pix"
+        },
+        {
+          "campo": "precoDe",
+          "de": null,
+          "para": "R$ 109,90"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 40,12",
+          "para": "R$ 49,12"
         }
       ]
     },
@@ -20,9 +42,14 @@
       "status": "atualizado",
       "mudancas": [
         {
+          "campo": "precoPor",
+          "de": "R$ 74,34",
+          "para": "R$ 89,12"
+        },
+        {
           "campo": "desconto",
-          "de": "Desconto não aplicável ou desconto expirou",
-          "para": "Desconto expirou"
+          "de": "Desconto expirou",
+          "para": "Desconto não aplicável ou desconto expirou"
         }
       ]
     }
