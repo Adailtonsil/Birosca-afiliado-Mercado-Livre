@@ -106,14 +106,33 @@ function extrairDadosDaPagina(html) {
     frete: null,
   };
 
-  // --- Preço atual (com desconto Pix), dentro do bloco "poly-price__current" ---
-  // Exemplo real encontrado na página:
-  // <span class="... poly-price__current ..." aria-label="Agora: 49 reais com 12 centavos" ...>
-  let match = extrairBlocoComAriaLabel(html, "poly-price__current", /Agora:\s*([\d.,]+)\s*reais?(?:\s*com\s*(\d{1,2})\s*centavos?)?/i);
+  // --- Preço atual, dentro do bloco "poly-price__current" ---
+  //
+  // O formato do aria-label muda dependendo de haver ou não desconto:
+  //   - COM desconto: aria-label="Agora: 49 reais com 12 centavos"
+  //   - SEM desconto: aria-label="54 reais" (sem o prefixo "Agora:",
+  //     e às vezes sem a parte "com X centavos" quando o valor é
+  //     redondo -- os centavos nesse caso ficam só visualmente em
+  //     outro <span>, não no aria-label)
+  //
+  // O regex abaixo aceita "Agora:" como opcional, e "com X centavos"
+  // também como opcional, para cobrir os dois formatos com o mesmo
+  // padrão.
+  let match = extrairBlocoComAriaLabel(html, "poly-price__current", /(?:Agora:\s*)?([\d.,]+)\s*reais?(?:\s*com\s*(\d{1,2})\s*centavos?)?/i);
+
   let precoPorNumero = null;
   if (match) {
     precoPorNumero = paraNumero(match[1], match[2]);
     dados.precoPor = formatarMoedaReaisCentavos(match[1], match[2]);
+  } else {
+    // DEPURAÇÃO TEMPORÁRIA: ajuda a identificar por que o preço não foi
+    // encontrado nesta página (classe ausente, aria-label ausente, ou
+    // regex não bateu no texto do aria-label). Pode ser removida depois
+    // que o problema for confirmado e corrigido em definitivo.
+    const existeClasse = html.indexOf("poly-price__current") !== -1;
+    console.log(
+      `  [debug-preco] Não foi possível extrair precoPor. Classe "poly-price__current" presente no HTML: ${existeClasse}`
+    );
   }
 
   // --- Preço original (antes do desconto), no elemento <s> com classe "andes-money-amount--previous" ---
@@ -156,7 +175,7 @@ function extrairDadosDaPagina(html) {
   }
 
   if (!dados.desconto) {
-    dados.desconto = "Desconto expirou";
+    dados.desconto = "Desconto não aplicável ou desconto expirou";
   }
 
   // --- Desconto por quantidade (ex: "20% OFF levando 3") ---
