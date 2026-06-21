@@ -1,23 +1,5 @@
 {
-  "executadoEm": "2026-06-21T21:31:41.399Z",
+  "executadoEm": "2026-06-21T21:45:38.478Z",
   "totalProdutos": 10,
-  "relatorio": [
-    {
-      "id": 8,
-      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "desconto",
-          "de": "8% OFF no Pix",
-          "para": "Desconto expirou"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 690,00",
-          "para": null
-        }
-      ]
-    }
-  ]
+  "relatorio": []
 }
