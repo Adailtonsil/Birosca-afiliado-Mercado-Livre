@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-06-21T18:45:47.066Z",
+  "executadoEm": "2026-06-21T18:49:01.458Z",
   "totalProdutos": 10,
   "relatorio": [
     {
@@ -9,7 +9,7 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 45,12",
+          "de": "R$ 41,12",
           "para": "R$ 49,12"
         }
       ]
