@@ -283,11 +283,20 @@ function formatarMoedaReaisCentavos(reaisTexto, centavosTexto) {
 function compararEAtualizar(produto, dadosNovos) {
   const mudancas = [];
 
+  // VERIFICAÇÃO EXPLÍCITA E REDUNDANTE (proteção extra):
+  // Se a página NÃO confirmou um preço anterior real (precoDe), então
+  // não pode haver desconto real -- ponto final. Isso é forçado aqui
+  // de forma direta, além da lógica abaixo, para garantir que nunca
+  // sobre um "desconto" ou "precoDe" antigo no produto quando a
+  // página atual não confirma mais nenhuma promoção.
+  if (!dadosNovos.precoDe) {
+    dadosNovos.desconto = "Desconto expirou";
+  }
+
   // precoPor, frete e desconto: campos que sempre devem ter um valor agora
-  // (desconto tem o fallback "Desconto não aplicável ou desconto expirou"
-  // quando não há promoção real). Se não conseguimos ler agora, é mais
-  // seguro preservar o valor antigo (provável falha temporária de leitura)
-  // do que apagar.
+  // (desconto tem o fallback "Desconto expirou" quando não há promoção
+  // real). Se não conseguimos ler agora, é mais seguro preservar o valor
+  // antigo (provável falha temporária de leitura) do que apagar.
   //
   // IMPORTANTE: precoPor é comparado e atualizado aqui de forma
   // COMPLETAMENTE INDEPENDENTE de haver ou não desconto real. Ou seja:
