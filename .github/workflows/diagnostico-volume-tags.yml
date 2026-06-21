@@ -1,0 +1,19 @@
+name: Diagnostico Volume Tags (temporario)
+ 
+on:
+  workflow_dispatch: {}
+ 
+jobs:
+  diagnosticar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o código do repositório
+        uses: actions/checkout@v4
+ 
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+ 
+      - name: Executar diagnostico volume tags
+        run: node diagnostico-volume-tags.js
