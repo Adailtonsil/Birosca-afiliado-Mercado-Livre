@@ -1,10 +1,10 @@
-name: Diagnostico 5 (temporario)
+name: Diagnostico 6 (temporario)
 
 on:
   workflow_dispatch: {}
 
 jobs:
-  diagnosticar5:
+  diagnosticar6:
     runs-on: ubuntu-latest
     steps:
       - name: Baixar o código do repositório
@@ -15,5 +15,5 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Executar diagnostico 5
-        run: node diagnostico5.js
+      - name: Executar diagnostico 6
+        run: node diagnostico6.js
