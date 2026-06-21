@@ -5,9 +5,14 @@
  * 1. Lê o arquivo produtos.json
  * 2. Para cada produto, acessa o link "checkout" (link de afiliado meli.la/...)
  *    e segue o redirecionamento até a página real do produto no Mercado Livre
- * 3. Extrai: preço atual, preço original, % de desconto, informação de frete
+ * 3. Extrai: preço atual, preço original, % de desconto real (Pix),
+ *    selo de desconto por quantidade (informativo, separado) e
+ *    informação de frete
  * 4. Compara com o que já está salvo no produtos.json
- * 5. Atualiza os campos que mudaram
+ * 5. Atualiza os campos que mudaram -- o preço (precoPor) é sempre
+ *    comparado e atualizado de forma independente de haver ou não
+ *    desconto real. A ausência de desconto NUNCA impede a atualização
+ *    do preço.
  * 6. Se o produto não existir mais (404 / removido), marca "indisponivel: true"
  * 7. Salva o produtos.json atualizado
  *
@@ -93,6 +98,11 @@ function extrairDadosDaPagina(html) {
     precoPor: null,
     precoDe: null,
     desconto: null,
+    // Campo separado e meramente informativo (ex: "20% OFF levando 3").
+    // NUNCA influencia precoPor, precoDe ou o campo "desconto" -- é só
+    // um aviso extra de vantagem por quantidade, sem relação com o
+    // desconto real (preço riscado) do produto.
+    descontoQuantidade: null,
     frete: null,
   };
 
@@ -133,16 +143,11 @@ function extrairDadosDaPagina(html) {
     );
   }
 
-  // --- Desconto: segue uma ordem de prioridade (cascata) ---
+  // --- Desconto real (preço riscado / Pix) ---
   //
-  // 1º) Desconto Pix real, no rótulo "poly-price__disc_label", só aceito
-  //     se já tivermos validado um preço anterior real (dados.precoDe).
-  // 2º) Se não houver desconto Pix, procura por um desconto por quantidade
-  //     (ex: "20% OFF levando 3"), que o Mercado Livre mostra no bloco
-  //     "ui-pdp-price__volume-tags" mesmo quando não há desconto Pix.
-  // 3º) Se nenhum dos dois existir, marca explicitamente como não aplicável,
-  //     para deixar claro ao visitante do site que não há desconto algum
-  //     hoje (em vez de simplesmente omitir a informação).
+  // Só é considerado desconto real se já tivermos validado um preço
+  // anterior real (dados.precoDe). Esse é o ÚNICO critério que define
+  // o campo "desconto" exibido como badge de promoção no site.
   if (dados.precoDe) {
     match = html.match(/poly-price__disc_label[^>]*>([^<]*\d{1,3}%[^<]*)</i);
     if (match) {
@@ -151,20 +156,25 @@ function extrairDadosDaPagina(html) {
   }
 
   if (!dados.desconto) {
-    // Exemplo real encontrado na página:
-    // <div class="ui-pdp-price__volume-tags">...<span>20% OFF levando 3</span>...
-    const posVolumeTags = html.indexOf("ui-pdp-price__volume-tags");
-    if (posVolumeTags !== -1) {
-      const janela = html.slice(posVolumeTags, posVolumeTags + 600);
-      const matchVolume = janela.match(/<span>([^<]*\d{1,3}%[^<]*)<\/span>/i);
-      if (matchVolume) {
-        dados.desconto = matchVolume[1].trim();
-      }
-    }
+    dados.desconto = "Desconto não aplicável ou desconto expirou";
   }
 
-  if (!dados.desconto) {
-    dados.desconto = "Desconto não aplicável";
+  // --- Desconto por quantidade (ex: "20% OFF levando 3") ---
+  //
+  // Isto é uma informação à parte, mostrada pelo Mercado Livre no bloco
+  // "ui-pdp-price__volume-tags" mesmo quando não há nenhum desconto real
+  // (preço riscado). É guardado em um campo próprio (descontoQuantidade)
+  // e NUNCA é usado para preencher dados.desconto, dados.precoPor ou
+  // dados.precoDe -- assim, a presença ou ausência desse selo de
+  // vantagem por quantidade não interfere em nada na comparação e
+  // atualização do preço do produto.
+  const posVolumeTags = html.indexOf("ui-pdp-price__volume-tags");
+  if (posVolumeTags !== -1) {
+    const janela = html.slice(posVolumeTags, posVolumeTags + 600);
+    const matchVolume = janela.match(/<span>([^<]*\d{1,3}%[^<]*)<\/span>/i);
+    if (matchVolume) {
+      dados.descontoQuantidade = matchVolume[1].trim();
+    }
   }
 
   // --- Frete grátis ---
@@ -226,9 +236,17 @@ function compararEAtualizar(produto, dadosNovos) {
   const mudancas = [];
 
   // precoPor, frete e desconto: campos que sempre devem ter um valor agora
-  // (desconto tem o fallback "Desconto não aplicável" quando não há
-  // promoção real). Se não conseguimos ler agora, é mais seguro preservar
-  // o valor antigo (provável falha temporária de leitura) do que apagar.
+  // (desconto tem o fallback "Desconto não aplicável ou desconto expirou"
+  // quando não há promoção real). Se não conseguimos ler agora, é mais
+  // seguro preservar o valor antigo (provável falha temporária de leitura)
+  // do que apagar.
+  //
+  // IMPORTANTE: precoPor é comparado e atualizado aqui de forma
+  // COMPLETAMENTE INDEPENDENTE de haver ou não desconto real. Ou seja:
+  // mesmo que o produto não tenha nenhum desconto (preço riscado), se o
+  // preço atual da página mudou, ele é atualizado normalmente no site.
+  // A existência (ou não) de desconto NUNCA bloqueia a atualização do
+  // preço -- são duas coisas tratadas em separado.
   const camposSemprePresentes = ["precoPor", "frete", "desconto"];
   for (const campo of camposSemprePresentes) {
     const valorNovo = dadosNovos[campo];
@@ -238,19 +256,23 @@ function compararEAtualizar(produto, dadosNovos) {
     }
   }
 
-  // precoDe: pode legitimamente deixar de existir (a promoção pode ter
-  // acabado). Se não conseguimos validar um valor novo, removemos o valor
-  // antigo em vez de preservá-lo -- caso contrário, o site continuaria
-  // mostrando um preço anterior que não existe mais de verdade na página.
-  const campo = "precoDe";
-  const valorNovo = dadosNovos[campo];
-  const valorAntigo = produto[campo] || null;
-  if (valorNovo !== valorAntigo) {
-    mudancas.push({ campo, de: valorAntigo, para: valorNovo });
-    if (valorNovo) {
-      produto[campo] = valorNovo;
-    } else {
-      delete produto[campo];
+  // precoDe e descontoQuantidade: podem legitimamente deixar de existir
+  // (a promoção pode ter acabado, ou o selo de quantidade pode não
+  // aparecer mais). Se não conseguimos validar um valor novo, removemos
+  // o valor antigo em vez de preservá-lo -- caso contrário, o site
+  // continuaria mostrando uma vantagem que não existe mais de verdade
+  // na página.
+  const camposOpcionais = ["precoDe", "descontoQuantidade"];
+  for (const campo of camposOpcionais) {
+    const valorNovo = dadosNovos[campo];
+    const valorAntigo = produto[campo] || null;
+    if (valorNovo !== valorAntigo) {
+      mudancas.push({ campo, de: valorAntigo, para: valorNovo });
+      if (valorNovo) {
+        produto[campo] = valorNovo;
+      } else {
+        delete produto[campo];
+      }
     }
   }
 
