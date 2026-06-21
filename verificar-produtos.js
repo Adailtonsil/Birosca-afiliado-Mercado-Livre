@@ -100,7 +100,9 @@ function extrairDadosDaPagina(html) {
   // Exemplo real encontrado na página:
   // <span class="... poly-price__current ..." aria-label="Agora: 49 reais com 12 centavos" ...>
   let match = extrairBlocoComAriaLabel(html, "poly-price__current", /Agora:\s*([\d.,]+)\s*reais?(?:\s*com\s*(\d{1,2})\s*centavos?)?/i);
+  let precoPorNumero = null;
   if (match) {
+    precoPorNumero = paraNumero(match[1], match[2]);
     dados.precoPor = formatarMoedaReaisCentavos(match[1], match[2]);
   }
 
@@ -108,16 +110,42 @@ function extrairDadosDaPagina(html) {
   // Exemplo real encontrado na página:
   // <s class="... andes-money-amount--previous ..." aria-label="Antes: 109 reais com 99 centavos" ...>
   match = extrairBlocoComAriaLabel(html, "andes-money-amount--previous", /Antes:\s*([\d.,]+)\s*reais?(?:\s*com\s*(\d{1,2})\s*centavos?)?/i);
+  let precoDeNumero = null;
   if (match) {
+    precoDeNumero = paraNumero(match[1], match[2]);
+  }
+
+  // VALIDAÇÃO DE SANIDADE: um "preço anterior" só faz sentido se for MAIOR
+  // que o preço atual. Já vimos casos em que o site encontra, em outro
+  // ponto da página (ex: comparação de preço histórico, ou produto
+  // recomendado), um valor de "preço anterior" que não tem relação real
+  // com o preço atual do produto. Nesses casos, é mais seguro não aceitar
+  // esse valor do que arriscar gravar um desconto falso.
+  if (
+    precoDeNumero !== null &&
+    precoPorNumero !== null &&
+    precoDeNumero > precoPorNumero
+  ) {
     dados.precoDe = formatarMoedaReaisCentavos(match[1], match[2]);
+  } else if (precoDeNumero !== null) {
+    console.log(
+      `  [aviso] Preço "anterior" encontrado (${formatarMoedaReaisCentavos(match[1], match[2])}) não é maior que o preço atual. Ignorando, provavelmente não é o preço anterior real deste produto.`
+    );
   }
 
   // --- Desconto em porcentagem, no rótulo "poly-price__disc_label" ---
   // Exemplo real encontrado na página:
   // <span class="poly-price__disc_label ...">55% OFF no Pix</span>
-  match = html.match(/poly-price__disc_label[^>]*>([^<]*\d{1,3}%[^<]*)</i);
-  if (match) {
-    dados.desconto = match[1].trim();
+  //
+  // Só aceitamos esse desconto se também tivermos validado um preço
+  // anterior real (dados.precoDe). Um "% OFF" sem preço anterior
+  // correspondente não tem como ser confirmado, e arriscaria mostrar
+  // um desconto que não existe de verdade (como aconteceu antes).
+  if (dados.precoDe) {
+    match = html.match(/poly-price__disc_label[^>]*>([^<]*\d{1,3}%[^<]*)</i);
+    if (match) {
+      dados.desconto = match[1].trim();
+    }
   }
 
   // --- Frete grátis ---
@@ -126,6 +154,18 @@ function extrairDadosDaPagina(html) {
   }
 
   return dados;
+}
+
+/**
+ * Converte os textos "reais" e "centavos" capturados pelo regex em um
+ * número (float), para permitir comparações matemáticas (ex: saber se
+ * um preço é maior que outro).
+ */
+function paraNumero(reaisTexto, centavosTexto) {
+  const reais = parseInt(reaisTexto.replace(/\D/g, ""), 10);
+  if (Number.isNaN(reais)) return null;
+  const centavos = centavosTexto ? parseInt(centavosTexto, 10) : 0;
+  return reais + centavos / 100;
 }
 
 /**
@@ -165,15 +205,36 @@ function formatarMoedaReaisCentavos(reaisTexto, centavosTexto) {
  */
 function compararEAtualizar(produto, dadosNovos) {
   const mudancas = [];
-  const campos = ["precoPor", "precoDe", "desconto", "frete"];
 
-  for (const campo of campos) {
+  // precoPor e frete: campos que sempre devem existir na página de um
+  // produto. Se não conseguimos ler agora, é mais seguro preservar o
+  // valor antigo (provável falha temporária de leitura) do que apagar.
+  const camposSemprePresentes = ["precoPor", "frete"];
+  for (const campo of camposSemprePresentes) {
     const valorNovo = dadosNovos[campo];
-    // Só atualiza se conseguimos extrair um valor válido da página.
-    // Se não achou nada (null), preserva o valor antigo em vez de apagar.
     if (valorNovo && valorNovo !== produto[campo]) {
       mudancas.push({ campo, de: produto[campo], para: valorNovo });
       produto[campo] = valorNovo;
+    }
+  }
+
+  // precoDe e desconto: campos que podem legitimamente deixar de existir
+  // (a promoção pode ter acabado). Se não conseguimos validar um valor
+  // novo para eles, removemos o valor antigo em vez de preservá-lo --
+  // caso contrário, o site continuaria mostrando um desconto/preço
+  // anterior que não existe mais de verdade na página.
+  const camposOpcionais = ["precoDe", "desconto"];
+  for (const campo of camposOpcionais) {
+    const valorNovo = dadosNovos[campo];
+    const valorAntigo = produto[campo] || null;
+
+    if (valorNovo !== valorAntigo) {
+      mudancas.push({ campo, de: valorAntigo, para: valorNovo });
+      if (valorNovo) {
+        produto[campo] = valorNovo;
+      } else {
+        delete produto[campo];
+      }
     }
   }
 
