@@ -5,7 +5,7 @@ name: Verificar produtos no Mercado Livre
 # 2. Manualmente, quando você quiser (aba "Actions" no GitHub, botão "Run workflow")
 on:
   schedule:
-    # Roda às 15:40 no horário de Brasília (12:00 UTC).
+    # Roda às 06:00 no horário de Brasília (12:00 UTC).
     # Para mudar o horário, ajuste o valor de "cron" (formato: minuto hora * * *, em UTC).
     - cron: "0 12 * * *"
   workflow_dispatch: {}
