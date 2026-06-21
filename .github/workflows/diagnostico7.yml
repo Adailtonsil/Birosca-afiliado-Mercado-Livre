@@ -1,0 +1,19 @@
+name: Diagnostico 7 (temporario)
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  diagnosticar7:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o código do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Executar diagnostico 7
+        run: node diagnostico7.js
