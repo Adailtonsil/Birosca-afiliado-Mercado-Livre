@@ -1,5 +1,18 @@
 {
-  "executadoEm": "2026-06-21T23:24:36.261Z",
+  "executadoEm": "2026-06-21T23:30:02.918Z",
   "totalProdutos": 10,
-  "relatorio": []
+  "relatorio": [
+    {
+      "id": 2,
+      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 40,12",
+          "para": "R$ 49,12"
+        }
+      ]
+    }
+  ]
 }
