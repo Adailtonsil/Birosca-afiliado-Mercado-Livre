@@ -190,6 +190,12 @@
       letter-spacing: 0.04em;
     }
 
+    .discount-badge.is-neutral {
+      background: #e4dccb;
+      color: #8a7c64;
+      font-weight: 700;
+    }
+
     .shipping {
       margin-bottom: 14px;
       color: var(--accent);
@@ -359,6 +365,12 @@
       color: #fff;
       font-size: 0.88rem;
       font-weight: 800;
+    }
+
+    .detail-discount.is-neutral {
+      background: #e4dccb;
+      color: #8a7c64;
+      font-weight: 700;
     }
 
     .detail-shipping {
@@ -581,7 +593,7 @@
           <div class="price-wrap">
             ${produto.precoDe ? `<span class="old-price">${produto.precoDe}</span>` : ""}
             <span class="current-price">${produto.precoPor}</span>
-            ${produto.desconto ? `<span class="discount-badge">${produto.desconto}</span>` : ""}
+            ${produto.desconto ? `<span class="discount-badge${produto.desconto === "Desconto não aplicável" ? " is-neutral" : ""}">${produto.desconto}</span>` : ""}
           </div>
           <p class="shipping">${produto.frete}</p>
 
@@ -643,7 +655,7 @@
           <div class="detail-price-wrap">
             ${produto.precoDe ? `<span class="detail-old-price">${produto.precoDe}</span>` : ""}
             <span class="detail-current-price">${produto.precoPor}</span>
-            ${produto.desconto ? `<span class="detail-discount">${produto.desconto}</span>` : ""}
+            ${produto.desconto ? `<span class="detail-discount${produto.desconto === "Desconto não aplicável" ? " is-neutral" : ""}">${produto.desconto}</span>` : ""}
           </div>
 
           <p class="detail-shipping">${produto.frete}</p>
