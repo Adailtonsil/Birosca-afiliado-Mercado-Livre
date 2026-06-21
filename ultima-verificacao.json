@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-06-21T19:51:57.253Z",
+  "executadoEm": "2026-06-21T20:06:07.697Z",
   "totalProdutos": 10,
   "relatorio": [
     {
@@ -9,8 +9,8 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "Desconto não aplicável",
-          "para": "Desconto não aplicável ou desconto expirou"
+          "de": "Desconto não aplicável ou desconto expirou",
+          "para": "Desconto expirou"
         }
       ]
     },
@@ -21,8 +21,8 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "Desconto não aplicável",
-          "para": "Desconto não aplicável ou desconto expirou"
+          "de": "Desconto não aplicável ou desconto expirou",
+          "para": "Desconto expirou"
         }
       ]
     }
