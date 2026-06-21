@@ -79,12 +79,18 @@
     "precoPor": "R$ 949;90",
     "desconto": "40% OFF",
     "frete": "Frete grátis acima de R$ 19",
-    "Quantidade de lugares": {
-       "Lugares":[
-        "2"
-      ],
+    "variacoes": {
       "Lugares": [
+        "2",
         "3"
+      ],
+      "Tecidos": [
+        "Suede",
+        "Liso"
+      ],
+      "Cores": [
+        "Marrom-escuro",
+        "Preto"
       ]
     },
    "detalhesHtml": "\n       <h2>Descricao</h2>\n<p><strong>Sofá Vegas</strong></p>\n\n<h3>Sobre o item:</h3>\n<p>Conforto, qualidade e praticidade são encontrados no Sofá Vegas, um produto desenhado para reunir essas características em uma única peça. Além disso, ele contribui para deixar o ambiente mais bonito e elegante, elevando o nível da sua sala.</p>\n\n<h3>Especificacoes tecnicas:</h3>\n<p>Medidas do Produto Montado:<br>\nLargura: 1,80m<br>\nProfundidade: 1,00m<br>\nAltura total: 1,00m<br>\nBraços: 0,20cm<br>\nProfundidade de assento: 0,56cm<br>\nProfundidade de assento aberto: 0,92cm<br>\nAltura do encosto: 0,55cm<br>\nLargura de assento: 1,50m<br>\nAltura do chão ao assento: 0,47cm<br>\nProfundidade total aberto: 1,40m<br>\nProfundidade total aberto (com o encosto totalmente reclinado): 1,50m<br><br>\nEncosto: Preenchido com fibra siliconada e flocos para garantir alta maciez e conforto, possui catraca com 3 estágios para ajuste conforme preferência.<br>\nAssento: Com espuma D-28, percintas elásticas de 5mm e molas, o assento retrátil permite o uso do sofá com as pernas esticadas, proporcionando conforto.<br>\nEstrutura: Composta por madeira de eucalipto 100% reflorestada, fixada por grampos galvanizados que asseguram firmeza e qualidade.</p>\n\n<h3>Beneficios e recursos:</h3>\n<p>Suporta de 150 a 170kg por assento<br>\nAcomoda até 3 pessoas<br>\nFácil manutenção: utilizar pano limpo e seco, não utilizar escovas ou produtos abrasivos<br>\nCores podem variar conforme monitor ou lote do tecido<br>\nProduto embalado com segurança para transporte<br>\nVerifique as dimensões e confirme passagem por escadas, elevadores, portas e corredores antes da entrega<br>\nMontagem por conta do comprador</p>\n          "},
