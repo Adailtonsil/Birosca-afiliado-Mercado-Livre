@@ -196,8 +196,37 @@ function extrairDadosDaPagina(html) {
     }
   }
 
-  // --- Frete grátis ---
-  if (/frete\s+gr[áa]tis/i.test(html)) {
+  // --- Frete ---
+  //
+  // O Mercado Livre mostra o texto de frete dentro de uma div com a
+  // classe "ui-pdp-promotions-pill__label", como texto puro (sem
+  // aria-label), em maiúsculas. Esse texto pode ser só "FRETE GRÁTIS"
+  // ou incluir uma condição, ex: "FRETE GRÁTIS ACIMA DE R$ 19".
+  // Capturamos o texto exato como aparece na página, em vez de só
+  // marcar um booleano genérico "Frete grátis".
+  //
+  // Exemplo real encontrado na página:
+  // <div class="ui-pdp-promotions-pill__label ...">FRETE GRÁTIS ACIMA DE R$ 19</div>
+  match = html.match(/ui-pdp-promotions-pill__label[^>]*>([^<]+)</i);
+  if (match) {
+    const textoFrete = match[1].trim();
+    // Só aceita se o texto realmente falar de frete -- essa classe de
+    // "promotions-pill" pode eventualmente ser reaproveitada pelo ML
+    // para outro tipo de selo/promoção que não seja sobre frete.
+    if (/frete/i.test(textoFrete)) {
+      // Normaliza para Capitalização de frase (a página vem em
+      // MAIÚSCULAS), mantendo "R$" e números como estão.
+      dados.frete = textoFrete
+        .toLowerCase()
+        .replace(/^./, (c) => c.toUpperCase())
+        .replace(/r\$/gi, "R$");
+    }
+  }
+
+  // Fallback: se a classe acima não existir nesta página mas o texto
+  // "frete grátis" aparecer em algum outro lugar do HTML, ao menos
+  // registra a informação simples (sem condição detalhada).
+  if (!dados.frete && /frete\s+gr[áa]tis/i.test(html)) {
     dados.frete = "Frete grátis";
   }
 
