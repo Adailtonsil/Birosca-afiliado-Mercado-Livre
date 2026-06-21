@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-06-21T15:11:31.826Z",
+  "executadoEm": "2026-06-21T15:29:56.455Z",
   "totalProdutos": 10,
   "relatorio": [
     {
@@ -8,14 +8,8 @@
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "precoDe",
-          "de": "R$ 109,90",
-          "para": null
-        },
-        {
           "campo": "desconto",
-          "de": "26% OFF no Pix",
-          "para": null
+          "para": "Desconto não aplicável"
         }
       ]
     },
@@ -25,14 +19,8 @@
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "precoDe",
-          "de": "R$ 48,70",
-          "para": null
-        },
-        {
           "campo": "desconto",
-          "de": "19% OFF",
-          "para": null
+          "para": "Desconto não aplicável"
         }
       ]
     }
