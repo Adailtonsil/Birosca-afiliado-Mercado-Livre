@@ -1,16 +1,28 @@
 {
-  "executadoEm": "2026-06-21T20:44:34.071Z",
+  "executadoEm": "2026-06-21T21:08:49.102Z",
   "totalProdutos": 10,
   "relatorio": [
     {
-      "id": 8,
-      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
+      "id": 1,
+      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "desconto",
-          "de": "Desconto não aplicável ou desconto expirou",
-          "para": "Desconto expirou"
+          "campo": "precoPor",
+          "de": "R$ 50,00",
+          "para": "R$ 54,00"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 40,12",
+          "para": "R$ 49,12"
         }
       ]
     }
