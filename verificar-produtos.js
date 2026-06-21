@@ -133,19 +133,38 @@ function extrairDadosDaPagina(html) {
     );
   }
 
-  // --- Desconto em porcentagem, no rótulo "poly-price__disc_label" ---
-  // Exemplo real encontrado na página:
-  // <span class="poly-price__disc_label ...">55% OFF no Pix</span>
+  // --- Desconto: segue uma ordem de prioridade (cascata) ---
   //
-  // Só aceitamos esse desconto se também tivermos validado um preço
-  // anterior real (dados.precoDe). Um "% OFF" sem preço anterior
-  // correspondente não tem como ser confirmado, e arriscaria mostrar
-  // um desconto que não existe de verdade (como aconteceu antes).
+  // 1º) Desconto Pix real, no rótulo "poly-price__disc_label", só aceito
+  //     se já tivermos validado um preço anterior real (dados.precoDe).
+  // 2º) Se não houver desconto Pix, procura por um desconto por quantidade
+  //     (ex: "20% OFF levando 3"), que o Mercado Livre mostra no bloco
+  //     "ui-pdp-price__volume-tags" mesmo quando não há desconto Pix.
+  // 3º) Se nenhum dos dois existir, marca explicitamente como não aplicável,
+  //     para deixar claro ao visitante do site que não há desconto algum
+  //     hoje (em vez de simplesmente omitir a informação).
   if (dados.precoDe) {
     match = html.match(/poly-price__disc_label[^>]*>([^<]*\d{1,3}%[^<]*)</i);
     if (match) {
       dados.desconto = match[1].trim();
     }
+  }
+
+  if (!dados.desconto) {
+    // Exemplo real encontrado na página:
+    // <div class="ui-pdp-price__volume-tags">...<span>20% OFF levando 3</span>...
+    const posVolumeTags = html.indexOf("ui-pdp-price__volume-tags");
+    if (posVolumeTags !== -1) {
+      const janela = html.slice(posVolumeTags, posVolumeTags + 600);
+      const matchVolume = janela.match(/<span>([^<]*\d{1,3}%[^<]*)<\/span>/i);
+      if (matchVolume) {
+        dados.desconto = matchVolume[1].trim();
+      }
+    }
+  }
+
+  if (!dados.desconto) {
+    dados.desconto = "Desconto não aplicável";
   }
 
   // --- Frete grátis ---
@@ -206,10 +225,11 @@ function formatarMoedaReaisCentavos(reaisTexto, centavosTexto) {
 function compararEAtualizar(produto, dadosNovos) {
   const mudancas = [];
 
-  // precoPor e frete: campos que sempre devem existir na página de um
-  // produto. Se não conseguimos ler agora, é mais seguro preservar o
-  // valor antigo (provável falha temporária de leitura) do que apagar.
-  const camposSemprePresentes = ["precoPor", "frete"];
+  // precoPor, frete e desconto: campos que sempre devem ter um valor agora
+  // (desconto tem o fallback "Desconto não aplicável" quando não há
+  // promoção real). Se não conseguimos ler agora, é mais seguro preservar
+  // o valor antigo (provável falha temporária de leitura) do que apagar.
+  const camposSemprePresentes = ["precoPor", "frete", "desconto"];
   for (const campo of camposSemprePresentes) {
     const valorNovo = dadosNovos[campo];
     if (valorNovo && valorNovo !== produto[campo]) {
@@ -218,23 +238,19 @@ function compararEAtualizar(produto, dadosNovos) {
     }
   }
 
-  // precoDe e desconto: campos que podem legitimamente deixar de existir
-  // (a promoção pode ter acabado). Se não conseguimos validar um valor
-  // novo para eles, removemos o valor antigo em vez de preservá-lo --
-  // caso contrário, o site continuaria mostrando um desconto/preço
-  // anterior que não existe mais de verdade na página.
-  const camposOpcionais = ["precoDe", "desconto"];
-  for (const campo of camposOpcionais) {
-    const valorNovo = dadosNovos[campo];
-    const valorAntigo = produto[campo] || null;
-
-    if (valorNovo !== valorAntigo) {
-      mudancas.push({ campo, de: valorAntigo, para: valorNovo });
-      if (valorNovo) {
-        produto[campo] = valorNovo;
-      } else {
-        delete produto[campo];
-      }
+  // precoDe: pode legitimamente deixar de existir (a promoção pode ter
+  // acabado). Se não conseguimos validar um valor novo, removemos o valor
+  // antigo em vez de preservá-lo -- caso contrário, o site continuaria
+  // mostrando um preço anterior que não existe mais de verdade na página.
+  const campo = "precoDe";
+  const valorNovo = dadosNovos[campo];
+  const valorAntigo = produto[campo] || null;
+  if (valorNovo !== valorAntigo) {
+    mudancas.push({ campo, de: valorAntigo, para: valorNovo });
+    if (valorNovo) {
+      produto[campo] = valorNovo;
+    } else {
+      delete produto[campo];
     }
   }
 
