@@ -1,7 +1,24 @@
 {
-  "executadoEm": "2026-06-23T03:01:19.471Z",
+  "executadoEm": "2026-06-23T15:13:37.675Z",
   "totalProdutos": 11,
   "relatorio": [
+    {
+      "id": 1,
+      "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 39,90",
+          "para": "R$ 36,99"
+        },
+        {
+          "campo": "desconto",
+          "de": "38% OFF",
+          "para": "43% OFF"
+        }
+      ]
+    },
     {
       "id": 4,
       "nome": "Sofá Retrátil Reclinável 3 Lugares C Molas 1,80m Vegas Suede Cor Preto",
@@ -9,13 +26,30 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 929,90",
-          "para": "R$ 999,90"
+          "de": "R$ 999,90",
+          "para": "R$ 929,90"
         },
         {
           "campo": "desconto",
-          "de": "41% OFF",
-          "para": "37% OFF"
+          "de": "37% OFF",
+          "para": "41% OFF"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 66,90",
+          "para": "R$ 59,99"
+        },
+        {
+          "campo": "desconto",
+          "de": "57% OFF",
+          "para": "62% OFF"
         }
       ]
     }
