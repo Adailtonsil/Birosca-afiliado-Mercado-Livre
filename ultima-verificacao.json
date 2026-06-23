@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-06-22T16:50:18.959Z",
+  "executadoEm": "2026-06-23T02:23:58.052Z",
   "totalProdutos": 10,
   "relatorio": [
     {
@@ -8,48 +8,48 @@
       "status": "atualizado",
       "mudancas": [
         {
+          "campo": "precoPor",
+          "de": "R$ 50,00",
+          "para": "R$ 54,00"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Magnow Pack Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável Viagem Organização",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 52,99",
+          "para": "R$ 51,54"
+        },
+        {
           "campo": "desconto",
-          "de": "26% OFF no Pix",
-          "para": "Desconto expirou"
+          "de": "51% OFF",
+          "para": "53% OFF"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 89,12",
+          "para": "R$ 73,28"
+        },
+        {
+          "campo": "desconto",
+          "de": "Desconto expirou",
+          "para": "17% OFF"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 109,90",
-          "para": null
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 49,12",
-          "para": "R$ 54,86"
-        },
-        {
-          "campo": "desconto",
-          "de": "55% OFF no Pix",
-          "para": "50% OFF no Pix"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "nome": "Sofá Retrátil Reclinável 3 Lugares C Molas 1,80m Vegas Suede Cor Preto",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 949,90",
-          "para": "R$ 929,90"
-        },
-        {
-          "campo": "desconto",
-          "de": "40% OFF no Pix",
-          "para": "41% OFF"
+          "de": null,
+          "para": "R$ 89,12"
         }
       ]
     }
