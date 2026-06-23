@@ -1,0 +1,32 @@
+name: Diagnóstico (temporário)
+# Este workflow roda APENAS manualmente, pela aba "Actions" do GitHub.
+# Serve só para inspecionar o HTML que o Mercado Livre devolve para o
+# GitHub Actions, e ajudar a corrigir os seletores do adicionar-produto.js.
+# Pode ser apagado depois que o diagnóstico terminar.
+on:
+  workflow_dispatch:
+    inputs:
+      url_produto:
+        description: "URL da página do produto (mercadolivre.com.br/...)"
+        required: true
+        type: string
+permissions:
+  contents: read
+jobs:
+  diagnosticar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o código do repositório
+        uses: actions/checkout@v4
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Rodar diagnóstico
+        run: node diagnostico.js "${{ github.event.inputs.url_produto }}"
+      - name: Salvar HTML como artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostico-html
+          path: diagnostico.html
+          retention-days: 3
