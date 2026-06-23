@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 11,
     "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
     "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_612450-MLA106797338388_022026-F.webp",
     "checkout": "https://meli.la/2Ej5rgh",
@@ -231,5 +231,51 @@
       ]
     },
     "detalhesHtml": "\n          <h2>Descrição</h2>\n<p><strong>Blusa masculina em tecido dry fit helanca</strong></p>\n\n<h3>Sobre o item:</h3>\n<p>A blusa masculina em tecido dry fit helanca é ideal para quem busca leveza, conforto e praticidade no dia a dia. Com toque suave e caimento reto, proporciona frescor e liberdade de movimento, sendo perfeita para atividades físicas, trabalho ou uso casual.</p>\n\n<h3>Especificações técnicas:</h3>\n<p>Produto: Blusa masculina<br>\nMaterial principal: Malha helanca dry fit (poliéster)<br>\nElasticidade: Baixa<br>\nModelagem: Tradicional<br>\nGola: Reforçada<br>\nTecido: Leve, resistente, de secagem rápida e fácil manutenção</p>\n\n<h3>Benefícios e cuidados:</h3>\n<p>Benefícios: Tecido leve e respirável, não amassa, seca rapidamente, ideal para uso prolongado com conforto térmico e liberdade de movimento. Substitui blusas pesadas que retêm suor e causam desconforto.</p>\n<p>Cuidados: Lavar à máquina em ciclo suave, secar à sombra e evitar altas temperaturas ao passar.</p>\n\n<h3>Tabela de medidas (em cm):</h3>\n<p>Não informado pelo vendedor.</p>\n\n<h3>Política de devolução:</h3>\n<p>Não informado pelo vendedor.</p>\n\n<h3>FAQ:</h3>\n<p>O tecido tem elasticidade? Pouca. A helanca é levemente maleável, mas não estica como o suplex.</p>\n<p>É quente? Não, é fresca e respirável, ideal para o calor.</p>\n<p>Amassa fácil? Não, o tecido mantém o caimento uniforme ao longo do dia.</p>\n<p>Pode ser usada para treino? Sim, o dry fit helanca ajuda na ventilação e absorve o suor rapidamente.</p>\n<p>Encolhe ou desbota? Não, o poliéster mantém as cores firmes e o formato original após várias lavagens.</p>\n<p>Garantia do vendedor: 30 dias.</p>\n        "
-  }
+  },
+  {
+  "id": 1,
+  "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
+  "imagem": "PENDENTE - me envie a URL da imagem",
+  "checkout": "https://meli.la/2NAM6Fn",
+  "precoDe": "R$ 64,90",
+  "precoPor": "R$ 39,90",
+  "desconto": "38% OFF",
+  "frete": "Frete grátis",
+  "variacoes": {
+    "Peso da unidade": ["250 g"],
+    "Peso líquido": ["250 g"]
+  },
+  "detalhesHtml": "<h2>Descrição</h2>
+<p><strong>Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó</strong></p>
+
+<h3>Sobre o item:</h3>
+<p>A creatina monohidratada em pó pode ser um auxílio para quem busca apoiar o aumento da força, o desempenho físico e a recuperação muscular. Apresenta boa solubilidade e sabor neutro, permitindo que seja misturada na bebida de sua escolha.</p>
+
+<h3>Especificações técnicas:</h3>
+<p>5g de creatina por porção<br>
+100% creatina monohidratada, sem aditivos e sem sabor<br>
+Pode contribuir para a força, potência e a recuperação muscular<br>
+Produto com foco em qualidade, com análise técnica e fabricação controlada</p>
+
+<h3>Sobre a Growth Supplements:</h3>
+<p>A creatina é um suplemento amplamente pesquisado na nutrição esportiva. É conhecida por seu papel potencial em apoiar a capacidade de gerar força, o que pode favorecer o desenvolvimento muscular e o rendimento em atividades físicas. Este produto utiliza matéria-prima selecionada e é submetido a verificações de qualidade.</p>
+
+<h3>Por que considerar a Growth?</h3>
+<p>Composição simples: 100% creatina monohidratada<br>
+Qualidade considerada: Produção com acompanhamento técnico<br>
+Relação de valor: Busca oferecer um bom equilíbrio entre qualidade e custo</p>
+
+<h3>Sugestão de Uso:</h3>
+<p>Misture 1 porção (5g) em aproximadamente 200–300 ml de água ou bebida de sua escolha. O uso diário é uma prática comum. É importante manter uma rotina de ingestão de água adequada.</p>
+
+<h3>Sugestão de Público:</h3>
+<p>Indivíduos que praticam musculação e atividades que visam o aumento da força e da massa muscular<br>
+Pessoas que desejam dar suporte ao desempenho dos treinos e otimizar a recuperação<br>
+Quem busca uma alternativa de suplementação com atenção à qualidade da formulação</p>
+
+<h3>Aviso legal:</h3>
+<p>Idade mínima recomendada: 19 anos.<br>
+Consumir junto com alimentos para facilitar sua assimilação.<br>
+Este produto é um suplemento dietético, não um medicamento. Suplementa dietas insuficientes. Consulte o seu médico e/ou farmacêutico.</p>"
+}
 ]
