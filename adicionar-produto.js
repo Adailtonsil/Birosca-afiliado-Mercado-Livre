@@ -3,22 +3,32 @@
  *
  * O que este script faz:
  * 1. Recebe dois argumentos via linha de comando:
- *    - URL da página do produto no Mercado Livre
+ *    - URL da página do produto no Mercado Livre (ou o ID, ex: MLB19603205)
  *    - URL de checkout (link de afiliado, ex: meli.la/...)
- * 2. Acessa a página do produto e extrai:
- *    - Nome do produto
- *    - URL da imagem principal
+ * 2. Extrai o ID do anúncio (ex: MLB19603205) da URL informada, ignorando
+ *    qualquer parâmetro de tracking/anúncio que venha colado junto.
+ * 3. Usa a API PÚBLICA do Mercado Livre (https://api.mercadolibre.com/items/{ID})
+ *    para buscar os dados do produto, em vez de fazer scraping do HTML.
+ *    Isso evita o bloqueio 403 que ocorre quando o GitHub Actions tenta
+ *    acessar a página do produto diretamente (o Mercado Livre bloqueia
+ *    requisições vindas de IPs de datacenter).
+ * 4. Extrai:
+ *    - Nome do produto (title)
+ *    - URL da imagem principal (pictures[0])
  *    - Preço atual (precoPor)
- *    - Preço original, se houver (precoDe)
- *    - Desconto, se houver
- *    - Informações de frete
- *    - Variações disponíveis (cores, tamanhos, etc.)
- *    - HTML completo da descrição/detalhes
- * 3. Insere o novo produto no produtos.json com o próximo ID disponível
- * 4. Salva o arquivo atualizado
+ *    - Preço original "De", SE existir e for maior que o atual (precoDe)
+ *    - Desconto, calculado a partir de precoDe/precoPor
+ *    - Frete (não vem na API pública de forma confiável; mantido como
+ *      "Não informado" salvo indicação em shipping.free_shipping)
+ *    - Características do produto (dimensão, tamanho, cor, etc.), vindas
+ *      do campo "attributes" da API, inseridas dentro de "variacoes"
+ *    - HTML/texto da descrição do produto (endpoint /description)
+ * 5. Insere o novo produto no produtos.json com o próximo ID disponível
+ * 6. Salva o arquivo atualizado
  *
  * Uso:
  *   node adicionar-produto.js "https://www.mercadolivre.com.br/..." "https://meli.la/..."
+ *   node adicionar-produto.js "MLB19603205" "https://meli.la/..."
  *
  * Este script NÃO altera produtos existentes.
  */
@@ -28,12 +38,8 @@ const path = require("path");
 
 const ARQUIVO_PRODUTOS = path.join(__dirname, "produtos.json");
 
-const HEADERS_NAVEGADOR = {
-  "User-Agent":
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-  Accept:
-    "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-  "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8",
+const HEADERS_API = {
+  Accept: "application/json",
 };
 
 // ─── Utilitários ────────────────────────────────────────────────────────────
@@ -56,199 +62,205 @@ function proximoId(produtos) {
   return Math.max(...produtos.map((p) => p.id)) + 1;
 }
 
-function paraNumero(reaisTexto, centavosTexto) {
-  const reais = parseInt(reaisTexto.replace(/\D/g, ""), 10);
-  if (Number.isNaN(reais)) return null;
-  const centavos = centavosTexto ? parseInt(centavosTexto, 10) : 0;
-  return reais + centavos / 100;
+function formatarMoeda(valorNumerico) {
+  if (valorNumerico === null || valorNumerico === undefined) return null;
+  const arredondado = Math.round(valorNumerico * 100) / 100;
+  const [reaisStr, centavosStr = "00"] = arredondado.toFixed(2).split(".");
+  // Formata milhares com ponto (padrão brasileiro)
+  const reaisFormatado = reaisStr.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  return `R$ ${reaisFormatado},${centavosStr}`;
 }
 
-function formatarMoeda(reaisTexto, centavosTexto) {
-  const reais = parseInt(reaisTexto.replace(/\D/g, ""), 10);
-  if (Number.isNaN(reais)) return null;
-  const centavos = centavosTexto ? parseInt(centavosTexto, 10) : 0;
-  return `R$ ${reais},${String(centavos).padStart(2, "0")}`;
+/**
+ * Extrai o ID do anúncio (ex: MLB19603205) de uma URL do Mercado Livre,
+ * ou retorna o próprio valor se já for um ID.
+ * Ignora parâmetros de tracking, query string e fragmentos (#...).
+ */
+function extrairItemId(entrada) {
+  const valor = entrada.trim();
+
+  // Caso já seja só o ID (ex: "MLB19603205")
+  const matchIdDireto = valor.match(/^MLB\d+$/i);
+  if (matchIdDireto) return matchIdDireto[0].toUpperCase();
+
+  // Remove fragmento (#...) e tudo que vem depois, que costuma conter
+  // parâmetros de anúncio/tracking (is_advertising, searchVariation, etc.)
+  const semFragmento = valor.split("#")[0];
+
+  // Tenta achar o ID no path "/p/MLB19603205" (página de produto/catálogo)
+  let match = semFragmento.match(/\/p\/(MLB\d+)/i);
+  if (match) return match[1].toUpperCase();
+
+  // Tenta achar o ID no path "/MLB-19603205-..." (página de anúncio individual)
+  match = semFragmento.match(/MLB-?(\d{8,})/i);
+  if (match) return `MLB${match[1]}`.toUpperCase();
+
+  // Tenta achar no parâmetro item_id (?pdp_filters=item_id:MLB587206016 ou item_id=MLB...)
+  match = semFragmento.match(/item_id[:=](MLB\d+)/i);
+  if (match) return match[1].toUpperCase();
+
+  throw new Error(
+    `Não foi possível identificar o ID do produto (MLB...) a partir de: ${entrada}`
+  );
 }
 
-function extrairBlocoComAriaLabel(html, classeBusca, regexAriaLabel) {
-  const posClasse = html.indexOf(classeBusca);
-  if (posClasse === -1) return null;
-  const janela = html.slice(posClasse, posClasse + 300);
-  const matchAria = janela.match(/aria-label="([^"]*)"/);
-  if (!matchAria) return null;
-  return matchAria[1].match(regexAriaLabel);
-}
+// ─── Busca via API pública do Mercado Livre ────────────────────────────────
 
-// ─── Busca da página ────────────────────────────────────────────────────────
+async function buscarItem(itemId) {
+  const url = `https://api.mercadolibre.com/items/${itemId}`;
+  const resposta = await fetch(url, { headers: HEADERS_API });
 
-async function buscarPagina(url) {
-  const resposta = await fetch(url, {
-    headers: HEADERS_NAVEGADOR,
-    redirect: "follow",
-  });
-
+  if (resposta.status === 404) {
+    throw new Error(`Produto ${itemId} não encontrado (404). Anúncio pode ter sido removido.`);
+  }
   if (!resposta.ok) {
-    throw new Error(`Página retornou status ${resposta.status}`);
+    throw new Error(`API do Mercado Livre retornou status ${resposta.status} para ${itemId}.`);
   }
 
-  const html = await resposta.text();
+  const dados = await resposta.json();
 
-  const indicaRemovido =
-    /item\s+n[ãa]o\s+encontrado/i.test(html) ||
-    /publica[çc][ãa]o\s+(pausada|encerrada|finalizada)/i.test(html) ||
-    /este\s+produto\s+n[ãa]o\s+est[áa]\s+mais\s+dispon[íi]vel/i.test(html) ||
-    /an[úu]ncio\s+n[ãa]o\s+est[áa]\s+mais\s+dispon[íi]vel/i.test(html);
-
-  if (indicaRemovido) {
-    throw new Error("Produto não encontrado ou anúncio encerrado.");
+  if (dados.status && dados.status !== "active") {
+    console.warn(`  [aviso] Status do anúncio: ${dados.status} (pode estar pausado/encerrado).`);
   }
 
-  return html;
+  return dados;
 }
 
-// ─── Extração de dados ──────────────────────────────────────────────────────
+async function buscarDescricao(itemId) {
+  try {
+    const resposta = await fetch(
+      `https://api.mercadolibre.com/items/${itemId}/description`,
+      { headers: HEADERS_API }
+    );
+    if (!resposta.ok) return "";
+    const dados = await resposta.json();
+    return dados.plain_text || dados.text || "";
+  } catch (_) {
+    return "";
+  }
+}
 
-function extrairNome(html) {
-  // Tenta o elemento principal do título do anúncio
-  let match = html.match(/<h1[^>]*class="[^"]*ui-pdp-title[^"]*"[^>]*>([^<]+)</i);
-  if (match) return match[1].trim();
+// ─── Extração / montagem de dados a partir do JSON da API ─────────────────
 
-  // Fallback: tag <title>
-  match = html.match(/<title>([^<|]+)/i);
-  if (match) return match[1].trim();
+function extrairNome(item) {
+  return item.title ? item.title.trim() : null;
+}
 
+function extrairImagem(item) {
+  if (Array.isArray(item.pictures) && item.pictures.length > 0) {
+    const primeira = item.pictures[0];
+    return primeira.secure_url || primeira.url || null;
+  }
+  if (item.secure_thumbnail) return item.secure_thumbnail;
+  if (item.thumbnail) return item.thumbnail;
   return null;
 }
 
-function extrairImagem(html) {
-  // Imagem principal no carrossel do produto (mlstatic.com, alta resolução)
-  let match = html.match(
-    /https:\/\/http2\.mlstatic\.com\/D_NQ_NP[^"'\s]+\.(?:jpg|jpeg|webp|png)/i
-  );
-  if (match) return match[0];
+function extrairPrecos(item) {
+  const precoPorNumero = typeof item.price === "number" ? item.price : null;
+  const precoOriginalNumero =
+    typeof item.original_price === "number" ? item.original_price : null;
 
-  // Fallback: qualquer imagem do mlstatic
-  match = html.match(/https:\/\/[^"'\s]+mlstatic\.com[^"'\s]+\.(?:jpg|jpeg|webp|png)/i);
-  if (match) return match[0];
+  const resultado = {
+    precoPor: formatarMoeda(precoPorNumero),
+    precoDe: null,
+  };
 
-  return null;
-}
-
-function extrairPrecos(html) {
-  const resultado = { precoPor: null, precoDe: null };
-
-  // Preço atual
-  const matchPor = extrairBlocoComAriaLabel(
-    html,
-    "poly-price__current",
-    /(?:Agora:\s*)?([\d.,]+)\s*reais?(?:\s*com\s*(\d{1,2})\s*centavos?)?/i
-  );
-
-  let precoPorNumero = null;
-  if (matchPor) {
-    precoPorNumero = paraNumero(matchPor[1], matchPor[2]);
-    resultado.precoPor = formatarMoeda(matchPor[1], matchPor[2]);
-  }
-
-  // Preço anterior (preço De, riscado)
-  const matchDe = extrairBlocoComAriaLabel(
-    html,
-    "andes-money-amount--previous",
-    /Antes:\s*([\d.,]+)\s*reais?(?:\s*com\s*(\d{1,2})\s*centavos?)?/i
-  );
-
-  if (matchDe) {
-    const precoDeNumero = paraNumero(matchDe[1], matchDe[2]);
-    // Só aceita se for realmente maior que o preço atual (sanidade)
-    if (precoDeNumero !== null && precoPorNumero !== null && precoDeNumero > precoPorNumero) {
-      resultado.precoDe = formatarMoeda(matchDe[1], matchDe[2]);
-    }
+  // Só considera "De" se existir e for de fato maior que o preço atual
+  if (
+    precoOriginalNumero !== null &&
+    precoPorNumero !== null &&
+    precoOriginalNumero > precoPorNumero
+  ) {
+    resultado.precoDe = formatarMoeda(precoOriginalNumero);
   }
 
   return resultado;
 }
 
-function extrairDesconto(html, temPrecoDe) {
+function extrairDesconto(item, temPrecoDe) {
   if (!temPrecoDe) return "Desconto expirou";
 
-  const match = html.match(/poly-price__disc_label[^>]*>([^<]*\d{1,3}%[^<]*)</i);
-  if (match) return match[1].trim();
+  const precoPorNumero = item.price;
+  const precoOriginalNumero = item.original_price;
+
+  if (
+    typeof precoPorNumero === "number" &&
+    typeof precoOriginalNumero === "number" &&
+    precoOriginalNumero > 0
+  ) {
+    const percentual = Math.round(
+      ((precoOriginalNumero - precoPorNumero) / precoOriginalNumero) * 100
+    );
+    if (percentual > 0) return `${percentual}% OFF`;
+  }
 
   return "Desconto expirou";
 }
 
-function extrairFrete(html) {
-  const match = html.match(/ui-pdp-promotions-pill__label[^>]*>([^<]+)</i);
-  if (match) {
-    const texto = match[1].trim();
-    if (/frete/i.test(texto)) {
-      return texto
-        .toLowerCase()
-        .replace(/^./, (c) => c.toUpperCase())
-        .replace(/r\$/gi, "R$");
-    }
-  }
-  if (/frete\s+gr[áa]tis/i.test(html)) return "Frete grátis";
-  return null;
+function extrairFrete(item) {
+  if (item.shipping && item.shipping.free_shipping) return "Frete grátis";
+  return "Não informado";
 }
 
-function extrairVariacoes(html) {
+/**
+ * Monta o objeto de variações a partir dos atributos (ficha técnica) da API.
+ * Inclui qualquer atributo relevante (cor, tamanho, dimensão, peso, etc.).
+ * Cada atributo vira { nome_do_atributo: [valor] } dentro de "variacoes",
+ * seguindo o mesmo formato (objeto de arrays) já usado no produtos.json.
+ */
+function extrairVariacoes(item) {
   const variacoes = {};
 
-  // Tenta extrair as variações do JSON de estado embutido na página (window.__PRELOADED_STATE__)
-  const matchState = html.match(/window\.__PRELOADED_STATE__\s*=\s*(\{.+?\});\s*<\/script>/s);
-  if (matchState) {
-    try {
-      const state = JSON.parse(matchState[1]);
-      const components = state?.initialState?.components;
-      if (components) {
-        for (const comp of Object.values(components)) {
-          if (comp?.variations) {
-            for (const variation of comp.variations) {
-              const nome = variation.name;
-              const valores = (variation.values || []).map((v) => v.name).filter(Boolean);
-              if (nome && valores.length > 0) {
-                variacoes[nome] = valores;
-              }
-            }
-          }
-        }
-      }
-    } catch (_) {
-      // JSON inválido, ignora e tenta o fallback abaixo
+  const atributosRelevantes = [
+    /cor/i,
+    /color/i,
+    /tamanho/i,
+    /size/i,
+    /dimens/i,
+    /comprimento/i,
+    /largura/i,
+    /altura/i,
+    /peso/i,
+    /volume/i,
+    /capacidade/i,
+    /material/i,
+    /sabor/i,
+    /voltagem/i,
+    /modelo/i,
+  ];
+
+  if (Array.isArray(item.attributes)) {
+    for (const atributo of item.attributes) {
+      const nome = atributo.name;
+      const valor = atributo.value_name;
+      if (!nome || !valor) continue;
+
+      const ehRelevante = atributosRelevantes.some((regex) => regex.test(nome));
+      if (!ehRelevante) continue;
+
+      if (!variacoes[nome]) variacoes[nome] = [];
+      if (!variacoes[nome].includes(valor)) variacoes[nome].push(valor);
     }
   }
 
-  if (Object.keys(variacoes).length > 0) return variacoes;
+  // Caso o item tenha variações reais (combinações compráveis: cor/tamanho
+  // escolhidos pelo comprador), inclui os valores possíveis também.
+  if (Array.isArray(item.variations)) {
+    for (const variacao of item.variations) {
+      if (!Array.isArray(variacao.attribute_combinations)) continue;
+      for (const combinacao of variacao.attribute_combinations) {
+        const nome = combinacao.name;
+        const valor = combinacao.value_name;
+        if (!nome || !valor) continue;
 
-  // Fallback: busca padrões de variação no HTML (cores e tamanhos)
-  const matchCores = html.match(/(?:cores?|color)[^:]*:\s*([^<\n]{2,80})/i);
-  if (matchCores) {
-    const cores = matchCores[1].split(/,|\//).map((s) => s.trim()).filter(Boolean);
-    if (cores.length > 0) variacoes["cores"] = cores;
-  }
-
-  const matchTamanhos = html.match(/(?:tamanhos?|sizes?)[^:]*:\s*([^<\n]{2,80})/i);
-  if (matchTamanhos) {
-    const tamanhos = matchTamanhos[1].split(/,|\//).map((s) => s.trim()).filter(Boolean);
-    if (tamanhos.length > 0) variacoes["tamanhos"] = tamanhos;
+        if (!variacoes[nome]) variacoes[nome] = [];
+        if (!variacoes[nome].includes(valor)) variacoes[nome].push(valor);
+      }
+    }
   }
 
   return variacoes;
-}
-
-function extrairDetalhesHtml(html) {
-  // Bloco principal de descrição do anúncio
-  let match = html.match(
-    /<div[^>]*class="[^"]*ui-pdp-description[^"]*"[^>]*>([\s\S]*?)<\/div>\s*(?:<\/div>|<section|<div[^>]*class="ui-pdp)/i
-  );
-  if (match) return match[1].trim();
-
-  // Fallback: seção de descrição genérica
-  match = html.match(/<section[^>]*class="[^"]*description[^"]*"[^>]*>([\s\S]*?)<\/section>/i);
-  if (match) return match[1].trim();
-
-  return "";
 }
 
 // ─── Principal ──────────────────────────────────────────────────────────────
@@ -258,45 +270,50 @@ async function main() {
 
   if (!urlProduto || !urlCheckout) {
     console.error(
-      "Uso: node adicionar-produto.js <url-produto> <url-checkout>\n" +
-        'Exemplo: node adicionar-produto.js "https://www.mercadolivre.com.br/..." "https://meli.la/..."'
+      "Uso: node adicionar-produto.js <url-ou-id-produto> <url-checkout>\n" +
+        'Exemplo: node adicionar-produto.js "https://www.mercadolivre.com.br/..." "https://meli.la/..."\n' +
+        'Exemplo: node adicionar-produto.js "MLB19603205" "https://meli.la/..."'
     );
     process.exit(1);
   }
 
   console.log("=== Adicionando novo produto ===");
-  console.log(`URL do produto : ${urlProduto}`);
-  console.log(`URL de checkout: ${urlCheckout}`);
+  console.log(`URL/ID do produto : ${urlProduto}`);
+  console.log(`URL de checkout   : ${urlCheckout}`);
   console.log("");
 
-  console.log("Acessando a página do produto...");
-  const html = await buscarPagina(urlProduto);
+  const itemId = extrairItemId(urlProduto);
+  console.log(`ID identificado   : ${itemId}`);
+
+  console.log("Buscando dados na API do Mercado Livre...");
+  const item = await buscarItem(itemId);
 
   console.log("Extraindo informações...");
 
-  const nome = extrairNome(html);
+  const nome = extrairNome(item);
   if (!nome) throw new Error("Não foi possível extrair o nome do produto.");
   console.log(`  Nome     : ${nome}`);
 
-  const imagem = extrairImagem(html);
+  const imagem = extrairImagem(item);
   if (!imagem) console.warn("  [aviso] Imagem não encontrada.");
   else console.log(`  Imagem   : ${imagem}`);
 
-  const { precoPor, precoDe } = extrairPrecos(html);
+  const { precoPor, precoDe } = extrairPrecos(item);
   if (!precoPor) throw new Error("Não foi possível extrair o preço do produto.");
   console.log(`  precoPor : ${precoPor}`);
   if (precoDe) console.log(`  precoDe  : ${precoDe}`);
 
-  const desconto = extrairDesconto(html, !!precoDe);
+  const desconto = extrairDesconto(item, !!precoDe);
   console.log(`  Desconto : ${desconto}`);
 
-  const frete = extrairFrete(html) || "Não informado";
+  const frete = extrairFrete(item);
   console.log(`  Frete    : ${frete}`);
 
-  const variacoes = extrairVariacoes(html);
-  console.log(`  Variações: ${JSON.stringify(variacoes)}`);
+  const variacoes = extrairVariacoes(item);
+  console.log(`  Variações/Características: ${JSON.stringify(variacoes)}`);
 
-  const detalhesHtml = extrairDetalhesHtml(html);
+  console.log("Buscando descrição do produto...");
+  const detalhesHtml = await buscarDescricao(itemId);
   console.log(`  Detalhes : ${detalhesHtml ? detalhesHtml.length + " caracteres extraídos" : "não encontrado"}`);
 
   // Monta o objeto do novo produto seguindo o mesmo formato do produtos.json
