@@ -1,0 +1,34 @@
+name: Gerar páginas ao atualizar produtos.json
+# Este workflow roda AUTOMATICAMENTE sempre que o produtos.json for
+# alterado e enviado (push) para a branch principal -- por exemplo, depois
+# que você rodar o adicionar-produto.js no seu computador e fizer o push.
+#
+# Ele NÃO acessa o Mercado Livre. Só lê o produtos.json (que você já
+# atualizou localmente) e gera as páginas otimizadas para SEO.
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "produtos.json"
+permissions:
+  contents: write
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o código do repositório
+        uses: actions/checkout@v4
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Gerar páginas otimizadas para SEO (catálogo + páginas de produto)
+        run: node gerar-paginas-seo.js
+      - name: Salvar (commit) os arquivos gerados
+        run: |
+          git config user.name "Robo Gerador"
+          git config user.email "robo-gerador@users.noreply.github.com"
+          git add index.html produto/ sitemap.xml
+          git diff --staged --quiet && echo "Nenhuma mudança para salvar." || git commit -m "Páginas SEO atualizadas automaticamente ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+          git push
