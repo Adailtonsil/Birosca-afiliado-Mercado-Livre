@@ -166,7 +166,7 @@ function gerarHtmlProduto(produto, slug) {
         <div class="detail-price-wrap">
           ${!ehValorInvalido(produto.precoDe) ? `<span class="detail-old-price">${escaparHtml(produto.precoDe)}</span>` : ""}
           <span class="detail-current-price">${escaparHtml(produto.precoPor)}</span>
-          ${(produto.desconto && !ehValorInvalido(produto.desconto)) ? `<span class="detail-discount${produto.desconto === "Desconto expirou" || produto.desconto === "Desconto não aplicável" ? " is-neutral" : ""}">${escaparHtml(produto.desconto)}</span>` : ""}
+          ${(produto.desconto && !ehValorInvalido(produto.desconto)) ? `<span class="detail-discount${produto.desconto === "Desconto não aplicável" ? " is-neutral" : ""}">${escaparHtml(produto.desconto)}</span>` : ""}
         </div>
 
         <p class="detail-shipping">${escaparHtml(produto.frete)}</p>
@@ -220,7 +220,7 @@ function gerarHtmlCardCatalogo(produto, slug) {
           <div class="price-wrap">
             ${!ehValorInvalido(produto.precoDe) ? `<span class="old-price">${escaparHtml(produto.precoDe)}</span>` : ""}
             <span class="current-price">${escaparHtml(produto.precoPor)}</span>
-            ${(produto.desconto && !ehValorInvalido(produto.desconto)) ? `<span class="discount-badge${produto.desconto === "Desconto expirou" || produto.desconto === "Desconto não aplicável" ? " is-neutral" : ""}">${escaparHtml(produto.desconto)}</span>` : ""}
+            ${(produto.desconto && !ehValorInvalido(produto.desconto)) ? `<span class="discount-badge${produto.desconto === "Desconto não aplicável" ? " is-neutral" : ""}">${escaparHtml(produto.desconto)}</span>` : ""}
           </div>
           <p class="shipping">${escaparHtml(produto.frete)}</p>
           ${variacoesHtml}
