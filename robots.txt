@@ -1,6 +1,4 @@
-/
-├── index.html
-├── robots.txt
-├── sitemap.xml
-├── style.css
-├── script.js
+User-agent: *
+Allow: /
+
+Sitemap: https://biroscaafiliado.netlify.app/sitemap.xml
