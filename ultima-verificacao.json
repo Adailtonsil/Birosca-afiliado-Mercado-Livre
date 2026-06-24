@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-06-23T15:13:37.675Z",
+  "executadoEm": "2026-06-24T14:43:22.888Z",
   "totalProdutos": 11,
   "relatorio": [
     {
@@ -9,13 +9,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 39,90",
-          "para": "R$ 36,99"
+          "de": "R$ 36,99",
+          "para": "R$ 39,90"
         },
         {
           "campo": "desconto",
-          "de": "38% OFF",
-          "para": "43% OFF"
+          "de": "43% OFF",
+          "para": "38% OFF"
         }
       ]
     },
@@ -26,13 +26,30 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 999,90",
-          "para": "R$ 929,90"
+          "de": "R$ 929,90",
+          "para": "R$ 999,90"
         },
         {
           "campo": "desconto",
-          "de": "37% OFF",
-          "para": "41% OFF"
+          "de": "41% OFF",
+          "para": "37% OFF"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nome": "Jogo De Cama Casal Padrão 3 Peças Fronha Ponto Palito C/ Elástico 400 Fios Toque Acetinado",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 44,98",
+          "para": "R$ 34,98"
+        },
+        {
+          "campo": "desconto",
+          "de": "43% OFF",
+          "para": "55% OFF"
         }
       ]
     },
@@ -43,13 +60,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 66,90",
-          "para": "R$ 59,99"
+          "de": "R$ 59,99",
+          "para": "R$ 61,27"
         },
         {
           "campo": "desconto",
-          "de": "57% OFF",
-          "para": "62% OFF"
+          "de": "62% OFF",
+          "para": "61% OFF"
         }
       ]
     }
