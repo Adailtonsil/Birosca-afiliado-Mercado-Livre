@@ -1,21 +1,21 @@
 {
-  "executadoEm": "2026-06-24T14:43:22.888Z",
+  "executadoEm": "2026-06-25T14:43:21.987Z",
   "totalProdutos": 11,
   "relatorio": [
     {
-      "id": 1,
-      "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
+      "id": 2,
+      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 36,99",
-          "para": "R$ 39,90"
+          "de": "R$ 54,86",
+          "para": "R$ 58,10"
         },
         {
           "campo": "desconto",
-          "de": "43% OFF",
-          "para": "38% OFF"
+          "de": "50% OFF no Pix",
+          "para": "47% OFF"
         }
       ]
     },
@@ -26,47 +26,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 929,90",
-          "para": "R$ 999,90"
+          "de": "R$ 999,90",
+          "para": "R$ 949,90"
         },
         {
           "campo": "desconto",
-          "de": "41% OFF",
-          "para": "37% OFF"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "nome": "Jogo De Cama Casal Padrão 3 Peças Fronha Ponto Palito C/ Elástico 400 Fios Toque Acetinado",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 44,98",
-          "para": "R$ 34,98"
-        },
-        {
-          "campo": "desconto",
-          "de": "43% OFF",
-          "para": "55% OFF"
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 59,99",
-          "para": "R$ 61,27"
-        },
-        {
-          "campo": "desconto",
-          "de": "62% OFF",
-          "para": "61% OFF"
+          "de": "37% OFF",
+          "para": "40% OFF no Pix"
         }
       ]
     }
