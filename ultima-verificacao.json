@@ -1,21 +1,64 @@
 {
-  "executadoEm": "2026-06-26T14:36:34.901Z",
-  "totalProdutos": 11,
+  "executadoEm": "2026-06-26T19:30:55.950Z",
+  "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 2,
-      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
+      "id": 1,
+      "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 58,10",
-          "para": "R$ 66,90"
+          "de": "R$ 39,90",
+          "para": "R$ 36,99"
         },
         {
           "campo": "desconto",
-          "de": "47% OFF",
-          "para": "39% OFF"
+          "de": "38% OFF",
+          "para": "43% OFF"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 7.999,00",
+          "para": "R$ 5819,00"
+        },
+        {
+          "campo": "frete",
+          "de": "FG",
+          "para": "Frete grátis"
+        },
+        {
+          "campo": "desconto",
+          "para": "19% OFF"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 5.999",
+          "para": "R$ 5999,00"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "nome": "Kit 2 Travesseiros 45x65 Antialérgico Lavável Fibra Siliconada Toque de Pluma",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 37,99",
+          "para": "R$ 36,99"
+        },
+        {
+          "campo": "desconto",
+          "de": "39% OFF",
+          "para": "41% OFF"
         }
       ]
     }
