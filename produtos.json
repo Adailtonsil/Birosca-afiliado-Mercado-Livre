@@ -22,10 +22,11 @@
   {
     "id": 2,
     "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
-    "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_914594-MLA80795415392_112024-F.webp",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_839737-MLA113356249335_062026-F.webp",
     "checkout": "https://meli.la/1SKPy8f",
+    "precoDe": "R$ 5.999",
     "precoPor": "R$ 7.999,00",
-    "frete": "Frete grátis",
+    "frete": "FG",
     "variacoes": {
       "Tamanho da tela": [
         "85 polegadas"
