@@ -18,6 +18,51 @@
     },
     "detalhesHtml": "\n          <h2>Descrição</h2>\n<p><strong>Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó</strong></p>\n\n<h3>Sobre o item:</h3>\n<p>A creatina monohidratada em pó pode ser um auxílio para quem busca apoiar o aumento da força, o desempenho físico e a recuperação muscular. Apresenta boa solubilidade e sabor neutro, permitindo que seja misturada na bebida de sua escolha.</p>\n\n<h3>Especificações técnicas:</h3>\n<p>5g de creatina por porção<br>\n100% creatina monohidratada, sem aditivos e sem sabor<br>\nPode contribuir para a força, potência e a recuperação muscular<br>\nProduto com foco em qualidade, com análise técnica e fabricação controlada</p>\n\n<h3>Sobre a Growth Supplements:</h3>\n<p>A creatina é um suplemento amplamente pesquisado na nutrição esportiva. É conhecida por seu papel potencial em apoiar a capacidade de gerar força, o que pode favorecer o desenvolvimento muscular e o rendimento em atividades físicas. Este produto utiliza matéria-prima selecionada e é submetido a verificações de qualidade.</p>\n\n<h3>Por que considerar a Growth?</h3>\n<p>Composição simples: 100% creatina monohidratada<br>\nQualidade considerada: Produção com acompanhamento técnico<br>\nRelação de valor: Busca oferecer um bom equilíbrio entre qualidade e custo</p>\n\n<h3>Sugestão de Uso:</h3>\n<p>Misture 1 porção (5g) em aproximadamente 200–300 ml de água ou bebida de sua escolha. O uso diário é uma prática comum. É importante manter uma rotina de ingestão de água adequada.</p>\n\n<h3>Sugestão de Público:</h3>\n<p>Indivíduos que praticam musculação e atividades que visam o aumento da força e da massa muscular<br>\nPessoas que desejam dar suporte ao desempenho dos treinos e otimizar a recuperação<br>\nQuem busca uma alternativa de suplementação com atenção à qualidade da formulação</p>\n\n<h3>Aviso legal:</h3>\n<p>Idade mínima recomendada: 19 anos.<br>\nConsumir junto com alimentos para facilitar sua assimilação.<br>\nEste produto é um suplemento dietético, não um medicamento. Suplementa dietas insuficientes. Consulte o seu médico e/ou farmacêutico.</p>\n        "
   },
+
+  {
+    "id": 12,
+    "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_914594-MLA80795415392_112024-F.webp",
+    "checkout": "https://meli.la/1SKPy8f",
+    "precoPor": "R$ 7.999,00",
+    "frete": "Frete grátis",
+    "variacoes": {
+      "Tamanho da tela": [
+        "85 polegadas"
+      ],
+      "Resolução": [
+        "4K"
+      ],
+      "Tecnologia": [
+        "QLED"
+      ]
+    },
+    "detalhesHtml": "
+          <h2>Descrição</h2>
+<p><strong>Smart TV TCL 85 Polegadas QLED 4K P7K</strong></p>
+
+<h3>Sobre o item:</h3>
+<p>A Smart TV TCL 85P7K oferece uma experiência cinematográfica imersiva na sua casa. Com tecnologia QLED 4K, proporciona cores vibrantes e brilho intenso. Equipada com Google TV, permite acesso fácil aos seus aplicativos de streaming favoritos. Conta com suporte a HDR10, Dolby Vision para imagens superiores e Dolby Atmos para um som envolvente.</p>
+
+<h3>Especificações técnicas:</h3>
+<p>Marca: TCL<br>
+Modelo: 85P7K<br>
+Tamanho da tela: 85 polegadas<br>
+Resolução: 4K (3840 x 2160 pixels)<br>
+Tecnologia do painel: QLED<br>
+Sistema operacional: Google TV<br>
+Conectividade: Wi-Fi e Bluetooth<br>
+Tecnologias de imagem: HDR10, Dolby Vision<br>
+Tecnologias de áudio: Dolby Atmos</p>
+
+<h3>Benefícios:</h3>
+<p>- Tela gigante de 85 polegadas para imersão total<br>
+- Tecnologia QLED com cores mais ricas e precisas<br>
+- Google TV com interface intuitiva e comandos de voz<br>
+- Imagens otimizadas com Dolby Vision e HDR10<br>
+- Som de cinema com Dolby Atmos</p>
+        "
+  },
   {
     "id": 2,
     "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
