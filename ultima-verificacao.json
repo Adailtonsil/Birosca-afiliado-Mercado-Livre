@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-06-25T14:43:21.987Z",
+  "executadoEm": "2026-06-26T14:36:34.901Z",
   "totalProdutos": 11,
   "relatorio": [
     {
@@ -9,30 +9,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 54,86",
-          "para": "R$ 58,10"
+          "de": "R$ 58,10",
+          "para": "R$ 66,90"
         },
         {
           "campo": "desconto",
-          "de": "50% OFF no Pix",
-          "para": "47% OFF"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "nome": "Sofá Retrátil Reclinável 3 Lugares C Molas 1,80m Vegas Suede Cor Preto",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 999,90",
-          "para": "R$ 949,90"
-        },
-        {
-          "campo": "desconto",
-          "de": "37% OFF",
-          "para": "40% OFF no Pix"
+          "de": "47% OFF",
+          "para": "39% OFF"
         }
       ]
     }
