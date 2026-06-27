@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-06-26T19:30:55.950Z",
+  "executadoEm": "2026-06-27T13:55:02.961Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -9,13 +9,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 39,90",
-          "para": "R$ 36,99"
+          "de": "R$ 36,99",
+          "para": "R$ 39,90"
         },
         {
           "campo": "desconto",
-          "de": "38% OFF",
-          "para": "43% OFF"
+          "de": "43% OFF",
+          "para": "38% OFF"
         }
       ]
     },
@@ -25,23 +25,9 @@
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "precoPor",
-          "de": "R$ 7.999,00",
-          "para": "R$ 5819,00"
-        },
-        {
-          "campo": "frete",
-          "de": "FG",
-          "para": "Frete grátis"
-        },
-        {
           "campo": "desconto",
-          "para": "19% OFF"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 5.999",
-          "para": "R$ 5999,00"
+          "de": "19% OFF",
+          "para": "13% OFF"
         }
       ]
     },
@@ -52,13 +38,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 37,99",
-          "para": "R$ 36,99"
+          "de": "R$ 36,99",
+          "para": "R$ 35,88"
         },
         {
           "campo": "desconto",
-          "de": "39% OFF",
-          "para": "41% OFF"
+          "de": "41% OFF",
+          "para": "43% OFF"
         }
       ]
     }
