@@ -1,24 +1,7 @@
 {
-  "executadoEm": "2026-06-27T13:55:02.961Z",
+  "executadoEm": "2026-06-28T14:00:54.302Z",
   "totalProdutos": 12,
   "relatorio": [
-    {
-      "id": 1,
-      "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 36,99",
-          "para": "R$ 39,90"
-        },
-        {
-          "campo": "desconto",
-          "de": "43% OFF",
-          "para": "38% OFF"
-        }
-      ]
-    },
     {
       "id": 2,
       "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
@@ -26,8 +9,8 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "19% OFF",
-          "para": "13% OFF"
+          "de": "13% OFF",
+          "para": "22% OFF"
         }
       ]
     },
@@ -38,13 +21,47 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 36,99",
-          "para": "R$ 35,88"
+          "de": "R$ 35,88",
+          "para": "R$ 36,99"
         },
         {
           "campo": "desconto",
-          "de": "41% OFF",
-          "para": "43% OFF"
+          "de": "43% OFF",
+          "para": "41% OFF"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "Desconto expirou",
+          "para": "5% OFF no Pix"
+        },
+        {
+          "campo": "precoDe",
+          "de": null,
+          "para": "R$ 388,00"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 66,90",
+          "para": "R$ 63,55"
+        },
+        {
+          "campo": "desconto",
+          "de": "39% OFF",
+          "para": "42% OFF no Pix"
         }
       ]
     }
