@@ -1,7 +1,19 @@
 {
-  "executadoEm": "2026-06-30T14:31:12.274Z",
+  "executadoEm": "2026-07-01T14:48:19.423Z",
   "totalProdutos": 12,
   "relatorio": [
+    {
+      "id": 2,
+      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "15% OFF",
+          "para": "37% OFF no Pix"
+        }
+      ]
+    },
     {
       "id": 3,
       "nome": "Magnow Pack Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável Viagem Organização",
@@ -9,13 +21,8 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 52,99",
-          "para": "R$ 44,89"
-        },
-        {
-          "campo": "desconto",
-          "de": "51% OFF",
-          "para": "59% OFF"
+          "de": "R$ 44,89",
+          "para": "R$ 44,90"
         }
       ]
     },
@@ -26,13 +33,52 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 883,40",
-          "para": "R$ 999,90"
+          "de": "R$ 999,90",
+          "para": "R$ 836,91"
         },
         {
           "campo": "desconto",
-          "de": "44% OFF no Pix",
-          "para": "37% OFF"
+          "de": "37% OFF",
+          "para": "47% OFF no Pix ou Saldo no Mercado Pago"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nome": "Jogo De Cama Casal Padrão 3 Peças Fronha Ponto Palito C/ Elástico 400 Fios Toque Acetinado",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 34,98",
+          "para": "R$ 78,98"
+        },
+        {
+          "campo": "desconto",
+          "de": "55% OFF",
+          "para": "Desconto expirou"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 78,98",
+          "para": null
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "nome": "Kit 3 Camisas Regatas Dry-fit Masculina Sandrini Academia",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 81,99",
+          "para": "R$ 54,99"
+        },
+        {
+          "campo": "desconto",
+          "de": "36% OFF",
+          "para": "57% OFF"
         }
       ]
     },
@@ -43,13 +89,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 61,27",
-          "para": "R$ 66,90"
+          "de": "R$ 66,90",
+          "para": "R$ 61,90"
         },
         {
           "campo": "desconto",
-          "de": "61% OFF",
-          "para": "57% OFF"
+          "de": "57% OFF",
+          "para": "61% OFF"
         }
       ]
     },
@@ -60,30 +106,8 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "Desconto expirou",
-          "para": "7% OFF no Pix"
-        },
-        {
-          "campo": "precoDe",
-          "de": null,
-          "para": "R$ 388,00"
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 63,55",
-          "para": "R$ 66,90"
-        },
-        {
-          "campo": "desconto",
-          "de": "42% OFF no Pix",
-          "para": "39% OFF"
+          "de": "7% OFF no Pix",
+          "para": "14% OFF no Pix"
         }
       ]
     }
