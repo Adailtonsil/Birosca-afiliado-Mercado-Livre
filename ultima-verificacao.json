@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-07-01T14:48:19.423Z",
+  "executadoEm": "2026-07-02T14:14:23.839Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -9,8 +9,8 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "15% OFF",
-          "para": "37% OFF no Pix"
+          "de": "37% OFF no Pix",
+          "para": "29% OFF"
         }
       ]
     },
@@ -21,8 +21,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 44,89",
-          "para": "R$ 44,90"
+          "de": "R$ 44,90",
+          "para": "R$ 47,80"
+        },
+        {
+          "campo": "desconto",
+          "de": "59% OFF",
+          "para": "56% OFF"
         }
       ]
     },
@@ -33,69 +38,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 999,90",
-          "para": "R$ 836,91"
+          "de": "R$ 836,91",
+          "para": "R$ 743,92"
         },
         {
           "campo": "desconto",
-          "de": "37% OFF",
-          "para": "47% OFF no Pix ou Saldo no Mercado Pago"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "nome": "Jogo De Cama Casal Padrão 3 Peças Fronha Ponto Palito C/ Elástico 400 Fios Toque Acetinado",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 34,98",
-          "para": "R$ 78,98"
-        },
-        {
-          "campo": "desconto",
-          "de": "55% OFF",
-          "para": "Desconto expirou"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 78,98",
-          "para": null
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "nome": "Kit 3 Camisas Regatas Dry-fit Masculina Sandrini Academia",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 81,99",
-          "para": "R$ 54,99"
-        },
-        {
-          "campo": "desconto",
-          "de": "36% OFF",
-          "para": "57% OFF"
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 66,90",
-          "para": "R$ 61,90"
-        },
-        {
-          "campo": "desconto",
-          "de": "57% OFF",
-          "para": "61% OFF"
+          "de": "47% OFF no Pix ou Saldo no Mercado Pago",
+          "para": "53% OFF no Pix ou Saldo no Mercado Pago"
         }
       ]
     },
@@ -106,8 +55,13 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "7% OFF no Pix",
-          "para": "14% OFF no Pix"
+          "de": "14% OFF no Pix",
+          "para": "5% OFF no Pix"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 388,00",
+          "para": "R$ 199,00"
         }
       ]
     }
