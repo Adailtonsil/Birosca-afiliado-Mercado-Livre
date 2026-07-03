@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-07-02T14:14:23.839Z",
+  "executadoEm": "2026-07-03T14:21:24.709Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -9,25 +9,8 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "37% OFF no Pix",
-          "para": "29% OFF"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "nome": "Magnow Pack Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável Viagem Organização",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 44,90",
-          "para": "R$ 47,80"
-        },
-        {
-          "campo": "desconto",
-          "de": "59% OFF",
-          "para": "56% OFF"
+          "de": "29% OFF",
+          "para": "48% OFF"
         }
       ]
     },
@@ -38,30 +21,35 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 836,91",
-          "para": "R$ 743,92"
+          "de": "R$ 743,92",
+          "para": "R$ 929,90"
         },
         {
           "campo": "desconto",
-          "de": "47% OFF no Pix ou Saldo no Mercado Pago",
-          "para": "53% OFF no Pix ou Saldo no Mercado Pago"
+          "de": "53% OFF no Pix ou Saldo no Mercado Pago",
+          "para": "41% OFF"
         }
       ]
     },
     {
-      "id": 11,
-      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
+      "id": 5,
+      "nome": "Jogo De Cama Casal Padrão 3 Peças Fronha Ponto Palito C/ Elástico 400 Fios Toque Acetinado",
       "status": "atualizado",
       "mudancas": [
         {
+          "campo": "precoPor",
+          "de": "R$ 78,98",
+          "para": "R$ 34,98"
+        },
+        {
           "campo": "desconto",
-          "de": "14% OFF no Pix",
-          "para": "5% OFF no Pix"
+          "de": "Desconto expirou",
+          "para": "55% OFF"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 388,00",
-          "para": "R$ 199,00"
+          "de": null,
+          "para": "R$ 78,98"
         }
       ]
     }
