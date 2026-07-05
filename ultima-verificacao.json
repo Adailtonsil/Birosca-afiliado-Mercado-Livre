@@ -1,38 +1,26 @@
 {
-  "executadoEm": "2026-07-04T13:45:59.750Z",
+  "executadoEm": "2026-07-05T13:52:05.851Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 2,
-      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
+      "id": 1,
+      "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 6595,00",
-          "para": "R$ 6119,00"
+          "de": "R$ 39,90",
+          "para": "R$ 37,50"
         },
         {
           "campo": "desconto",
-          "de": "48% OFF",
-          "para": "10% OFF no Pix"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "nome": "Magnow Pack Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável Viagem Organização",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 47,80",
-          "para": "R$ 48,99"
+          "de": "38% OFF",
+          "para": "30% OFF"
         },
         {
-          "campo": "desconto",
-          "de": "56% OFF",
-          "para": "55% OFF"
+          "campo": "precoDe",
+          "de": "R$ 64,90",
+          "para": "R$ 104,90"
         }
       ]
     },
@@ -43,13 +31,47 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "55% OFF",
-          "para": "Desconto expirou"
+          "de": "Desconto expirou",
+          "para": "55% OFF"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 78,98",
-          "para": null
+          "de": null,
+          "para": "R$ 78,98"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "nome": "Kit 2 Travesseiros 45x65 Antialérgico Lavável Fibra Siliconada Toque de Pluma",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 36,99",
+          "para": "R$ 34,99"
+        },
+        {
+          "campo": "desconto",
+          "de": "41% OFF",
+          "para": "44% OFF"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "5% OFF no Pix",
+          "para": "3% OFF"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 199,00",
+          "para": "R$ 82,90"
         }
       ]
     }
