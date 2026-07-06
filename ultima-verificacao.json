@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-07-05T13:52:05.851Z",
+  "executadoEm": "2026-07-06T15:45:32.287Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -9,35 +9,52 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 39,90",
-          "para": "R$ 37,50"
+          "de": "R$ 37,50",
+          "para": "R$ 39,90"
         },
         {
           "campo": "desconto",
-          "de": "38% OFF",
-          "para": "30% OFF"
+          "de": "30% OFF",
+          "para": "38% OFF"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 64,90",
-          "para": "R$ 104,90"
+          "de": "R$ 104,90",
+          "para": "R$ 64,90"
         }
       ]
     },
     {
-      "id": 5,
-      "nome": "Jogo De Cama Casal Padrão 3 Peças Fronha Ponto Palito C/ Elástico 400 Fios Toque Acetinado",
+      "id": 2,
+      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "desconto",
-          "de": "Desconto expirou",
-          "para": "55% OFF"
+          "campo": "precoPor",
+          "de": "R$ 6119,00",
+          "para": "R$ 6569,00"
         },
         {
           "campo": "precoDe",
-          "de": null,
-          "para": "R$ 78,98"
+          "de": "R$ 6799,00",
+          "para": "R$ 7299,00"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Magnow Pack Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável Viagem Organização",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 48,99",
+          "para": "R$ 49,99"
+        },
+        {
+          "campo": "desconto",
+          "de": "55% OFF",
+          "para": "54% OFF"
         }
       ]
     },
@@ -48,13 +65,30 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 36,99",
-          "para": "R$ 34,99"
+          "de": "R$ 34,99",
+          "para": "R$ 36,99"
         },
         {
           "campo": "desconto",
-          "de": "41% OFF",
-          "para": "44% OFF"
+          "de": "44% OFF",
+          "para": "41% OFF"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 61,90",
+          "para": "R$ 59,99"
+        },
+        {
+          "campo": "desconto",
+          "de": "61% OFF",
+          "para": "62% OFF"
         }
       ]
     },
@@ -64,14 +98,31 @@
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "desconto",
-          "de": "5% OFF no Pix",
-          "para": "3% OFF"
+          "campo": "precoPor",
+          "de": "R$ 54,00",
+          "para": "R$ 51,90"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 199,00",
-          "para": "R$ 82,90"
+          "de": "R$ 82,90",
+          "para": "R$ 54,00"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 66,90",
+          "para": "R$ 65,90"
+        },
+        {
+          "campo": "desconto",
+          "de": "39% OFF",
+          "para": "40% OFF"
         }
       ]
     }
