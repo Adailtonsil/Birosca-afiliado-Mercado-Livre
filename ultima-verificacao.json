@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-07-06T15:45:32.287Z",
+  "executadoEm": "2026-07-07T14:49:49.005Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -9,18 +9,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 37,50",
-          "para": "R$ 39,90"
+          "de": "R$ 39,90",
+          "para": "R$ 36,90"
         },
         {
           "campo": "desconto",
-          "de": "30% OFF",
-          "para": "38% OFF"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 104,90",
-          "para": "R$ 64,90"
+          "de": "38% OFF",
+          "para": "43% OFF"
         }
       ]
     },
@@ -31,47 +26,30 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 6119,00",
-          "para": "R$ 6569,00"
+          "de": "R$ 6569,00",
+          "para": "R$ 6119,00"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 6799,00",
-          "para": "R$ 7299,00"
+          "de": "R$ 7299,00",
+          "para": "R$ 6799,00"
         }
       ]
     },
     {
-      "id": 3,
-      "nome": "Magnow Pack Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável Viagem Organização",
+      "id": 4,
+      "nome": "Sofá Retrátil Reclinável 3 Lugares C Molas 1,80m Vegas Suede Cor Preto",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 48,99",
-          "para": "R$ 49,99"
+          "de": "R$ 929,90",
+          "para": "R$ 883,40"
         },
         {
           "campo": "desconto",
-          "de": "55% OFF",
-          "para": "54% OFF"
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "nome": "Kit 2 Travesseiros 45x65 Antialérgico Lavável Fibra Siliconada Toque de Pluma",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 34,99",
-          "para": "R$ 36,99"
-        },
-        {
-          "campo": "desconto",
-          "de": "44% OFF",
-          "para": "41% OFF"
+          "de": "41% OFF",
+          "para": "44% OFF no Pix ou Saldo no Mercado Pago"
         }
       ]
     },
@@ -82,13 +60,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 61,90",
-          "para": "R$ 59,99"
+          "de": "R$ 59,99",
+          "para": "R$ 61,90"
         },
         {
           "campo": "desconto",
-          "de": "61% OFF",
-          "para": "62% OFF"
+          "de": "62% OFF",
+          "para": "61% OFF"
         }
       ]
     },
@@ -99,13 +77,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 54,00",
-          "para": "R$ 51,90"
+          "de": "R$ 51,90",
+          "para": "R$ 54,00"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 82,90",
-          "para": "R$ 54,00"
+          "de": "R$ 54,00",
+          "para": "R$ 82,90"
         }
       ]
     },
@@ -116,13 +94,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 66,90",
-          "para": "R$ 65,90"
+          "de": "R$ 65,90",
+          "para": "R$ 55,11"
         },
         {
           "campo": "desconto",
-          "de": "39% OFF",
-          "para": "40% OFF"
+          "de": "40% OFF",
+          "para": "49% OFF no Pix"
         }
       ]
     }
