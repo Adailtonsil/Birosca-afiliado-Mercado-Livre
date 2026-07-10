@@ -1,24 +1,7 @@
 {
-  "executadoEm": "2026-07-09T15:22:01.177Z",
+  "executadoEm": "2026-07-10T14:40:15.963Z",
   "totalProdutos": 12,
   "relatorio": [
-    {
-      "id": 1,
-      "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 38,70",
-          "para": "R$ 39,90"
-        },
-        {
-          "campo": "desconto",
-          "de": "40% OFF",
-          "para": "38% OFF"
-        }
-      ]
-    },
     {
       "id": 2,
       "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
@@ -26,81 +9,30 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 6298,00",
-          "para": "R$ 6029,00"
+          "de": "R$ 6029,00",
+          "para": "R$ 6498,00"
         },
         {
-          "campo": "precoDe",
-          "de": "R$ 6998,00",
-          "para": "R$ 6699,00"
+          "campo": "desconto",
+          "de": "10% OFF no Pix",
+          "para": "24% OFF no Pix"
         }
       ]
     },
     {
-      "id": 4,
-      "nome": "Sofá Retrátil Reclinável 3 Lugares C Molas 1,80m Vegas Suede Cor Preto",
+      "id": 3,
+      "nome": "Magnow Pack Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável Viagem Organização",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 883,40",
-          "para": "R$ 929,90"
+          "de": "R$ 49,99",
+          "para": "R$ 44,00"
         },
         {
           "campo": "desconto",
-          "de": "44% OFF no Pix ou Saldo no Mercado Pago",
-          "para": "41% OFF"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "nome": "Jogo De Cama Casal Padrão 3 Peças Fronha Ponto Palito C/ Elástico 400 Fios Toque Acetinado",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 34,98",
-          "para": "R$ 27,98"
-        },
-        {
-          "campo": "desconto",
-          "de": "55% OFF",
-          "para": "64% OFF"
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "nome": "Kit 3 Camisas Regatas Dry-fit Masculina Sandrini Academia",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 54,99",
-          "para": "R$ 81,99"
-        },
-        {
-          "campo": "desconto",
-          "de": "57% OFF",
-          "para": "36% OFF"
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "desconto",
-          "de": "5% OFF no Pix",
-          "para": "3% OFF"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 369,00",
-          "para": "R$ 78,90"
+          "de": "54% OFF",
+          "para": "60% OFF"
         }
       ]
     }
