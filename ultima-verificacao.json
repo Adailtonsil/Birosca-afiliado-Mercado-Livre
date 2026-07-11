@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-07-10T14:40:15.963Z",
+  "executadoEm": "2026-07-11T13:39:08.154Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -8,31 +8,60 @@
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "precoPor",
-          "de": "R$ 6029,00",
-          "para": "R$ 6498,00"
-        },
-        {
           "campo": "desconto",
-          "de": "10% OFF no Pix",
-          "para": "24% OFF no Pix"
+          "de": "24% OFF no Pix",
+          "para": "25% OFF no Pix ou Saldo no Mercado Pago"
         }
       ]
     },
     {
-      "id": 3,
-      "nome": "Magnow Pack Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável Viagem Organização",
+      "id": 5,
+      "nome": "Jogo De Cama Casal Padrão 3 Peças Fronha Ponto Palito C/ Elástico 400 Fios Toque Acetinado",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 49,99",
-          "para": "R$ 44,00"
+          "de": "R$ 27,98",
+          "para": "R$ 26,31"
         },
         {
           "campo": "desconto",
-          "de": "54% OFF",
-          "para": "60% OFF"
+          "de": "64% OFF",
+          "para": "66% OFF"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "3% OFF",
+          "para": "33% OFF"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 78,90",
+          "para": "R$ 59,90"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 65,90",
+          "para": "R$ 57,33"
+        },
+        {
+          "campo": "desconto",
+          "de": "40% OFF",
+          "para": "47% OFF no Pix"
         }
       ]
     }
