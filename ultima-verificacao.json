@@ -1,33 +1,43 @@
 {
-  "executadoEm": "2026-07-11T13:39:08.154Z",
+  "executadoEm": "2026-07-12T13:38:59.391Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 2,
-      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "desconto",
-          "de": "24% OFF no Pix",
-          "para": "25% OFF no Pix ou Saldo no Mercado Pago"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "nome": "Jogo De Cama Casal Padrão 3 Peças Fronha Ponto Palito C/ Elástico 400 Fios Toque Acetinado",
+      "id": 3,
+      "nome": "Magnow Pack Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável Viagem Organização",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 27,98",
-          "para": "R$ 26,31"
+          "de": "R$ 44,00",
+          "para": "R$ 48,99"
         },
         {
           "campo": "desconto",
-          "de": "64% OFF",
-          "para": "66% OFF"
+          "de": "60% OFF",
+          "para": "55% OFF"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 659,00",
+          "para": "R$ 699,00"
+        },
+        {
+          "campo": "desconto",
+          "de": "5% OFF",
+          "para": "Desconto expirou"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 699,00",
+          "para": null
         }
       ]
     },
@@ -38,13 +48,13 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "3% OFF",
-          "para": "33% OFF"
+          "de": "33% OFF",
+          "para": "12% OFF"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 78,90",
-          "para": "R$ 59,90"
+          "de": "R$ 59,90",
+          "para": "R$ 59,19"
         }
       ]
     },
@@ -55,13 +65,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 65,90",
-          "para": "R$ 57,33"
+          "de": "R$ 57,33",
+          "para": "R$ 62,60"
         },
         {
           "campo": "desconto",
-          "de": "40% OFF",
-          "para": "47% OFF no Pix"
+          "de": "47% OFF no Pix",
+          "para": "43% OFF no Pix"
         }
       ]
     }
