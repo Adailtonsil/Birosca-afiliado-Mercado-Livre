@@ -1,7 +1,24 @@
 {
-  "executadoEm": "2026-07-12T13:38:59.391Z",
+  "executadoEm": "2026-07-13T14:46:55.015Z",
   "totalProdutos": 12,
   "relatorio": [
+    {
+      "id": 1,
+      "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 39,90",
+          "para": "R$ 34,90"
+        },
+        {
+          "campo": "desconto",
+          "de": "38% OFF",
+          "para": "46% OFF"
+        }
+      ]
+    },
     {
       "id": 3,
       "nome": "Magnow Pack Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável Viagem Organização",
@@ -9,13 +26,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 44,00",
-          "para": "R$ 48,99"
+          "de": "R$ 48,99",
+          "para": "R$ 49,99"
         },
         {
           "campo": "desconto",
-          "de": "60% OFF",
-          "para": "55% OFF"
+          "de": "55% OFF",
+          "para": "54% OFF"
         }
       ]
     },
@@ -25,36 +42,14 @@
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "precoPor",
-          "de": "R$ 659,00",
-          "para": "R$ 699,00"
-        },
-        {
           "campo": "desconto",
-          "de": "5% OFF",
-          "para": "Desconto expirou"
+          "de": "Desconto expirou",
+          "para": "30% OFF"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 699,00",
-          "para": null
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "desconto",
-          "de": "33% OFF",
-          "para": "12% OFF"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 59,90",
-          "para": "R$ 59,19"
+          "de": null,
+          "para": "R$ 799,99"
         }
       ]
     },
@@ -65,13 +60,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 57,33",
-          "para": "R$ 62,60"
+          "de": "R$ 62,60",
+          "para": "R$ 65,90"
         },
         {
           "campo": "desconto",
-          "de": "47% OFF no Pix",
-          "para": "43% OFF no Pix"
+          "de": "43% OFF no Pix",
+          "para": "40% OFF"
         }
       ]
     }
