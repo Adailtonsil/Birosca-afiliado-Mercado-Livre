@@ -1,58 +1,7 @@
 {
-  "executadoEm": "2026-07-18T13:27:02.899Z",
+  "executadoEm": "2026-07-19T13:36:10.668Z",
   "totalProdutos": 12,
   "relatorio": [
-    {
-      "id": 2,
-      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 6304,00",
-          "para": "R$ 6013,00"
-        },
-        {
-          "campo": "desconto",
-          "de": "5% OFF no Pix com Cupom",
-          "para": "10% OFF no Pix com Cupom"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "nome": "Magnow Pack Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável Viagem Organização",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 48,99",
-          "para": "R$ 47,80"
-        },
-        {
-          "campo": "desconto",
-          "de": "55% OFF",
-          "para": "56% OFF"
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 66,90",
-          "para": "R$ 61,99"
-        },
-        {
-          "campo": "desconto",
-          "de": "57% OFF",
-          "para": "61% OFF"
-        }
-      ]
-    },
     {
       "id": 11,
       "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
@@ -60,13 +9,13 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "54% OFF",
-          "para": "34% OFF"
+          "de": "34% OFF",
+          "para": "54% OFF"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 69,39",
-          "para": "R$ 122,99"
+          "de": "R$ 122,99",
+          "para": "R$ 69,39"
         }
       ]
     }
