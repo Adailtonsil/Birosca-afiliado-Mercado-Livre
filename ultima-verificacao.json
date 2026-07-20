@@ -1,7 +1,24 @@
 {
-  "executadoEm": "2026-07-19T13:36:10.668Z",
+  "executadoEm": "2026-07-20T14:19:03.896Z",
   "totalProdutos": 12,
   "relatorio": [
+    {
+      "id": 9,
+      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "30% OFF",
+          "para": "Desconto expirou"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 799,99",
+          "para": null
+        }
+      ]
+    },
     {
       "id": 11,
       "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
@@ -9,13 +26,13 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "34% OFF",
-          "para": "54% OFF"
+          "de": "54% OFF",
+          "para": "12% OFF"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 122,99",
-          "para": "R$ 69,39"
+          "de": "R$ 69,39",
+          "para": "R$ 59,19"
         }
       ]
     }
