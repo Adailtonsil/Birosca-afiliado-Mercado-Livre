@@ -1,21 +1,38 @@
 {
-  "executadoEm": "2026-07-20T14:19:03.896Z",
+  "executadoEm": "2026-07-21T14:05:43.148Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 9,
-      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
+      "id": 2,
+      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "desconto",
-          "de": "30% OFF",
-          "para": "Desconto expirou"
+          "campo": "precoPor",
+          "de": "R$ 6013,00",
+          "para": "R$ 6498,00"
         },
         {
-          "campo": "precoDe",
-          "de": "R$ 799,99",
-          "para": null
+          "campo": "desconto",
+          "de": "10% OFF no Pix com Cupom",
+          "para": "5% OFF no Pix"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "Sofá Retrátil Reclinável 3 Lugares C Molas 1,80m Vegas Suede Cor Preto",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 929,90",
+          "para": "R$ 919,90"
+        },
+        {
+          "campo": "desconto",
+          "de": "41% OFF",
+          "para": "42% OFF"
         }
       ]
     },
@@ -26,13 +43,13 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "54% OFF",
-          "para": "12% OFF"
+          "de": "12% OFF",
+          "para": "30% OFF no Pix ou Saldo no Mercado Pago"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 69,39",
-          "para": "R$ 59,19"
+          "de": "R$ 59,19",
+          "para": "R$ 74,98"
         }
       ]
     }
