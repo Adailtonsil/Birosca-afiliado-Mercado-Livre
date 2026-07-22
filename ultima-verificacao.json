@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-07-21T14:05:43.148Z",
+  "executadoEm": "2026-07-22T14:08:31.450Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -8,14 +8,9 @@
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "precoPor",
-          "de": "R$ 6013,00",
-          "para": "R$ 6498,00"
-        },
-        {
           "campo": "desconto",
-          "de": "10% OFF no Pix com Cupom",
-          "para": "5% OFF no Pix"
+          "de": "5% OFF no Pix",
+          "para": "7% OFF no Pix"
         }
       ]
     },
@@ -26,13 +21,30 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 929,90",
-          "para": "R$ 919,90"
+          "de": "R$ 919,90",
+          "para": "R$ 929,90"
         },
         {
           "campo": "desconto",
-          "de": "41% OFF",
-          "para": "42% OFF"
+          "de": "42% OFF",
+          "para": "41% OFF"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "Desconto expirou",
+          "para": "30% OFF"
+        },
+        {
+          "campo": "precoDe",
+          "de": null,
+          "para": "R$ 799,99"
         }
       ]
     },
@@ -43,13 +55,13 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "12% OFF",
-          "para": "30% OFF no Pix ou Saldo no Mercado Pago"
+          "de": "30% OFF no Pix ou Saldo no Mercado Pago",
+          "para": "12% OFF"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 59,19",
-          "para": "R$ 74,98"
+          "de": "R$ 74,98",
+          "para": "R$ 59,19"
         }
       ]
     }
