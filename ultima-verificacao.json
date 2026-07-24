@@ -1,21 +1,21 @@
 {
-  "executadoEm": "2026-07-23T14:13:27.700Z",
+  "executadoEm": "2026-07-24T13:56:32.230Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 2,
-      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
+      "id": 6,
+      "nome": "Kit 2 Travesseiros 45x65 Antialérgico Lavável Fibra Siliconada Toque de Pluma",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 6498,00",
-          "para": "R$ 6013,00"
+          "de": "R$ 36,99",
+          "para": "R$ 34,99"
         },
         {
           "campo": "desconto",
-          "de": "7% OFF no Pix",
-          "para": "10% OFF no Pix com Cupom"
+          "de": "41% OFF",
+          "para": "44% OFF"
         }
       ]
     },
@@ -25,14 +25,36 @@
       "status": "atualizado",
       "mudancas": [
         {
+          "campo": "precoPor",
+          "de": "R$ 699,00",
+          "para": "R$ 599,90"
+        },
+        {
           "campo": "desconto",
-          "de": "30% OFF",
-          "para": "54% OFF no Pix"
+          "de": "54% OFF no Pix",
+          "para": "14% OFF"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 799,99",
-          "para": "R$ 809,90"
+          "de": "R$ 809,90",
+          "para": "R$ 699,00"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 56,90",
+          "para": "R$ 54,04"
+        },
+        {
+          "campo": "desconto",
+          "de": "48% OFF no Pix",
+          "para": "50% OFF no Pix"
         }
       ]
     }
