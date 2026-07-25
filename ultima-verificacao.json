@@ -1,43 +1,33 @@
 {
-  "executadoEm": "2026-07-24T13:56:32.230Z",
+  "executadoEm": "2026-07-25T13:46:42.966Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 6,
-      "nome": "Kit 2 Travesseiros 45x65 Antialérgico Lavável Fibra Siliconada Toque de Pluma",
+      "id": 7,
+      "nome": "Kit 3 Camisas Regatas Dry-fit Masculina Sandrini Academia",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 36,99",
-          "para": "R$ 34,99"
-        },
-        {
-          "campo": "desconto",
-          "de": "41% OFF",
-          "para": "44% OFF"
+          "de": "R$ 81,99",
+          "para": "R$ 81,90"
         }
       ]
     },
     {
-      "id": 9,
-      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
+      "id": 10,
+      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 699,00",
-          "para": "R$ 599,90"
+          "de": "R$ 61,99",
+          "para": "R$ 66,90"
         },
         {
           "campo": "desconto",
-          "de": "54% OFF no Pix",
-          "para": "14% OFF"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 809,90",
-          "para": "R$ 699,00"
+          "de": "61% OFF",
+          "para": "57% OFF"
         }
       ]
     },
@@ -48,13 +38,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 56,90",
-          "para": "R$ 54,04"
+          "de": "R$ 54,04",
+          "para": "R$ 62,60"
         },
         {
           "campo": "desconto",
-          "de": "48% OFF no Pix",
-          "para": "50% OFF no Pix"
+          "de": "50% OFF no Pix",
+          "para": "43% OFF no Pix"
         }
       ]
     }
