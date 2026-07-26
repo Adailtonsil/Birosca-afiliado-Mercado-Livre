@@ -1,16 +1,16 @@
 {
-  "executadoEm": "2026-07-25T13:46:42.966Z",
+  "executadoEm": "2026-07-26T13:40:31.398Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 7,
-      "nome": "Kit 3 Camisas Regatas Dry-fit Masculina Sandrini Academia",
+      "id": 9,
+      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 81,99",
-          "para": "R$ 81,90"
+          "de": "R$ 599,90",
+          "para": "R$ 599,00"
         }
       ]
     },
@@ -21,13 +21,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 61,99",
-          "para": "R$ 66,90"
+          "de": "R$ 66,90",
+          "para": "R$ 59,90"
         },
         {
           "campo": "desconto",
-          "de": "61% OFF",
-          "para": "57% OFF"
+          "de": "57% OFF",
+          "para": "62% OFF"
         }
       ]
     },
@@ -38,13 +38,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 54,04",
-          "para": "R$ 62,60"
+          "de": "R$ 62,60",
+          "para": "R$ 57,33"
         },
         {
           "campo": "desconto",
-          "de": "50% OFF no Pix",
-          "para": "43% OFF no Pix"
+          "de": "43% OFF no Pix",
+          "para": "47% OFF no Pix"
         }
       ]
     }
