@@ -1,38 +1,38 @@
 {
-  "executadoEm": "2026-07-27T14:48:00.675Z",
+  "executadoEm": "2026-07-28T14:22:33.274Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 3,
-      "nome": "Magnow Pack Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável Viagem Organização",
+      "id": 4,
+      "nome": "Sofá Retrátil Reclinável 3 Lugares C Molas 1,80m Vegas Suede Cor Preto",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 47,80",
-          "para": "R$ 47,79"
+          "de": "R$ 929,90",
+          "para": "R$ 919,90"
+        },
+        {
+          "campo": "desconto",
+          "de": "41% OFF",
+          "para": "42% OFF"
         }
       ]
     },
     {
-      "id": 9,
-      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
+      "id": 8,
+      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 599,00",
-          "para": "R$ 699,00"
+          "de": "R$ 73,28",
+          "para": "R$ 72,61"
         },
         {
           "campo": "desconto",
-          "de": "14% OFF",
-          "para": "Desconto expirou"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 699,00",
-          "para": null
+          "de": "17% OFF",
+          "para": "18% OFF"
         }
       ]
     },
@@ -43,13 +43,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 57,33",
-          "para": "R$ 62,60"
+          "de": "R$ 62,60",
+          "para": "R$ 65,90"
         },
         {
           "campo": "desconto",
-          "de": "47% OFF no Pix",
-          "para": "43% OFF no Pix"
+          "de": "43% OFF no Pix",
+          "para": "40% OFF"
         }
       ]
     }
