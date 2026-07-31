@@ -1,33 +1,21 @@
 {
-  "executadoEm": "2026-07-30T14:15:11.452Z",
+  "executadoEm": "2026-07-31T14:22:06.710Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 2,
-      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
+      "id": 12,
+      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "desconto",
-          "de": "23% OFF no Pix ou Saldo no Mercado Pago",
-          "para": "25% OFF no Pix ou Saldo no Mercado Pago"
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "desconto",
-          "de": "37% OFF",
-          "para": "Desconto expirou"
+          "campo": "precoPor",
+          "de": "R$ 65,90",
+          "para": "R$ 58,08"
         },
         {
-          "campo": "precoDe",
-          "de": "R$ 69,90",
-          "para": null
+          "campo": "desconto",
+          "de": "40% OFF",
+          "para": "47% OFF"
         }
       ]
     }
