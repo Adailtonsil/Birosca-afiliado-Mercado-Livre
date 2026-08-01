@@ -1,7 +1,58 @@
 {
-  "executadoEm": "2026-07-31T14:22:06.710Z",
+  "executadoEm": "2026-08-01T13:39:18.711Z",
   "totalProdutos": 12,
   "relatorio": [
+    {
+      "id": 2,
+      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 6983,00",
+          "para": "R$ 7199,00"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 7199,00",
+          "para": "R$ 9449,00"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "nome": "Kit 3 Camisas Regatas Dry-fit Masculina Sandrini Academia",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 81,90",
+          "para": "R$ 54,99"
+        },
+        {
+          "campo": "desconto",
+          "de": "36% OFF",
+          "para": "57% OFF"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "Desconto expirou",
+          "para": "25% OFF"
+        },
+        {
+          "campo": "precoDe",
+          "de": null,
+          "para": "R$ 70,00"
+        }
+      ]
+    },
     {
       "id": 12,
       "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
@@ -9,13 +60,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 65,90",
-          "para": "R$ 58,08"
+          "de": "R$ 58,08",
+          "para": "R$ 55,18"
         },
         {
           "campo": "desconto",
-          "de": "40% OFF",
-          "para": "47% OFF"
+          "de": "47% OFF",
+          "para": "49% OFF no Pix"
         }
       ]
     }
