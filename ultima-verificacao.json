@@ -1,55 +1,38 @@
 {
-  "executadoEm": "2026-08-01T13:39:18.711Z",
+  "executadoEm": "2026-08-02T13:39:46.601Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 2,
-      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
+      "id": 6,
+      "nome": "Kit 2 Travesseiros 45x65 Antialérgico Lavável Fibra Siliconada Toque de Pluma",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 6983,00",
-          "para": "R$ 7199,00"
+          "de": "R$ 34,99",
+          "para": "R$ 36,99"
         },
         {
-          "campo": "precoDe",
-          "de": "R$ 7199,00",
-          "para": "R$ 9449,00"
+          "campo": "desconto",
+          "de": "44% OFF",
+          "para": "41% OFF"
         }
       ]
     },
     {
-      "id": 7,
-      "nome": "Kit 3 Camisas Regatas Dry-fit Masculina Sandrini Academia",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 81,90",
-          "para": "R$ 54,99"
-        },
-        {
-          "campo": "desconto",
-          "de": "36% OFF",
-          "para": "57% OFF"
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
+      "id": 9,
+      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "Desconto expirou",
-          "para": "25% OFF"
+          "de": "25% OFF",
+          "para": "Desconto expirou"
         },
         {
           "campo": "precoDe",
-          "de": null,
-          "para": "R$ 70,00"
+          "de": "R$ 799,99",
+          "para": null
         }
       ]
     },
@@ -60,13 +43,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 58,08",
-          "para": "R$ 55,18"
+          "de": "R$ 55,18",
+          "para": "R$ 58,08"
         },
         {
           "campo": "desconto",
-          "de": "47% OFF",
-          "para": "49% OFF no Pix"
+          "de": "49% OFF no Pix",
+          "para": "47% OFF"
         }
       ]
     }
