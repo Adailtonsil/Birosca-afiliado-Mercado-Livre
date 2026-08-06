@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-08-05T14:21:07.510Z",
+  "executadoEm": "2026-08-06T14:24:41.318Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -8,31 +8,9 @@
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "precoPor",
-          "de": "R$ 7199,00",
-          "para": "R$ 7599,00"
-        },
-        {
           "campo": "desconto",
-          "de": "25% OFF no Pix ou Saldo no Mercado Pago",
-          "para": "21% OFF no Pix ou Saldo no Mercado Pago"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "nome": "Jogo De Cama Casal Padrão 3 Peças Fronha Ponto Palito C/ Elástico 400 Fios Toque Acetinado",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 34,98",
-          "para": "R$ 27,98"
-        },
-        {
-          "campo": "desconto",
-          "de": "55% OFF",
-          "para": "64% OFF"
+          "de": "21% OFF no Pix ou Saldo no Mercado Pago",
+          "para": "22% OFF no Pix"
         }
       ]
     },
@@ -43,13 +21,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 61,37",
-          "para": "R$ 49,10"
+          "de": "R$ 49,10",
+          "para": "R$ 59,90"
         },
         {
           "campo": "desconto",
-          "de": "44% OFF",
-          "para": "55% OFF no Pix"
+          "de": "55% OFF no Pix",
+          "para": "45% OFF"
         }
       ]
     }
