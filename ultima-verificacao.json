@@ -1,7 +1,24 @@
 {
-  "executadoEm": "2026-08-06T14:24:41.318Z",
+  "executadoEm": "2026-08-07T13:15:41.619Z",
   "totalProdutos": 12,
   "relatorio": [
+    {
+      "id": 1,
+      "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 42,90",
+          "para": "R$ 39,90"
+        },
+        {
+          "campo": "desconto",
+          "de": "33% OFF",
+          "para": "38% OFF"
+        }
+      ]
+    },
     {
       "id": 2,
       "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
@@ -9,25 +26,64 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "21% OFF no Pix ou Saldo no Mercado Pago",
-          "para": "22% OFF no Pix"
+          "de": "22% OFF no Pix",
+          "para": "21% OFF no Pix"
         }
       ]
     },
     {
-      "id": 12,
-      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
+      "id": 5,
+      "nome": "Jogo De Cama Casal Padrão 3 Peças Fronha Ponto Palito C/ Elástico 400 Fios Toque Acetinado",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 49,10",
-          "para": "R$ 59,90"
+          "de": "R$ 27,98",
+          "para": "R$ 34,98"
         },
         {
           "campo": "desconto",
-          "de": "55% OFF no Pix",
-          "para": "45% OFF"
+          "de": "64% OFF",
+          "para": "55% OFF"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 72,61",
+          "para": "R$ 72,03"
+        },
+        {
+          "campo": "desconto",
+          "de": "18% OFF",
+          "para": "19% OFF"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 54,00",
+          "para": "R$ 51,30"
+        },
+        {
+          "campo": "desconto",
+          "de": "22% OFF",
+          "para": "5% OFF"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 70,00",
+          "para": "R$ 54,00"
         }
       ]
     }
