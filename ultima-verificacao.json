@@ -1,89 +1,43 @@
 {
-  "executadoEm": "2026-08-07T13:15:41.619Z",
+  "executadoEm": "2026-08-08T12:58:31.241Z",
   "totalProdutos": 12,
   "relatorio": [
-    {
-      "id": 1,
-      "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 42,90",
-          "para": "R$ 39,90"
-        },
-        {
-          "campo": "desconto",
-          "de": "33% OFF",
-          "para": "38% OFF"
-        }
-      ]
-    },
     {
       "id": 2,
       "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "desconto",
-          "de": "22% OFF no Pix",
-          "para": "21% OFF no Pix"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "nome": "Jogo De Cama Casal Padrão 3 Peças Fronha Ponto Palito C/ Elástico 400 Fios Toque Acetinado",
-      "status": "atualizado",
-      "mudancas": [
-        {
           "campo": "precoPor",
-          "de": "R$ 27,98",
-          "para": "R$ 34,98"
+          "de": "R$ 7599,00",
+          "para": "R$ 6711,00"
         },
         {
           "campo": "desconto",
-          "de": "64% OFF",
-          "para": "55% OFF"
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 72,61",
-          "para": "R$ 72,03"
-        },
-        {
-          "campo": "desconto",
-          "de": "18% OFF",
-          "para": "19% OFF"
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 54,00",
-          "para": "R$ 51,30"
-        },
-        {
-          "campo": "desconto",
-          "de": "22% OFF",
-          "para": "5% OFF"
+          "de": "21% OFF no Pix",
+          "para": "7% OFF no Pix com Cupom"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 70,00",
-          "para": "R$ 54,00"
+          "de": "R$ 9449,00",
+          "para": "R$ 7219,00"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 59,90",
+          "para": "R$ 56,90"
+        },
+        {
+          "campo": "desconto",
+          "de": "45% OFF",
+          "para": "48% OFF no Pix"
         }
       ]
     }
