@@ -1,24 +1,7 @@
 {
-  "executadoEm": "2026-08-10T13:20:22.536Z",
+  "executadoEm": "2026-08-11T13:17:07.057Z",
   "totalProdutos": 12,
   "relatorio": [
-    {
-      "id": 1,
-      "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 34,90",
-          "para": "R$ 39,90"
-        },
-        {
-          "campo": "desconto",
-          "de": "46% OFF",
-          "para": "38% OFF"
-        }
-      ]
-    },
     {
       "id": 2,
       "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
@@ -26,18 +9,86 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 6711,00",
-          "para": "R$ 7371,00"
+          "de": "R$ 7371,00",
+          "para": "R$ 8341,00"
         },
         {
           "campo": "desconto",
-          "de": "7% OFF no Pix com Cupom",
-          "para": "18% OFF no Pix ou Saldo no Mercado Pago"
+          "de": "18% OFF no Pix ou Saldo no Mercado Pago",
+          "para": "20% OFF no Pix"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 7219,00",
-          "para": "R$ 7599,00"
+          "de": "R$ 7599,00",
+          "para": "R$ 8599,00"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "nome": "Kit 3 Camisas Regatas Dry-fit Masculina Sandrini Academia",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 54,99",
+          "para": "R$ 81,99"
+        },
+        {
+          "campo": "desconto",
+          "de": "57% OFF",
+          "para": "36% OFF"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 72,03",
+          "para": "R$ 72,61"
+        },
+        {
+          "campo": "desconto",
+          "de": "19% OFF",
+          "para": "18% OFF"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "Desconto expirou",
+          "para": "30% OFF"
+        },
+        {
+          "campo": "precoDe",
+          "de": null,
+          "para": "R$ 1428,00"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 59,90",
+          "para": "R$ 63,50"
+        },
+        {
+          "campo": "desconto",
+          "de": "62% OFF",
+          "para": "60% OFF"
         }
       ]
     },
@@ -48,18 +99,18 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 51,30",
-          "para": "R$ 54,00"
+          "de": "R$ 54,00",
+          "para": "R$ 49,68"
         },
         {
           "campo": "desconto",
-          "de": "5% OFF",
-          "para": "14% OFF"
+          "de": "14% OFF",
+          "para": "8% OFF"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 54,00",
-          "para": "R$ 59,19"
+          "de": "R$ 59,19",
+          "para": "R$ 54,00"
         }
       ]
     },
@@ -70,13 +121,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 56,90",
-          "para": "R$ 61,65"
+          "de": "R$ 61,65",
+          "para": "R$ 64,90"
         },
         {
           "campo": "desconto",
-          "de": "48% OFF no Pix",
-          "para": "43% OFF no Pix"
+          "de": "43% OFF no Pix",
+          "para": "40% OFF"
         }
       ]
     }
