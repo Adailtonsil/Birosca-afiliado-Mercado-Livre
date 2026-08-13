@@ -1,22 +1,21 @@
 {
-  "executadoEm": "2026-08-12T13:21:05.600Z",
+  "executadoEm": "2026-08-13T13:23:02.689Z",
   "totalProdutos": 12,
   "relatorio": [
-    {
-      "id": 1,
-      "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
-      "status": "erro_acesso",
-      "detalhe": 500
-    },
     {
       "id": 2,
       "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
       "status": "atualizado",
       "mudancas": [
         {
+          "campo": "precoPor",
+          "de": "R$ 8341,00",
+          "para": "R$ 7923,00"
+        },
+        {
           "campo": "desconto",
-          "de": "20% OFF no Pix",
-          "para": "18% OFF no Pix ou Saldo no Mercado Pago"
+          "de": "18% OFF no Pix ou Saldo no Mercado Pago",
+          "para": "7% OFF no Pix com Cupom"
         }
       ]
     },
@@ -27,13 +26,13 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "36% OFF",
-          "para": "Desconto expirou"
+          "de": "Desconto expirou",
+          "para": "36% OFF"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 128,91",
-          "para": null
+          "de": null,
+          "para": "R$ 128,91"
         }
       ]
     },
@@ -44,30 +43,30 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "30% OFF",
-          "para": "11% OFF"
+          "de": "11% OFF",
+          "para": "Desconto expirou"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 1428,00",
-          "para": "R$ 1895,00"
+          "de": "R$ 1895,00",
+          "para": null
         }
       ]
     },
     {
-      "id": 10,
-      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
+      "id": 12,
+      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 63,50",
-          "para": "R$ 66,90"
+          "de": "R$ 64,90",
+          "para": "R$ 61,65"
         },
         {
           "campo": "desconto",
-          "de": "60% OFF",
-          "para": "57% OFF"
+          "de": "40% OFF",
+          "para": "43% OFF no Pix"
         }
       ]
     }
