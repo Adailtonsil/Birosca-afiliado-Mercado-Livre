@@ -1,5 +1,23 @@
 {
-  "executadoEm": "2026-08-15T12:47:04.271Z",
+  "executadoEm": "2026-08-16T12:49:18.464Z",
   "totalProdutos": 12,
-  "relatorio": []
+  "relatorio": [
+    {
+      "id": 10,
+      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 56,90",
+          "para": "R$ 59,90"
+        },
+        {
+          "campo": "desconto",
+          "de": "64% OFF no Pix",
+          "para": "62% OFF"
+        }
+      ]
+    }
+  ]
 }
