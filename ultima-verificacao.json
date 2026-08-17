@@ -1,21 +1,48 @@
 {
-  "executadoEm": "2026-08-16T12:49:18.464Z",
+  "executadoEm": "2026-08-17T12:53:38.981Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 10,
-      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
+      "id": 9,
+      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 56,90",
-          "para": "R$ 59,90"
+          "de": "R$ 664,05",
+          "para": "R$ 699,00"
         },
         {
           "campo": "desconto",
-          "de": "64% OFF no Pix",
-          "para": "62% OFF"
+          "de": "5% OFF",
+          "para": "Desconto expirou"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 699,00",
+          "para": null
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 49,68",
+          "para": "R$ 54,00"
+        },
+        {
+          "campo": "desconto",
+          "de": "8% OFF",
+          "para": "Desconto expirou"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 54,00",
+          "para": null
         }
       ]
     }
