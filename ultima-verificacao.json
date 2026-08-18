@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-08-17T12:53:38.981Z",
+  "executadoEm": "2026-08-18T12:56:00.721Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -9,18 +9,18 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 664,05",
-          "para": "R$ 699,00"
+          "de": "R$ 699,00",
+          "para": "R$ 658,00"
         },
         {
           "campo": "desconto",
-          "de": "5% OFF",
-          "para": "Desconto expirou"
+          "de": "Desconto expirou",
+          "para": "5% OFF"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 699,00",
-          "para": null
+          "de": null,
+          "para": "R$ 699,00"
         }
       ]
     },
@@ -30,19 +30,31 @@
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "precoPor",
-          "de": "R$ 49,68",
-          "para": "R$ 54,00"
-        },
-        {
           "campo": "desconto",
-          "de": "8% OFF",
-          "para": "Desconto expirou"
+          "de": "Desconto expirou",
+          "para": "8% OFF"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 54,00",
-          "para": null
+          "de": null,
+          "para": "R$ 59,19"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 64,90",
+          "para": "R$ 61,65"
+        },
+        {
+          "campo": "desconto",
+          "de": "40% OFF",
+          "para": "43% OFF no Pix"
         }
       ]
     }
