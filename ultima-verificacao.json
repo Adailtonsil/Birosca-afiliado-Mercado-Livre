@@ -1,21 +1,21 @@
 {
-  "executadoEm": "2026-08-19T12:56:32.374Z",
+  "executadoEm": "2026-08-20T12:58:31.089Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 2,
-      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
+      "id": 3,
+      "nome": "Magnow Pack Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável Viagem Organização",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 7352,00",
-          "para": "R$ 6984,00"
+          "de": "R$ 48,99",
+          "para": "R$ 47,79"
         },
         {
           "campo": "desconto",
-          "de": "14% OFF no Pix com Cupom",
-          "para": "18% OFF no Pix com Cupom"
+          "de": "55% OFF",
+          "para": "56% OFF"
         }
       ]
     },
@@ -26,8 +26,8 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "8% OFF",
-          "para": "18% OFF"
+          "de": "18% OFF",
+          "para": "22% OFF no Pix"
         }
       ]
     }
