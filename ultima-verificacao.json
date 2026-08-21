@@ -1,33 +1,21 @@
 {
-  "executadoEm": "2026-08-20T12:58:31.089Z",
+  "executadoEm": "2026-08-21T12:57:18.284Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 3,
-      "nome": "Magnow Pack Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável Viagem Organização",
+      "id": 7,
+      "nome": "Kit 3 Camisas Regatas Dry-fit Masculina Sandrini Academia",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 48,99",
-          "para": "R$ 47,79"
+          "de": "R$ 54,99",
+          "para": "R$ 81,99"
         },
         {
           "campo": "desconto",
-          "de": "55% OFF",
-          "para": "56% OFF"
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "desconto",
-          "de": "18% OFF",
-          "para": "22% OFF no Pix"
+          "de": "57% OFF",
+          "para": "36% OFF"
         }
       ]
     }
