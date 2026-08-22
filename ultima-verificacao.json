@@ -1,23 +1,5 @@
 {
-  "executadoEm": "2026-08-21T12:57:18.284Z",
+  "executadoEm": "2026-08-22T12:49:09.763Z",
   "totalProdutos": 12,
-  "relatorio": [
-    {
-      "id": 7,
-      "nome": "Kit 3 Camisas Regatas Dry-fit Masculina Sandrini Academia",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 54,99",
-          "para": "R$ 81,99"
-        },
-        {
-          "campo": "desconto",
-          "de": "57% OFF",
-          "para": "36% OFF"
-        }
-      ]
-    }
-  ]
+  "relatorio": []
 }
