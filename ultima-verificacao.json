@@ -1,5 +1,23 @@
 {
-  "executadoEm": "2026-08-23T12:49:56.346Z",
+  "executadoEm": "2026-08-24T12:59:45.380Z",
   "totalProdutos": 12,
-  "relatorio": []
+  "relatorio": [
+    {
+      "id": 2,
+      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 6984,00",
+          "para": "R$ 7352,00"
+        },
+        {
+          "campo": "desconto",
+          "de": "18% OFF no Pix com Cupom",
+          "para": "14% OFF no Pix com Cupom"
+        }
+      ]
+    }
+  ]
 }
