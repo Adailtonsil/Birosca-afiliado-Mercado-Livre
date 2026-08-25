@@ -1,21 +1,67 @@
 {
-  "executadoEm": "2026-08-24T12:59:45.380Z",
+  "executadoEm": "2026-08-25T12:56:07.204Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 2,
-      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
+      "id": 3,
+      "nome": "Magnow Pack Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável Viagem Organização",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 6984,00",
-          "para": "R$ 7352,00"
+          "de": "R$ 47,79",
+          "para": "R$ 48,98"
         },
         {
           "campo": "desconto",
-          "de": "18% OFF no Pix com Cupom",
-          "para": "14% OFF no Pix com Cupom"
+          "de": "56% OFF",
+          "para": "55% OFF"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 72,61",
+          "para": "R$ 72,03"
+        },
+        {
+          "campo": "desconto",
+          "de": "18% OFF",
+          "para": "19% OFF"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "22% OFF no Pix",
+          "para": "18% OFF"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 61,65",
+          "para": "R$ 64,90"
+        },
+        {
+          "campo": "desconto",
+          "de": "43% OFF no Pix",
+          "para": "40% OFF"
         }
       ]
     }
