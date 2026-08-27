@@ -1,55 +1,21 @@
 {
-  "executadoEm": "2026-08-26T13:02:16.981Z",
+  "executadoEm": "2026-08-27T22:04:41.580Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 2,
-      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
+      "id": 10,
+      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 7352,00",
-          "para": "R$ 6839,00"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 8599,00",
-          "para": "R$ 7999,00"
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "nome": "Kit 2 Travesseiros 45x65 Antialérgico Lavável Fibra Siliconada Toque de Pluma",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 36,99",
-          "para": "R$ 34,99"
+          "de": "R$ 59,90",
+          "para": "R$ 66,90"
         },
         {
           "campo": "desconto",
-          "de": "41% OFF",
-          "para": "44% OFF"
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "desconto",
-          "de": "18% OFF",
-          "para": "Desconto expirou"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 59,19",
-          "para": null
+          "de": "62% OFF",
+          "para": "57% OFF"
         }
       ]
     }
