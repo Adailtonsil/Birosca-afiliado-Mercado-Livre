@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-08-28T22:01:59.269Z",
+  "executadoEm": "2026-08-29T16:31:35.340Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -9,13 +9,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 66,90",
-          "para": "R$ 63,55"
+          "de": "R$ 63,55",
+          "para": "R$ 56,33"
         },
         {
           "campo": "desconto",
-          "de": "57% OFF",
-          "para": "60% OFF no Pix"
+          "de": "60% OFF no Pix",
+          "para": "64% OFF no Pix"
         }
       ]
     }
