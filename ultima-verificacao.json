@@ -1,7 +1,19 @@
 {
-  "executadoEm": "2026-08-30T16:25:44.675Z",
+  "executadoEm": "2026-08-31T19:00:12.156Z",
   "totalProdutos": 12,
   "relatorio": [
+    {
+      "id": 9,
+      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 658,00",
+          "para": "R$ 659,00"
+        }
+      ]
+    },
     {
       "id": 10,
       "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
@@ -9,30 +21,30 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 56,33",
-          "para": "R$ 63,55"
+          "de": "R$ 63,55",
+          "para": "R$ 66,90"
         },
         {
           "campo": "desconto",
-          "de": "64% OFF no Pix",
-          "para": "60% OFF no Pix"
+          "de": "60% OFF no Pix",
+          "para": "57% OFF"
         }
       ]
     },
     {
-      "id": 11,
-      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
+      "id": 12,
+      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "desconto",
-          "de": "Desconto expirou",
-          "para": "8% OFF"
+          "campo": "precoPor",
+          "de": "R$ 64,90",
+          "para": "R$ 63,90"
         },
         {
-          "campo": "precoDe",
-          "de": null,
-          "para": "R$ 59,19"
+          "campo": "desconto",
+          "de": "40% OFF",
+          "para": "41% OFF"
         }
       ]
     }
