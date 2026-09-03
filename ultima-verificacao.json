@@ -1,7 +1,24 @@
 {
-  "executadoEm": "2026-09-02T16:20:10.329Z",
+  "executadoEm": "2026-09-03T16:10:42.635Z",
   "totalProdutos": 12,
   "relatorio": [
+    {
+      "id": 2,
+      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 7759,00",
+          "para": "R$ 7341,00"
+        },
+        {
+          "campo": "desconto",
+          "de": "17% OFF no Pix ou Saldo no Mercado Pago",
+          "para": "8% OFF no Pix com Cupom"
+        }
+      ]
+    },
     {
       "id": 6,
       "nome": "Kit 2 Travesseiros 45x65 Antialérgico Lavável Fibra Siliconada Toque de Pluma",
@@ -9,30 +26,35 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 34,99",
-          "para": "R$ 36,99"
+          "de": "R$ 36,99",
+          "para": "R$ 34,99"
         },
         {
           "campo": "desconto",
-          "de": "44% OFF",
-          "para": "41% OFF"
+          "de": "41% OFF",
+          "para": "44% OFF"
         }
       ]
     },
     {
-      "id": 10,
-      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
+      "id": 9,
+      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 56,90",
-          "para": "R$ 59,90"
+          "de": "R$ 659,00",
+          "para": "R$ 669,99"
         },
         {
           "campo": "desconto",
-          "de": "64% OFF no Pix",
-          "para": "62% OFF"
+          "de": "5% OFF",
+          "para": "Desconto expirou"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 699,00",
+          "para": null
         }
       ]
     },
@@ -42,36 +64,9 @@
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "precoPor",
-          "de": "R$ 49,00",
-          "para": "R$ 54,00"
-        },
-        {
           "campo": "desconto",
-          "de": "9% OFF",
-          "para": "19% OFF no Pix"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 54,00",
-          "para": "R$ 59,19"
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 59,90",
-          "para": "R$ 56,90"
-        },
-        {
-          "campo": "desconto",
-          "de": "45% OFF",
-          "para": "48% OFF no Pix"
+          "de": "19% OFF no Pix",
+          "para": "21% OFF no Pix"
         }
       ]
     }
