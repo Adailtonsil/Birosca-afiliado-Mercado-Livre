@@ -1,38 +1,43 @@
 {
-  "executadoEm": "2026-09-03T16:10:42.635Z",
+  "executadoEm": "2026-09-04T16:05:22.913Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 2,
-      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
+      "id": 5,
+      "nome": "Jogo De Cama Casal Padrão 3 Peças Fronha Ponto Palito C/ Elástico 400 Fios Toque Acetinado",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 7759,00",
-          "para": "R$ 7341,00"
+          "de": "R$ 78,98",
+          "para": "R$ 29,98"
         },
         {
           "campo": "desconto",
-          "de": "17% OFF no Pix ou Saldo no Mercado Pago",
-          "para": "8% OFF no Pix com Cupom"
+          "de": "Desconto expirou",
+          "para": "62% OFF"
+        },
+        {
+          "campo": "precoDe",
+          "de": null,
+          "para": "R$ 78,98"
         }
       ]
     },
     {
-      "id": 6,
-      "nome": "Kit 2 Travesseiros 45x65 Antialérgico Lavável Fibra Siliconada Toque de Pluma",
+      "id": 8,
+      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 36,99",
-          "para": "R$ 34,99"
+          "de": "R$ 72,03",
+          "para": "R$ 84,66"
         },
         {
           "campo": "desconto",
-          "de": "41% OFF",
-          "para": "44% OFF"
+          "de": "19% OFF",
+          "para": "5% OFF"
         }
       ]
     },
@@ -42,19 +47,14 @@
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "precoPor",
-          "de": "R$ 659,00",
-          "para": "R$ 669,99"
-        },
-        {
           "campo": "desconto",
-          "de": "5% OFF",
-          "para": "Desconto expirou"
+          "de": "Desconto expirou",
+          "para": "60% OFF"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 699,00",
-          "para": null
+          "de": null,
+          "para": "R$ 999,00"
         }
       ]
     },
@@ -65,8 +65,13 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "19% OFF no Pix",
-          "para": "21% OFF no Pix"
+          "de": "21% OFF no Pix",
+          "para": "8% OFF no Pix"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 59,19",
+          "para": "R$ 136,86"
         }
       ]
     }
