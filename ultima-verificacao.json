@@ -1,60 +1,16 @@
 {
-  "executadoEm": "2026-09-04T16:05:22.913Z",
+  "executadoEm": "2026-09-05T14:55:32.939Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 5,
-      "nome": "Jogo De Cama Casal Padrão 3 Peças Fronha Ponto Palito C/ Elástico 400 Fios Toque Acetinado",
+      "id": 10,
+      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 78,98",
-          "para": "R$ 29,98"
-        },
-        {
-          "campo": "desconto",
-          "de": "Desconto expirou",
-          "para": "62% OFF"
-        },
-        {
-          "campo": "precoDe",
-          "de": null,
-          "para": "R$ 78,98"
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 72,03",
-          "para": "R$ 84,66"
-        },
-        {
-          "campo": "desconto",
-          "de": "19% OFF",
-          "para": "5% OFF"
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "desconto",
-          "de": "Desconto expirou",
-          "para": "60% OFF"
-        },
-        {
-          "campo": "precoDe",
-          "de": null,
-          "para": "R$ 999,00"
+          "de": "R$ 59,90",
+          "para": "R$ 59,30"
         }
       ]
     },
@@ -65,13 +21,13 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "21% OFF no Pix",
-          "para": "8% OFF no Pix"
+          "de": "8% OFF no Pix",
+          "para": "26% OFF no Pix"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 59,19",
-          "para": "R$ 136,86"
+          "de": "R$ 136,86",
+          "para": "R$ 164,99"
         }
       ]
     }
