@@ -1,50 +1,38 @@
 {
-  "executadoEm": "2026-09-06T15:15:38.374Z",
+  "executadoEm": "2026-09-07T17:36:28.889Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 9,
-      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
+      "id": 1,
+      "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 42,90",
+          "para": "R$ 39,90"
+        },
+        {
+          "campo": "desconto",
+          "de": "33% OFF",
+          "para": "38% OFF"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "60% OFF",
-          "para": "Desconto expirou"
+          "de": "26% OFF no Pix",
+          "para": "21% OFF no Pix"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 999,00",
-          "para": null
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 59,30",
-          "para": "R$ 59,90"
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 56,90",
-          "para": "R$ 59,90"
-        },
-        {
-          "campo": "desconto",
-          "de": "48% OFF no Pix",
-          "para": "45% OFF"
+          "de": "R$ 164,99",
+          "para": "R$ 59,19"
         }
       ]
     }
