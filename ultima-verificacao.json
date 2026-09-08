@@ -1,21 +1,21 @@
 {
-  "executadoEm": "2026-09-07T17:36:28.889Z",
+  "executadoEm": "2026-09-08T16:23:26.285Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 1,
-      "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
+      "id": 2,
+      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 42,90",
-          "para": "R$ 39,90"
+          "de": "R$ 7341,00",
+          "para": "R$ 7729,00"
         },
         {
           "campo": "desconto",
-          "de": "33% OFF",
-          "para": "38% OFF"
+          "de": "8% OFF no Pix com Cupom",
+          "para": "19% OFF no Pix"
         }
       ]
     },
@@ -26,13 +26,25 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "26% OFF no Pix",
-          "para": "21% OFF no Pix"
+          "de": "21% OFF no Pix",
+          "para": "17% OFF no Pix"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 59,90",
+          "para": "R$ 56,90"
         },
         {
-          "campo": "precoDe",
-          "de": "R$ 164,99",
-          "para": "R$ 59,19"
+          "campo": "desconto",
+          "de": "45% OFF",
+          "para": "48% OFF no Pix"
         }
       ]
     }
