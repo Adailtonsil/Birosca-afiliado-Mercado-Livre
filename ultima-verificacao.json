@@ -1,106 +1,21 @@
 {
-  "executadoEm": "2026-09-10T16:09:36.868Z",
+  "executadoEm": "2026-09-11T16:13:10.768Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 1,
-      "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
+      "id": 4,
+      "nome": "Sofá Retrátil Reclinável 3 Lugares C Molas 1,80m Vegas Suede Cor Preto",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 34,90",
-          "para": "R$ 42,90"
+          "de": "R$ 1069,00",
+          "para": "R$ 962,91"
         },
         {
           "campo": "desconto",
-          "de": "46% OFF",
-          "para": "33% OFF"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 7729,00",
-          "para": "R$ 7662,00"
-        },
-        {
-          "campo": "desconto",
-          "de": "13% OFF no Pix",
-          "para": "15% OFF no Pix"
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "nome": "Kit 3 Camisas Regatas Dry-fit Masculina Sandrini Academia",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 81,99",
-          "para": "R$ 54,99"
-        },
-        {
-          "campo": "desconto",
-          "de": "36% OFF",
-          "para": "57% OFF"
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 84,66",
-          "para": "R$ 89,12"
-        },
-        {
-          "campo": "desconto",
-          "de": "5% OFF",
-          "para": "Desconto expirou"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 89,12",
-          "para": null
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 59,90",
-          "para": "R$ 66,90"
-        },
-        {
-          "campo": "desconto",
-          "de": "62% OFF",
-          "para": "57% OFF"
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "desconto",
-          "de": "17% OFF no Pix",
-          "para": "14% OFF no Pix"
+          "de": "33% OFF",
+          "para": "39% OFF no Pix"
         }
       ]
     },
@@ -111,13 +26,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 55,95",
-          "para": "R$ 58,90"
+          "de": "R$ 58,90",
+          "para": "R$ 60,70"
         },
         {
           "campo": "desconto",
-          "de": "49% OFF no Pix",
-          "para": "46% OFF"
+          "de": "46% OFF",
+          "para": "44% OFF no Pix"
         }
       ]
     }
