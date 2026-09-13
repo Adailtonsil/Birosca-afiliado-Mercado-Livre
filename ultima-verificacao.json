@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-09-12T15:20:33.423Z",
+  "executadoEm": "2026-09-13T15:57:32.106Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -9,8 +9,13 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "15% OFF no Pix",
-          "para": "23% OFF no Pix"
+          "de": "23% OFF no Pix",
+          "para": "19% OFF no Pix"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 7999,00",
+          "para": "R$ 7998,00"
         }
       ]
     },
@@ -21,13 +26,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 962,91",
-          "para": "R$ 1069,00"
+          "de": "R$ 1069,00",
+          "para": "R$ 962,91"
         },
         {
           "campo": "desconto",
-          "de": "39% OFF no Pix",
-          "para": "33% OFF"
+          "de": "33% OFF",
+          "para": "39% OFF no Pix"
         }
       ]
     },
@@ -38,13 +43,13 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "14% OFF no Pix",
-          "para": "32% OFF no Pix"
+          "de": "32% OFF no Pix",
+          "para": "Desconto expirou"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 59,19",
-          "para": "R$ 152,00"
+          "de": "R$ 152,00",
+          "para": null
         }
       ]
     }
