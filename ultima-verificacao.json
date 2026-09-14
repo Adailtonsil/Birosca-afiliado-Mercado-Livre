@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-09-13T15:57:32.106Z",
+  "executadoEm": "2026-09-14T17:58:08.510Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -8,48 +8,31 @@
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "desconto",
-          "de": "23% OFF no Pix",
-          "para": "19% OFF no Pix"
+          "campo": "precoPor",
+          "de": "R$ 7662,00",
+          "para": "R$ 7729,00"
         },
         {
-          "campo": "precoDe",
-          "de": "R$ 7999,00",
-          "para": "R$ 7998,00"
+          "campo": "desconto",
+          "de": "19% OFF no Pix",
+          "para": "22% OFF no Pix"
         }
       ]
     },
     {
-      "id": 4,
-      "nome": "Sofá Retrátil Reclinável 3 Lugares C Molas 1,80m Vegas Suede Cor Preto",
+      "id": 12,
+      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 1069,00",
-          "para": "R$ 962,91"
+          "de": "R$ 60,70",
+          "para": "R$ 63,90"
         },
         {
           "campo": "desconto",
-          "de": "33% OFF",
-          "para": "39% OFF no Pix"
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "desconto",
-          "de": "32% OFF no Pix",
-          "para": "Desconto expirou"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 152,00",
-          "para": null
+          "de": "44% OFF no Pix",
+          "para": "41% OFF"
         }
       ]
     }
