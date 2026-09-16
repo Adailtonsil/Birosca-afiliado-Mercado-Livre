@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-09-15T16:40:17.679Z",
+  "executadoEm": "2026-09-16T16:33:37.265Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -8,53 +8,31 @@
       "status": "atualizado",
       "mudancas": [
         {
+          "campo": "desconto",
+          "de": "40% OFF",
+          "para": "22% OFF no Pix"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
+      "status": "atualizado",
+      "mudancas": [
+        {
           "campo": "precoPor",
-          "de": "R$ 7729,00",
-          "para": "R$ 7768,00"
+          "de": "R$ 89,12",
+          "para": "R$ 72,03"
         },
         {
           "campo": "desconto",
-          "de": "22% OFF no Pix",
-          "para": "40% OFF"
+          "de": "Desconto expirou",
+          "para": "19% OFF"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 7998,00",
-          "para": "R$ 8038,00"
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 66,90",
-          "para": "R$ 58,10"
-        },
-        {
-          "campo": "desconto",
-          "de": "57% OFF",
-          "para": "63% OFF"
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 63,90",
-          "para": "R$ 58,79"
-        },
-        {
-          "campo": "desconto",
-          "de": "41% OFF",
-          "para": "46% OFF no Pix"
+          "de": null,
+          "para": "R$ 89,12"
         }
       ]
     }
