@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-09-17T16:38:42.483Z",
+  "executadoEm": "2026-09-18T16:10:28.546Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -9,30 +9,18 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 7768,00",
-          "para": "R$ 7797,00"
+          "de": "R$ 7797,00",
+          "para": "R$ 8038,00"
         },
         {
           "campo": "desconto",
-          "de": "22% OFF no Pix",
-          "para": "38% OFF"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "nome": "Magnow Pack Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável Viagem Organização",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 48,98",
-          "para": "R$ 46,00"
+          "de": "38% OFF",
+          "para": "24% OFF no Pix"
         },
         {
-          "campo": "desconto",
-          "de": "55% OFF",
-          "para": "58% OFF"
+          "campo": "precoDe",
+          "de": "R$ 8038,00",
+          "para": "R$ 8599,00"
         }
       ]
     },
@@ -43,13 +31,30 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 962,91",
-          "para": "R$ 984,31"
+          "de": "R$ 984,31",
+          "para": "R$ 909,41"
         },
         {
           "campo": "desconto",
-          "de": "39% OFF no Pix",
-          "para": "38% OFF no Pix"
+          "de": "38% OFF no Pix",
+          "para": "43% OFF no Pix"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 72,03",
+          "para": "R$ 82,12"
+        },
+        {
+          "campo": "desconto",
+          "de": "19% OFF",
+          "para": "7% OFF"
         }
       ]
     },
@@ -60,30 +65,13 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "Desconto expirou",
-          "para": "25% OFF"
+          "de": "25% OFF",
+          "para": "8% OFF"
         },
         {
           "campo": "precoDe",
-          "de": null,
-          "para": "R$ 70,00"
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 58,79",
-          "para": "R$ 63,90"
-        },
-        {
-          "campo": "desconto",
-          "de": "46% OFF no Pix",
-          "para": "41% OFF"
+          "de": "R$ 70,00",
+          "para": "R$ 59,19"
         }
       ]
     }
