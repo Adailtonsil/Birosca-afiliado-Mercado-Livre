@@ -1,26 +1,38 @@
 {
-  "executadoEm": "2026-09-18T16:10:28.546Z",
+  "executadoEm": "2026-09-19T15:42:29.869Z",
   "totalProdutos": 12,
   "relatorio": [
+    {
+      "id": 1,
+      "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 42,90",
+          "para": "R$ 39,99"
+        },
+        {
+          "campo": "desconto",
+          "de": "33% OFF",
+          "para": "38% OFF"
+        }
+      ]
+    },
     {
       "id": 2,
       "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "precoPor",
-          "de": "R$ 7797,00",
-          "para": "R$ 8038,00"
-        },
-        {
           "campo": "desconto",
-          "de": "38% OFF",
-          "para": "24% OFF no Pix"
+          "de": "24% OFF no Pix",
+          "para": "38% OFF"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 8038,00",
-          "para": "R$ 8599,00"
+          "de": "R$ 8599,00",
+          "para": "R$ 14799,00"
         }
       ]
     },
@@ -31,13 +43,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 984,31",
-          "para": "R$ 909,41"
+          "de": "R$ 909,41",
+          "para": "R$ 962,91"
         },
         {
           "campo": "desconto",
-          "de": "38% OFF no Pix",
-          "para": "43% OFF no Pix"
+          "de": "43% OFF no Pix",
+          "para": "39% OFF no Pix"
         }
       ]
     },
@@ -48,30 +60,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 72,03",
-          "para": "R$ 82,12"
+          "de": "R$ 82,12",
+          "para": "R$ 72,03"
         },
         {
           "campo": "desconto",
-          "de": "19% OFF",
-          "para": "7% OFF"
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "desconto",
-          "de": "25% OFF",
-          "para": "8% OFF"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 70,00",
-          "para": "R$ 59,19"
+          "de": "7% OFF",
+          "para": "19% OFF"
         }
       ]
     }
