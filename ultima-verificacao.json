@@ -1,55 +1,21 @@
 {
-  "executadoEm": "2026-09-20T15:47:44.361Z",
+  "executadoEm": "2026-09-21T18:05:46.089Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 1,
-      "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
+      "id": 8,
+      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 39,99",
-          "para": "R$ 42,90"
-        },
-        {
-          "campo": "desconto",
-          "de": "38% OFF",
-          "para": "33% OFF"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "desconto",
-          "de": "38% OFF",
-          "para": "14% OFF no Pix"
+          "de": "R$ 72,03",
+          "para": "R$ 89,12"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 14799,00",
-          "para": "R$ 8599,00"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "nome": "Sofá Retrátil Reclinável 3 Lugares C Molas 1,80m Vegas Suede Cor Preto",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 962,91",
-          "para": "R$ 984,31"
-        },
-        {
-          "campo": "desconto",
-          "de": "39% OFF no Pix",
-          "para": "38% OFF no Pix"
+          "de": "R$ 89,12",
+          "para": "R$ 2108,00"
         }
       ]
     },
@@ -60,13 +26,13 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "Desconto expirou",
-          "para": "58% OFF"
+          "de": "58% OFF",
+          "para": "Desconto expirou"
         },
         {
           "campo": "precoDe",
-          "de": null,
-          "para": "R$ 699,00"
+          "de": "R$ 699,00",
+          "para": null
         }
       ]
     },
@@ -77,13 +43,13 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "8% OFF",
-          "para": "25% OFF"
+          "de": "25% OFF",
+          "para": "Desconto expirou"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 59,19",
-          "para": "R$ 70,00"
+          "de": "R$ 70,00",
+          "para": null
         }
       ]
     }
