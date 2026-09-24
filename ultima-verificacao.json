@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-09-23T16:33:03.854Z",
+  "executadoEm": "2026-09-24T16:52:52.248Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -9,13 +9,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 39,99",
-          "para": "R$ 42,90"
+          "de": "R$ 42,90",
+          "para": "R$ 39,90"
         },
         {
           "campo": "desconto",
-          "de": "38% OFF",
-          "para": "33% OFF"
+          "de": "33% OFF",
+          "para": "38% OFF"
         }
       ]
     },
@@ -26,8 +26,8 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "17% OFF no Pix",
-          "para": "14% OFF no Pix"
+          "de": "14% OFF no Pix",
+          "para": "11% OFF no Pix"
         }
       ]
     },
@@ -38,30 +38,30 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 962,91",
-          "para": "R$ 855,92"
+          "de": "R$ 855,92",
+          "para": "R$ 764,90"
         },
         {
           "campo": "desconto",
-          "de": "39% OFF no Pix",
-          "para": "46% OFF no Pix"
+          "de": "46% OFF no Pix",
+          "para": "52% OFF no Pix"
         }
       ]
     },
     {
-      "id": 7,
-      "nome": "Kit 3 Camisas Regatas Dry-fit Masculina Sandrini Academia",
+      "id": 5,
+      "nome": "Jogo De Cama Casal Padrão 3 Peças Fronha Ponto Palito C/ Elástico 400 Fios Toque Acetinado",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 54,99",
-          "para": "R$ 59,99"
+          "de": "R$ 29,98",
+          "para": "R$ 21,98"
         },
         {
           "campo": "desconto",
-          "de": "57% OFF",
-          "para": "53% OFF"
+          "de": "62% OFF",
+          "para": "72% OFF"
         }
       ]
     },
@@ -72,13 +72,13 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "9% OFF",
-          "para": "15% OFF"
+          "de": "15% OFF",
+          "para": "Desconto expirou"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 887,50",
-          "para": "R$ 1532,00"
+          "de": "R$ 1532,00",
+          "para": null
         }
       ]
     }
