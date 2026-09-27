@@ -1,33 +1,43 @@
 {
-  "executadoEm": "2026-09-26T16:08:08.772Z",
+  "executadoEm": "2026-09-27T16:44:39.154Z",
   "totalProdutos": 12,
   "relatorio": [
-    {
-      "id": 2,
-      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 7699,00",
-          "para": "R$ 8318,00"
-        }
-      ]
-    },
     {
       "id": 9,
       "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
       "status": "atualizado",
       "mudancas": [
         {
+          "campo": "precoPor",
+          "de": "R$ 669,99",
+          "para": "R$ 609,08"
+        },
+        {
           "campo": "desconto",
-          "de": "Desconto expirou",
-          "para": "30% OFF"
+          "de": "30% OFF",
+          "para": "9% OFF"
         },
         {
           "campo": "precoDe",
-          "de": null,
-          "para": "R$ 799,99"
+          "de": "R$ 799,99",
+          "para": "R$ 669,99"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 58,10",
+          "para": "R$ 56,36"
+        },
+        {
+          "campo": "desconto",
+          "de": "63% OFF",
+          "para": "64% OFF"
         }
       ]
     }
