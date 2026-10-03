@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-10-02T17:42:50.455Z",
+  "executadoEm": "2026-10-03T16:01:10.677Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -8,60 +8,43 @@
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "precoPor",
-          "de": "R$ 7599,00",
-          "para": "R$ 8318,00"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 8038,00",
-          "para": "R$ 8599,00"
+          "campo": "desconto",
+          "de": "5% OFF",
+          "para": "17% OFF no Pix"
         }
       ]
     },
     {
-      "id": 5,
-      "nome": "Jogo De Cama Casal Padrão 3 Peças Fronha Ponto Palito C/ Elástico 400 Fios Toque Acetinado",
+      "id": 6,
+      "nome": "Kit 2 Travesseiros 45x65 Antialérgico Lavável Fibra Siliconada Toque de Pluma",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 21,98",
-          "para": "R$ 48,99"
+          "de": "R$ 34,99",
+          "para": "R$ 35,90"
         },
         {
           "campo": "desconto",
-          "de": "72% OFF",
-          "para": "37% OFF"
+          "de": "44% OFF",
+          "para": "43% OFF"
         }
       ]
     },
     {
-      "id": 10,
-      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
+      "id": 8,
+      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 55,20",
-          "para": "R$ 59,90"
+          "de": "R$ 69,87",
+          "para": "R$ 67,77"
         },
         {
           "campo": "desconto",
-          "de": "65% OFF",
-          "para": "62% OFF"
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "desconto",
-          "de": "38% OFF no Pix",
-          "para": "28% OFF no Pix"
+          "de": "21% OFF",
+          "para": "23% OFF"
         }
       ]
     }
