@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-10-03T16:01:10.677Z",
+  "executadoEm": "2026-10-04T16:42:19.425Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -9,42 +9,30 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "5% OFF",
-          "para": "17% OFF no Pix"
+          "de": "17% OFF no Pix",
+          "para": "Desconto expirou"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 8599,00",
+          "para": null
         }
       ]
     },
     {
-      "id": 6,
-      "nome": "Kit 2 Travesseiros 45x65 Antialérgico Lavável Fibra Siliconada Toque de Pluma",
+      "id": 10,
+      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 34,99",
-          "para": "R$ 35,90"
+          "de": "R$ 59,90",
+          "para": "R$ 56,36"
         },
         {
           "campo": "desconto",
-          "de": "44% OFF",
-          "para": "43% OFF"
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 69,87",
-          "para": "R$ 67,77"
-        },
-        {
-          "campo": "desconto",
-          "de": "21% OFF",
-          "para": "23% OFF"
+          "de": "62% OFF",
+          "para": "64% OFF"
         }
       ]
     }
