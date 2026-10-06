@@ -1,21 +1,21 @@
 {
-  "executadoEm": "2026-10-04T16:42:19.425Z",
+  "executadoEm": "2026-10-06T18:10:02.450Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 2,
-      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
+      "id": 9,
+      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "17% OFF no Pix",
-          "para": "Desconto expirou"
+          "de": "Desconto expirou",
+          "para": "18% OFF"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 8599,00",
-          "para": null
+          "de": null,
+          "para": "R$ 799,99"
         }
       ]
     },
@@ -26,13 +26,25 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 59,90",
-          "para": "R$ 56,36"
+          "de": "R$ 56,36",
+          "para": "R$ 59,90"
         },
         {
           "campo": "desconto",
-          "de": "62% OFF",
-          "para": "64% OFF"
+          "de": "64% OFF",
+          "para": "62% OFF"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "28% OFF no Pix",
+          "para": "38% OFF no Pix"
         }
       ]
     }
