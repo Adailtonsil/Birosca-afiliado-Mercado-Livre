@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-10-06T18:10:02.450Z",
+  "executadoEm": "2026-10-07T18:43:42.032Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -8,31 +8,19 @@
       "status": "atualizado",
       "mudancas": [
         {
+          "campo": "precoPor",
+          "de": "R$ 669,99",
+          "para": "R$ 636,49"
+        },
+        {
           "campo": "desconto",
-          "de": "Desconto expirou",
-          "para": "18% OFF"
+          "de": "18% OFF",
+          "para": "5% OFF"
         },
         {
           "campo": "precoDe",
-          "de": null,
-          "para": "R$ 799,99"
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 56,36",
-          "para": "R$ 59,90"
-        },
-        {
-          "campo": "desconto",
-          "de": "64% OFF",
-          "para": "62% OFF"
+          "de": "R$ 799,99",
+          "para": "R$ 669,99"
         }
       ]
     },
@@ -43,8 +31,8 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "28% OFF no Pix",
-          "para": "38% OFF no Pix"
+          "de": "38% OFF no Pix",
+          "para": "34% OFF no Pix"
         }
       ]
     }
