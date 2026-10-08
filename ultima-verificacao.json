@@ -1,7 +1,24 @@
 {
-  "executadoEm": "2026-10-07T18:43:42.032Z",
+  "executadoEm": "2026-10-08T18:41:46.797Z",
   "totalProdutos": 12,
   "relatorio": [
+    {
+      "id": 5,
+      "nome": "Jogo De Cama Casal Padrão 3 Peças Fronha Ponto Palito C/ Elástico 400 Fios Toque Acetinado",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 48,99",
+          "para": "R$ 39,98"
+        },
+        {
+          "campo": "desconto",
+          "de": "37% OFF",
+          "para": "49% OFF"
+        }
+      ]
+    },
     {
       "id": 9,
       "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
@@ -9,30 +26,35 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 669,99",
-          "para": "R$ 636,49"
+          "de": "R$ 636,49",
+          "para": "R$ 669,99"
         },
         {
           "campo": "desconto",
-          "de": "18% OFF",
-          "para": "5% OFF"
+          "de": "5% OFF",
+          "para": "Desconto expirou"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 799,99",
-          "para": "R$ 669,99"
+          "de": "R$ 669,99",
+          "para": null
         }
       ]
     },
     {
-      "id": 11,
-      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
+      "id": 10,
+      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
       "status": "atualizado",
       "mudancas": [
         {
+          "campo": "precoPor",
+          "de": "R$ 59,90",
+          "para": "R$ 54,64"
+        },
+        {
           "campo": "desconto",
-          "de": "38% OFF no Pix",
-          "para": "34% OFF no Pix"
+          "de": "62% OFF",
+          "para": "65% OFF"
         }
       ]
     }
