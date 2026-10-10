@@ -1,55 +1,43 @@
 {
-  "executadoEm": "2026-10-09T18:12:41.113Z",
+  "executadoEm": "2026-10-10T17:11:48.758Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 2,
-      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
+      "id": 1,
+      "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 39,90",
+          "para": "R$ 34,00"
+        },
+        {
+          "campo": "desconto",
+          "de": "38% OFF",
+          "para": "57% OFF"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 64,90",
+          "para": "R$ 139,90"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "desconto",
           "de": "Desconto expirou",
-          "para": "11% OFF no Pix"
+          "para": "14% OFF"
         },
         {
           "campo": "precoDe",
           "de": null,
-          "para": "R$ 8599,00"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "nome": "Magnow Pack Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável Viagem Organização",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 46,00",
-          "para": "R$ 48,98"
-        },
-        {
-          "campo": "desconto",
-          "de": "58% OFF",
-          "para": "55% OFF"
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 54,64",
-          "para": "R$ 59,90"
-        },
-        {
-          "campo": "desconto",
-          "de": "65% OFF",
-          "para": "62% OFF"
+          "para": "R$ 699,99"
         }
       ]
     },
@@ -60,8 +48,13 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "34% OFF no Pix",
-          "para": "20% OFF no Pix"
+          "de": "20% OFF no Pix",
+          "para": "10% OFF no Pix"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 152,00",
+          "para": "R$ 69,00"
         }
       ]
     }
