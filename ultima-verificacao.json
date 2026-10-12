@@ -1,5 +1,62 @@
 {
-  "executadoEm": "2026-10-11T17:34:27.027Z",
+  "executadoEm": "2026-10-12T21:08:02.412Z",
   "totalProdutos": 12,
-  "relatorio": []
+  "relatorio": [
+    {
+      "id": 1,
+      "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 34,00",
+          "para": "R$ 39,90"
+        },
+        {
+          "campo": "desconto",
+          "de": "57% OFF",
+          "para": "38% OFF"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 139,90",
+          "para": "R$ 64,90"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Magnow Pack Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável Viagem Organização",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 48,98",
+          "para": "R$ 54,99"
+        },
+        {
+          "campo": "desconto",
+          "de": "55% OFF",
+          "para": "50% OFF"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "10% OFF no Pix",
+          "para": "33% OFF"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 69,00",
+          "para": "R$ 99,90"
+        }
+      ]
+    }
+  ]
 }
