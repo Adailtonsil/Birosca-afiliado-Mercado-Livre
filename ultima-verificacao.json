@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-10-12T21:08:02.412Z",
+  "executadoEm": "2026-10-13T19:06:51.458Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -9,35 +9,52 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 34,00",
-          "para": "R$ 39,90"
+          "de": "R$ 39,90",
+          "para": "R$ 34,00"
         },
         {
           "campo": "desconto",
-          "de": "57% OFF",
-          "para": "38% OFF"
+          "de": "38% OFF",
+          "para": "43% OFF"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 139,90",
-          "para": "R$ 64,90"
+          "de": "R$ 64,90",
+          "para": "R$ 139,90"
         }
       ]
     },
     {
-      "id": 3,
-      "nome": "Magnow Pack Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável Viagem Organização",
+      "id": 9,
+      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "14% OFF",
+          "para": "30% OFF"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 699,99",
+          "para": "R$ 799,99"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 48,98",
-          "para": "R$ 54,99"
+          "de": "R$ 59,90",
+          "para": "R$ 67,90"
         },
         {
           "campo": "desconto",
-          "de": "55% OFF",
-          "para": "50% OFF"
+          "de": "62% OFF",
+          "para": "57% OFF"
         }
       ]
     },
@@ -48,13 +65,13 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "10% OFF no Pix",
-          "para": "33% OFF"
+          "de": "33% OFF",
+          "para": "5% OFF no Pix"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 69,00",
-          "para": "R$ 99,90"
+          "de": "R$ 99,90",
+          "para": "R$ 69,00"
         }
       ]
     }
