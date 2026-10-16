@@ -1,29 +1,7 @@
 {
-  "executadoEm": "2026-10-15T16:41:17.141Z",
+  "executadoEm": "2026-10-16T16:24:13.121Z",
   "totalProdutos": 12,
   "relatorio": [
-    {
-      "id": 1,
-      "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 34,00",
-          "para": "R$ 39,90"
-        },
-        {
-          "campo": "desconto",
-          "de": "43% OFF",
-          "para": "38% OFF"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 139,90",
-          "para": "R$ 64,90"
-        }
-      ]
-    },
     {
       "id": 2,
       "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
@@ -31,30 +9,13 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "8% OFF",
-          "para": "Desconto expirou"
+          "de": "Desconto expirou",
+          "para": "51% OFF"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 8599,00",
-          "para": null
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "desconto",
-          "de": "8% OFF no Pix",
-          "para": "30% OFF"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 699,99",
-          "para": "R$ 799,99"
+          "de": null,
+          "para": "R$ 16999,00"
         }
       ]
     },
@@ -65,13 +26,30 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 56,00",
-          "para": "R$ 67,90"
+          "de": "R$ 67,90",
+          "para": "R$ 62,47"
         },
         {
           "campo": "desconto",
-          "de": "64% OFF",
-          "para": "57% OFF"
+          "de": "57% OFF",
+          "para": "60% OFF no Pix"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 63,90",
+          "para": "R$ 58,79"
+        },
+        {
+          "campo": "desconto",
+          "de": "41% OFF",
+          "para": "46% OFF no Pix"
         }
       ]
     }
