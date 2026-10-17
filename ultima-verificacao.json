@@ -1,21 +1,26 @@
 {
-  "executadoEm": "2026-10-16T16:24:13.121Z",
+  "executadoEm": "2026-10-17T15:18:43.641Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 2,
-      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
+      "id": 9,
+      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
       "status": "atualizado",
       "mudancas": [
         {
+          "campo": "precoPor",
+          "de": "R$ 669,99",
+          "para": "R$ 599,00"
+        },
+        {
           "campo": "desconto",
-          "de": "Desconto expirou",
-          "para": "51% OFF"
+          "de": "30% OFF",
+          "para": "10% OFF"
         },
         {
           "campo": "precoDe",
-          "de": null,
-          "para": "R$ 16999,00"
+          "de": "R$ 799,99",
+          "para": "R$ 669,99"
         }
       ]
     },
@@ -26,13 +31,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 67,90",
-          "para": "R$ 62,47"
+          "de": "R$ 62,47",
+          "para": "R$ 67,90"
         },
         {
           "campo": "desconto",
-          "de": "57% OFF",
-          "para": "60% OFF no Pix"
+          "de": "60% OFF no Pix",
+          "para": "57% OFF"
         }
       ]
     },
@@ -43,13 +48,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 63,90",
-          "para": "R$ 58,79"
+          "de": "R$ 58,79",
+          "para": "R$ 63,90"
         },
         {
           "campo": "desconto",
-          "de": "41% OFF",
-          "para": "46% OFF no Pix"
+          "de": "46% OFF no Pix",
+          "para": "41% OFF"
         }
       ]
     }
