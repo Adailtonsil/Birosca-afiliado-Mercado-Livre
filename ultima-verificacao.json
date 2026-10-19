@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-10-18T15:39:56.617Z",
+  "executadoEm": "2026-10-19T18:35:11.236Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -9,18 +9,35 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 39,90",
-          "para": "R$ 32,88"
+          "de": "R$ 32,88",
+          "para": "R$ 39,90"
         },
         {
           "campo": "desconto",
-          "de": "38% OFF",
-          "para": "30% OFF"
+          "de": "30% OFF",
+          "para": "38% OFF"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 64,90",
-          "para": "R$ 104,90"
+          "de": "R$ 104,90",
+          "para": "R$ 64,90"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "51% OFF",
+          "para": "7% OFF"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 16999,00",
+          "para": "R$ 8599,00"
         }
       ]
     },
@@ -31,30 +48,52 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 838,98",
-          "para": "R$ 932,20"
+          "de": "R$ 932,20",
+          "para": "R$ 989,90"
         },
         {
           "campo": "desconto",
-          "de": "47% OFF no Pix",
-          "para": "41% OFF"
+          "de": "41% OFF",
+          "para": "38% OFF"
         }
       ]
     },
     {
-      "id": 10,
-      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
+      "id": 9,
+      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 67,90",
-          "para": "R$ 62,47"
+          "de": "R$ 599,00",
+          "para": "R$ 669,99"
         },
         {
           "campo": "desconto",
-          "de": "57% OFF",
-          "para": "60% OFF no Pix"
+          "de": "10% OFF",
+          "para": "17% OFF"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 669,99",
+          "para": "R$ 799,99"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "Desconto expirou",
+          "para": "10% OFF no Pix"
+        },
+        {
+          "campo": "precoDe",
+          "de": null,
+          "para": "R$ 69,00"
         }
       ]
     }
