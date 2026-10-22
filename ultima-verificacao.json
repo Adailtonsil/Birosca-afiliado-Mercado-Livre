@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-10-21T16:56:58.673Z",
+  "executadoEm": "2026-10-22T16:56:28.899Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -9,30 +9,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 989,90",
-          "para": "R$ 890,91"
+          "de": "R$ 890,91",
+          "para": "R$ 989,90"
         },
         {
           "campo": "desconto",
-          "de": "38% OFF",
-          "para": "44% OFF no Pix"
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "desconto",
-          "de": "Desconto expirou",
-          "para": "17% OFF"
-        },
-        {
-          "campo": "precoDe",
-          "de": null,
-          "para": "R$ 799,99"
+          "de": "44% OFF no Pix",
+          "para": "38% OFF"
         }
       ]
     },
@@ -43,13 +26,30 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 62,47",
-          "para": "R$ 51,52"
+          "de": "R$ 51,52",
+          "para": "R$ 67,90"
         },
         {
           "campo": "desconto",
-          "de": "60% OFF no Pix",
-          "para": "67% OFF no Pix"
+          "de": "67% OFF no Pix",
+          "para": "57% OFF"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 63,90",
+          "para": "R$ 61,98"
+        },
+        {
+          "campo": "desconto",
+          "de": "41% OFF",
+          "para": "43% OFF"
         }
       ]
     }
