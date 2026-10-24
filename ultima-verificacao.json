@@ -1,24 +1,7 @@
 {
-  "executadoEm": "2026-10-23T16:48:27.866Z",
+  "executadoEm": "2026-10-24T15:41:14.593Z",
   "totalProdutos": 12,
   "relatorio": [
-    {
-      "id": 9,
-      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "desconto",
-          "de": "17% OFF",
-          "para": "Desconto expirou"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 799,99",
-          "para": null
-        }
-      ]
-    },
     {
       "id": 10,
       "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
@@ -26,30 +9,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 67,90",
-          "para": "R$ 62,99"
+          "de": "R$ 62,99",
+          "para": "R$ 56,00"
         },
         {
           "campo": "desconto",
-          "de": "57% OFF",
-          "para": "60% OFF"
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "desconto",
-          "de": "15% OFF",
-          "para": "17% OFF"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 98,00",
-          "para": "R$ 59,19"
+          "de": "60% OFF",
+          "para": "64% OFF"
         }
       ]
     },
@@ -60,13 +26,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 61,98",
-          "para": "R$ 63,90"
+          "de": "R$ 63,90",
+          "para": "R$ 60,90"
         },
         {
           "campo": "desconto",
-          "de": "43% OFF",
-          "para": "41% OFF"
+          "de": "41% OFF",
+          "para": "44% OFF com Cupom"
         }
       ]
     }
