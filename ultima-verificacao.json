@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-10-25T15:52:01.553Z",
+  "executadoEm": "2026-10-26T18:31:56.660Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -9,35 +9,18 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 669,99",
-          "para": "R$ 589,59"
+          "de": "R$ 589,59",
+          "para": "R$ 669,99"
         },
         {
           "campo": "desconto",
-          "de": "Desconto expirou",
-          "para": "12% OFF"
+          "de": "12% OFF",
+          "para": "17% OFF"
         },
         {
           "campo": "precoDe",
-          "de": null,
-          "para": "R$ 669,99"
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 56,00",
-          "para": "R$ 62,99"
-        },
-        {
-          "campo": "desconto",
-          "de": "64% OFF",
-          "para": "60% OFF"
+          "de": "R$ 669,99",
+          "para": "R$ 799,99"
         }
       ]
     },
@@ -48,13 +31,30 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "17% OFF",
-          "para": "15% OFF"
+          "de": "15% OFF",
+          "para": "Desconto expirou"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 59,19",
-          "para": "R$ 98,00"
+          "de": "R$ 98,00",
+          "para": null
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 60,90",
+          "para": "R$ 56,03"
+        },
+        {
+          "campo": "desconto",
+          "de": "44% OFF com Cupom",
+          "para": "49% OFF no Pix com Cupom"
         }
       ]
     }
