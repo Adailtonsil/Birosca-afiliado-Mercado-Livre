@@ -1,42 +1,37 @@
 {
-  "executadoEm": "2026-10-26T18:31:56.660Z",
+  "executadoEm": "2026-10-27T17:47:25.153Z",
   "totalProdutos": 12,
   "relatorio": [
+    {
+      "id": 2,
+      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "Desconto expirou",
+          "para": "53% OFF"
+        },
+        {
+          "campo": "precoDe",
+          "de": null,
+          "para": "R$ 16999,00"
+        }
+      ]
+    },
     {
       "id": 9,
       "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "precoPor",
-          "de": "R$ 589,59",
-          "para": "R$ 669,99"
-        },
-        {
           "campo": "desconto",
-          "de": "12% OFF",
-          "para": "17% OFF"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 669,99",
-          "para": "R$ 799,99"
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "desconto",
-          "de": "15% OFF",
+          "de": "17% OFF",
           "para": "Desconto expirou"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 98,00",
+          "de": "R$ 799,99",
           "para": null
         }
       ]
@@ -48,13 +43,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 60,90",
-          "para": "R$ 56,03"
+          "de": "R$ 56,03",
+          "para": "R$ 58,79"
         },
         {
           "campo": "desconto",
-          "de": "44% OFF com Cupom",
-          "para": "49% OFF no Pix com Cupom"
+          "de": "49% OFF no Pix com Cupom",
+          "para": "46% OFF no Pix"
         }
       ]
     }
