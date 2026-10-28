@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-10-27T17:47:25.153Z",
+  "executadoEm": "2026-10-28T18:11:28.839Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -9,47 +9,47 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "Desconto expirou",
-          "para": "53% OFF"
+          "de": "53% OFF",
+          "para": "42% OFF"
         },
         {
           "campo": "precoDe",
-          "de": null,
-          "para": "R$ 16999,00"
+          "de": "R$ 16999,00",
+          "para": "R$ 14799,00"
         }
       ]
     },
     {
-      "id": 9,
-      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "desconto",
-          "de": "17% OFF",
-          "para": "Desconto expirou"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 799,99",
-          "para": null
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
+      "id": 7,
+      "nome": "Kit 3 Camisas Regatas Dry-fit Masculina Sandrini Academia",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 56,03",
-          "para": "R$ 58,79"
+          "de": "R$ 54,99",
+          "para": "R$ 59,99"
         },
         {
           "campo": "desconto",
-          "de": "49% OFF no Pix com Cupom",
-          "para": "46% OFF no Pix"
+          "de": "57% OFF",
+          "para": "53% OFF"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "Desconto expirou",
+          "para": "36% OFF"
+        },
+        {
+          "campo": "precoDe",
+          "de": null,
+          "para": "R$ 99,90"
         }
       ]
     }
