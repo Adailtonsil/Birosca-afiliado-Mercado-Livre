@@ -1,38 +1,21 @@
 {
-  "executadoEm": "2026-10-29T18:17:33.287Z",
+  "executadoEm": "2026-10-30T17:53:45.786Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 2,
-      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
+      "id": 8,
+      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "desconto",
-          "de": "42% OFF",
-          "para": "Desconto expirou"
+          "campo": "precoPor",
+          "de": "R$ 67,77",
+          "para": "R$ 56,48"
         },
         {
-          "campo": "precoDe",
-          "de": "R$ 14799,00",
-          "para": null
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
-      "status": "atualizado",
-      "mudancas": [
-        {
           "campo": "desconto",
-          "de": "36% OFF",
-          "para": "Desconto expirou"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 99,90",
-          "para": null
+          "de": "23% OFF",
+          "para": "36% OFF"
         }
       ]
     },
@@ -43,13 +26,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 58,79",
-          "para": "R$ 57,02"
+          "de": "R$ 57,02",
+          "para": "R$ 58,79"
         },
         {
           "campo": "desconto",
-          "de": "46% OFF no Pix",
-          "para": "48% OFF no Pix"
+          "de": "48% OFF no Pix",
+          "para": "46% OFF no Pix"
         }
       ]
     }
