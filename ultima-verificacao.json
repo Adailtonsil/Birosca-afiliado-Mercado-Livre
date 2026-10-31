@@ -1,21 +1,43 @@
 {
-  "executadoEm": "2026-10-30T17:53:45.786Z",
+  "executadoEm": "2026-10-31T17:05:14.854Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 8,
-      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
+      "id": 4,
+      "nome": "Sofá Retrátil Reclinável 3 Lugares C Molas 1,80m Vegas Suede Cor Preto",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 67,77",
-          "para": "R$ 56,48"
+          "de": "R$ 989,90",
+          "para": "R$ 932,20"
         },
         {
           "campo": "desconto",
-          "de": "23% OFF",
-          "para": "36% OFF"
+          "de": "38% OFF",
+          "para": "41% OFF"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 669,99",
+          "para": "R$ 599,00"
+        },
+        {
+          "campo": "desconto",
+          "de": "Desconto expirou",
+          "para": "10% OFF"
+        },
+        {
+          "campo": "precoDe",
+          "de": null,
+          "para": "R$ 669,99"
         }
       ]
     },
@@ -26,13 +48,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 57,02",
-          "para": "R$ 58,79"
+          "de": "R$ 58,79",
+          "para": "R$ 60,70"
         },
         {
           "campo": "desconto",
-          "de": "48% OFF no Pix",
-          "para": "46% OFF no Pix"
+          "de": "46% OFF no Pix",
+          "para": "44% OFF no Pix"
         }
       ]
     }
