@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-11-01T17:48:54.256Z",
+  "executadoEm": "2026-11-02T21:35:57.557Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -9,13 +9,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 39,90",
-          "para": "R$ 38,31"
+          "de": "R$ 38,31",
+          "para": "R$ 39,90"
         },
         {
           "campo": "desconto",
-          "de": "38% OFF",
-          "para": "40% OFF"
+          "de": "40% OFF",
+          "para": "38% OFF"
         }
       ]
     },
@@ -26,47 +26,30 @@
       "mudancas": [
         {
           "campo": "desconto",
-          "de": "Desconto expirou",
-          "para": "9% OFF no Pix"
+          "de": "9% OFF no Pix",
+          "para": "Desconto expirou"
         },
         {
           "campo": "precoDe",
-          "de": null,
-          "para": "R$ 10229,00"
+          "de": "R$ 10229,00",
+          "para": null
         }
       ]
     },
     {
-      "id": 3,
-      "nome": "Magnow Pack Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável Viagem Organização",
+      "id": 7,
+      "nome": "Kit 3 Camisas Regatas Dry-fit Masculina Sandrini Academia",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 54,99",
-          "para": "R$ 56,99"
+          "de": "R$ 59,99",
+          "para": "R$ 54,99"
         },
         {
           "campo": "desconto",
-          "de": "50% OFF",
-          "para": "48% OFF"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "nome": "Jogo De Cama Casal Padrão 3 Peças Fronha Ponto Palito C/ Elástico 400 Fios Toque Acetinado",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 39,98",
-          "para": "R$ 75,03"
-        },
-        {
-          "campo": "desconto",
-          "de": "49% OFF",
-          "para": "5% OFF no Pix"
+          "de": "53% OFF",
+          "para": "57% OFF"
         }
       ]
     },
@@ -77,13 +60,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 62,99",
-          "para": "R$ 56,00"
+          "de": "R$ 56,00",
+          "para": "R$ 59,99"
         },
         {
           "campo": "desconto",
-          "de": "60% OFF",
-          "para": "64% OFF"
+          "de": "64% OFF",
+          "para": "62% OFF"
         }
       ]
     },
@@ -94,13 +77,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 60,70",
-          "para": "R$ 59,71"
+          "de": "R$ 59,71",
+          "para": "R$ 64,90"
         },
         {
           "campo": "desconto",
-          "de": "44% OFF no Pix",
-          "para": "45% OFF no Pix"
+          "de": "45% OFF no Pix",
+          "para": "40% OFF"
         }
       ]
     }
