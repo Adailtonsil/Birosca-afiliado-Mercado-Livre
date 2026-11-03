@@ -1,41 +1,7 @@
 {
-  "executadoEm": "2026-11-02T21:35:57.557Z",
+  "executadoEm": "2026-11-03T19:19:08.426Z",
   "totalProdutos": 12,
   "relatorio": [
-    {
-      "id": 1,
-      "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 38,31",
-          "para": "R$ 39,90"
-        },
-        {
-          "campo": "desconto",
-          "de": "40% OFF",
-          "para": "38% OFF"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "desconto",
-          "de": "9% OFF no Pix",
-          "para": "Desconto expirou"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 10229,00",
-          "para": null
-        }
-      ]
-    },
     {
       "id": 7,
       "nome": "Kit 3 Camisas Regatas Dry-fit Masculina Sandrini Academia",
@@ -43,47 +9,35 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 59,99",
-          "para": "R$ 54,99"
-        },
-        {
-          "campo": "desconto",
-          "de": "53% OFF",
-          "para": "57% OFF"
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 56,00",
+          "de": "R$ 54,99",
           "para": "R$ 59,99"
         },
         {
           "campo": "desconto",
-          "de": "64% OFF",
-          "para": "62% OFF"
+          "de": "57% OFF",
+          "para": "53% OFF"
         }
       ]
     },
     {
-      "id": 12,
-      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
+      "id": 9,
+      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 59,71",
-          "para": "R$ 64,90"
+          "de": "R$ 599,00",
+          "para": "R$ 669,99"
         },
         {
           "campo": "desconto",
-          "de": "45% OFF no Pix",
-          "para": "40% OFF"
+          "de": "10% OFF",
+          "para": "Desconto expirou"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 669,99",
+          "para": null
         }
       ]
     }
