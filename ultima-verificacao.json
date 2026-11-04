@@ -1,20 +1,59 @@
 {
-  "executadoEm": "2026-11-03T19:19:08.426Z",
+  "executadoEm": "2026-11-04T19:36:19.582Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 7,
-      "nome": "Kit 3 Camisas Regatas Dry-fit Masculina Sandrini Academia",
+      "id": 1,
+      "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 54,99",
-          "para": "R$ 59,99"
+          "de": "R$ 39,90",
+          "para": "R$ 37,99"
         },
         {
           "campo": "desconto",
-          "de": "57% OFF",
+          "de": "38% OFF",
+          "para": "41% OFF"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 9150,00",
+          "para": "R$ 8318,00"
+        },
+        {
+          "campo": "desconto",
+          "de": "Desconto expirou",
+          "para": "12% OFF"
+        },
+        {
+          "campo": "precoDe",
+          "de": null,
+          "para": "R$ 8599,00"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 56,48",
+          "para": "R$ 41,58"
+        },
+        {
+          "campo": "desconto",
+          "de": "36% OFF",
           "para": "53% OFF"
         }
       ]
@@ -26,18 +65,52 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 599,00",
-          "para": "R$ 669,99"
+          "de": "R$ 669,99",
+          "para": "R$ 636,49"
         },
         {
           "campo": "desconto",
-          "de": "10% OFF",
-          "para": "Desconto expirou"
+          "de": "Desconto expirou",
+          "para": "5% OFF"
         },
         {
           "campo": "precoDe",
-          "de": "R$ 669,99",
-          "para": null
+          "de": null,
+          "para": "R$ 669,99"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 59,99",
+          "para": "R$ 53,99"
+        },
+        {
+          "campo": "desconto",
+          "de": "62% OFF",
+          "para": "66% OFF no Pix"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 64,90",
+          "para": "R$ 55,59"
+        },
+        {
+          "campo": "desconto",
+          "de": "40% OFF",
+          "para": "49% OFF no Pix"
         }
       ]
     }
