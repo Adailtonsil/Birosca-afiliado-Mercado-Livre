@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-11-04T19:36:19.582Z",
+  "executadoEm": "2026-11-05T19:45:10.441Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -9,13 +9,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 39,90",
-          "para": "R$ 37,99"
+          "de": "R$ 37,99",
+          "para": "R$ 39,90"
         },
         {
           "campo": "desconto",
-          "de": "38% OFF",
-          "para": "41% OFF"
+          "de": "41% OFF",
+          "para": "Desconto expirou"
         }
       ]
     },
@@ -25,19 +25,79 @@
       "status": "atualizado",
       "mudancas": [
         {
+          "campo": "desconto",
+          "de": "12% OFF",
+          "para": "Desconto expirou"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Magnow Pack Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável Viagem Organização",
+      "status": "atualizado",
+      "mudancas": [
+        {
           "campo": "precoPor",
-          "de": "R$ 9150,00",
-          "para": "R$ 8318,00"
+          "de": "R$ 56,99",
+          "para": "R$ 56,98"
         },
         {
           "campo": "desconto",
-          "de": "Desconto expirou",
-          "para": "12% OFF"
+          "de": "48% OFF",
+          "para": "Desconto expirou"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "Sofá Retrátil Reclinável 3 Lugares C Molas 1,80m Vegas Suede Cor Preto",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "41% OFF",
+          "para": "Desconto expirou"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nome": "Jogo De Cama Casal Padrão 3 Peças Fronha Ponto Palito C/ Elástico 400 Fios Toque Acetinado",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 75,03",
+          "para": "R$ 42,73"
         },
         {
-          "campo": "precoDe",
-          "de": null,
-          "para": "R$ 8599,00"
+          "campo": "desconto",
+          "de": "5% OFF no Pix",
+          "para": "Desconto expirou"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "nome": "Kit 2 Travesseiros 45x65 Antialérgico Lavável Fibra Siliconada Toque de Pluma",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "43% OFF",
+          "para": "Desconto expirou"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "nome": "Kit 3 Camisas Regatas Dry-fit Masculina Sandrini Academia",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "desconto",
+          "de": "53% OFF",
+          "para": "Desconto expirou"
         }
       ]
     },
@@ -48,13 +108,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 56,48",
-          "para": "R$ 41,58"
+          "de": "R$ 41,58",
+          "para": "R$ 42,00"
         },
         {
           "campo": "desconto",
-          "de": "36% OFF",
-          "para": "53% OFF"
+          "de": "53% OFF",
+          "para": "Desconto expirou"
         }
       ]
     },
@@ -65,18 +125,18 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 669,99",
-          "para": "R$ 636,49"
+          "de": "R$ 636,49",
+          "para": "R$ 669,99"
         },
         {
           "campo": "desconto",
-          "de": "Desconto expirou",
-          "para": "5% OFF"
+          "de": "5% OFF",
+          "para": "Desconto expirou"
         },
         {
           "campo": "precoDe",
-          "de": null,
-          "para": "R$ 669,99"
+          "de": "R$ 669,99",
+          "para": null
         }
       ]
     },
@@ -87,13 +147,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 59,99",
-          "para": "R$ 53,99"
+          "de": "R$ 53,99",
+          "para": "R$ 59,99"
         },
         {
           "campo": "desconto",
-          "de": "62% OFF",
-          "para": "66% OFF no Pix"
+          "de": "66% OFF no Pix",
+          "para": "Desconto expirou"
         }
       ]
     },
@@ -103,14 +163,9 @@
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "precoPor",
-          "de": "R$ 64,90",
-          "para": "R$ 55,59"
-        },
-        {
           "campo": "desconto",
-          "de": "40% OFF",
-          "para": "49% OFF no Pix"
+          "de": "49% OFF no Pix",
+          "para": "Desconto expirou"
         }
       ]
     }
