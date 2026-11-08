@@ -1,19 +1,7 @@
 {
-  "executadoEm": "2026-11-07T17:39:26.302Z",
+  "executadoEm": "2026-11-08T17:49:01.503Z",
   "totalProdutos": 12,
   "relatorio": [
-    {
-      "id": 2,
-      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoDe",
-          "de": null,
-          "para": "R$ 8599,00"
-        }
-      ]
-    },
     {
       "id": 10,
       "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
@@ -21,8 +9,20 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 54,99",
-          "para": "R$ 59,99"
+          "de": "R$ 59,99",
+          "para": "R$ 53,99"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoDe",
+          "de": "R$ 147,00",
+          "para": null
         }
       ]
     }
