@@ -1,7 +1,55 @@
 {
-  "executadoEm": "2026-11-08T17:49:01.503Z",
+  "executadoEm": "2026-11-09T22:08:57.200Z",
   "totalProdutos": 12,
   "relatorio": [
+    {
+      "id": 1,
+      "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 39,90",
+          "para": "R$ 37,90"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Smart TV TCL 85 Polegadas QLED 4K P7K Wifi Bluetooth Google TV HDR10 Dolby Atmos Dolby Vision",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoDe",
+          "de": "R$ 8599,00",
+          "para": null
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 42,00",
+          "para": "R$ 56,48"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 589,59",
+          "para": "R$ 599,00"
+        }
+      ]
+    },
     {
       "id": 10,
       "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
@@ -9,8 +57,8 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 59,99",
-          "para": "R$ 53,99"
+          "de": "R$ 53,99",
+          "para": "R$ 54,99"
         }
       ]
     },
@@ -21,8 +69,8 @@
       "mudancas": [
         {
           "campo": "precoDe",
-          "de": "R$ 147,00",
-          "para": null
+          "de": null,
+          "para": "R$ 199,00"
         }
       ]
     }
