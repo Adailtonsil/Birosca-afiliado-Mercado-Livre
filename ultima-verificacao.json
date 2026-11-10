@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-11-09T22:08:57.200Z",
+  "executadoEm": "2026-11-10T19:31:05.508Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -9,8 +9,8 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 39,90",
-          "para": "R$ 37,90"
+          "de": "R$ 37,90",
+          "para": "R$ 34,90"
         }
       ]
     },
@@ -21,20 +21,8 @@
       "mudancas": [
         {
           "campo": "precoDe",
-          "de": "R$ 8599,00",
-          "para": null
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 42,00",
-          "para": "R$ 56,48"
+          "de": null,
+          "para": "R$ 8599,00"
         }
       ]
     },
@@ -45,8 +33,8 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 589,59",
-          "para": "R$ 599,00"
+          "de": "R$ 599,00",
+          "para": "R$ 636,49"
         }
       ]
     },
@@ -57,20 +45,20 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 53,99",
-          "para": "R$ 54,99"
+          "de": "R$ 54,99",
+          "para": "R$ 59,99"
         }
       ]
     },
     {
-      "id": 11,
-      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
+      "id": 12,
+      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "precoDe",
-          "de": null,
-          "para": "R$ 199,00"
+          "campo": "precoPor",
+          "de": "R$ 63,90",
+          "para": "R$ 59,90"
         }
       ]
     }
