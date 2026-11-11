@@ -479,6 +479,75 @@ body {
   margin-top: 12px;
 }
 
+/* ---------- Aviso animado do cabeçalho ---------- */
+.hero-aviso {
+  position: relative;
+  overflow: hidden;
+  animation: aviso-pulsa 2.6s ease-in-out infinite;
+}
+
+/* Brilho que atravessa a caixa de tempos em tempos */
+.hero-aviso::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 35%;
+  height: 100%;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.85), transparent);
+  transform: skewX(-20deg);
+  animation: aviso-brilho 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.hero-aviso strong {
+  color: var(--accent);
+}
+
+.aviso-emoji {
+  display: inline-block;
+}
+
+.aviso-acena {
+  transform-origin: 70% 70%;
+  animation: aviso-acena 2.8s ease-in-out infinite;
+}
+
+.aviso-pula {
+  animation: aviso-pula 1.6s ease-in-out infinite;
+}
+
+@keyframes aviso-pulsa {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+  50%      { box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.45); }
+}
+
+@keyframes aviso-brilho {
+  0%       { left: -60%; }
+  55%, 100% { left: 130%; }
+}
+
+@keyframes aviso-acena {
+  0%, 55%, 100% { transform: rotate(0deg); }
+  10%, 30%      { transform: rotate(20deg); }
+  20%, 40%      { transform: rotate(-12deg); }
+}
+
+@keyframes aviso-pula {
+  0%, 60%, 100% { transform: translateY(0); }
+  30%           { transform: translateY(-4px); }
+}
+
+/* Quem pediu "reduzir movimento" no aparelho vê o aviso parado */
+@media (prefers-reduced-motion: reduce) {
+  .hero-aviso,
+  .hero-aviso::after,
+  .aviso-acena,
+  .aviso-pula {
+    animation: none;
+  }
+}
+
 /* ---------- Responsivo ---------- */
 @media (max-width: 920px) {
   .detail-card {
