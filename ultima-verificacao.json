@@ -1,5 +1,47 @@
 {
-  "executadoEm": "2026-11-11T19:26:32.151Z",
+  "executadoEm": "2026-11-11T21:55:04.883Z",
   "totalProdutos": 12,
-  "relatorio": []
+  "relatorio": [
+    {
+      "id": 2,
+      "nome": "Console Playstation®5 Slim Digital - Pacote Astro Bot E Gran Turismo 7 - Branco",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 4154,00",
+          "para": "R$ 4369,00"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 5201,00",
+          "para": "R$ 4599,00"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 49,29",
+          "para": "R$ 62,99"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 59,90",
+          "para": "R$ 64,90"
+        }
+      ]
+    }
+  ]
 }
