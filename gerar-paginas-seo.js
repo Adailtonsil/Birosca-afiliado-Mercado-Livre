@@ -44,7 +44,7 @@ const TEXTO_AVISO_HEADER =
 const ESTILO_AVISO_HEADER = [
   "background: #FFF9C4",
   "color: #333",
-  "margin: 6px 24px 8px 24px",
+  "margin: 8px 0 8px 0",
   "padding: 6px 14px",
   "border-radius: 6px",
   "border: 1px solid #F5E26B",
