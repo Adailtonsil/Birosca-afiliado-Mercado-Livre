@@ -116,6 +116,38 @@ function escaparHtml(texto) {
     .replace(/'/g, "&#39;");
 }
 
+/**
+ * Converte um preço em texto brasileiro para número.
+ * Exemplos: "R$ 8.318,00" -> 8318 | "R$ 7902,00" -> 7902 | "R$ 56,98" -> 56.98
+ * Retorna null se não conseguir ler um valor válido.
+ */
+function precoParaNumero(texto) {
+  if (!texto || ehValorInvalido(texto)) return null;
+  const limpo = String(texto)
+    .replace(/[^\d.,]/g, "") // tira "R$", espaços e letras
+    .replace(/\./g, "") // tira o ponto de milhar
+    .replace(",", "."); // vírgula decimal -> ponto
+  const numero = parseFloat(limpo);
+  return Number.isFinite(numero) && numero > 0 ? numero : null;
+}
+
+/**
+ * Calcula o texto do desconto a partir de precoDe e precoPor:
+ * - se os dois existem e o preço anterior é maior que o atual -> "5% OFF"
+ * - caso contrário -> "Desconto expirou"
+ * Ignora o campo "desconto" do produtos.json, que pode estar errado.
+ */
+function calcularDesconto(produto) {
+  const precoDe = precoParaNumero(produto.precoDe);
+  const precoPor = precoParaNumero(produto.precoPor);
+
+  if (precoDe && precoPor && precoDe > precoPor) {
+    const porcentagem = Math.round(((precoDe - precoPor) / precoDe) * 100);
+    if (porcentagem >= 1) return `${porcentagem}% OFF`;
+  }
+  return "Desconto expirou";
+}
+
 function gerarHtmlVariacoes(variacoes) {
   if (!variacoes) return "";
   return Object.entries(variacoes)
@@ -196,7 +228,7 @@ function gerarHtmlProduto(produto, slug) {
         <div class="detail-price-wrap">
           ${!ehValorInvalido(produto.precoDe) ? `<span class="detail-old-price">${escaparHtml(produto.precoDe)}</span>` : ""}
           <span class="detail-current-price">${escaparHtml(produto.precoPor)}</span>
-          ${(produto.desconto && !ehValorInvalido(produto.desconto)) ? `<span class="detail-discount${produto.desconto === "Desconto não aplicável" ? " is-neutral" : ""}">${escaparHtml(produto.desconto)}</span>` : ""}
+          <span class="detail-discount">${escaparHtml(calcularDesconto(produto))}</span>
         </div>
 
         <p class="detail-shipping">${escaparHtml(produto.frete)}</p>
@@ -250,7 +282,7 @@ function gerarHtmlCardCatalogo(produto, slug) {
           <div class="price-wrap">
             ${!ehValorInvalido(produto.precoDe) ? `<span class="old-price">${escaparHtml(produto.precoDe)}</span>` : ""}
             <span class="current-price">${escaparHtml(produto.precoPor)}</span>
-            ${(produto.desconto && !ehValorInvalido(produto.desconto)) ? `<span class="discount-badge${produto.desconto === "Desconto não aplicável" ? " is-neutral" : ""}">${escaparHtml(produto.desconto)}</span>` : ""}
+            <span class="discount-badge">${escaparHtml(calcularDesconto(produto))}</span>
           </div>
           <p class="shipping">${escaparHtml(produto.frete)}</p>
           ${variacoesHtml}
