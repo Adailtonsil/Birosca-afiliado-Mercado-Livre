@@ -1,7 +1,24 @@
 {
-  "executadoEm": "2026-11-11T17:42:49.239Z",
+  "executadoEm": "2026-11-11T18:11:44.944Z",
   "totalProdutos": 12,
   "relatorio": [
+    {
+      "id": 2,
+      "nome": "Console Playstation®5 Slim Digital - Pacote Astro Bot E Gran Turismo 7 - Branco",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 4.456,53",
+          "para": "R$ 4154,00"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 4.691,08",
+          "para": "R$ 5201,00"
+        }
+      ]
+    },
     {
       "id": 11,
       "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
@@ -9,8 +26,8 @@
       "mudancas": [
         {
           "campo": "precoDe",
-          "de": "R$ 199,00",
-          "para": null
+          "de": null,
+          "para": "R$ 199,00"
         }
       ]
     }
