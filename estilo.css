@@ -36,6 +36,10 @@ body {
 .hero {
   position: relative;
   width: 100%;
+  /* O fundo ocupa a tela toda, mas o conteúdo (título, aviso e menu) usa
+     o mesmo recuo lateral do .page-shell: 24px nas laterais, e centralizado
+     com largura máxima de 1400px em telas grandes. */
+  padding-inline: max(24px, calc((100% - 1400px) / 2 + 24px));
   background:
     radial-gradient(circle at top right, rgba(255, 231, 138, 0.65), transparent 28%),
     linear-gradient(135deg, #ffcf33 0%, #ffb100 45%, #f28c00 100%);
@@ -43,7 +47,7 @@ body {
 }
 
 .hero-top {
-  padding: 10px 24px 8px;
+  padding: 10px 0 8px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.10);
 }
 
@@ -60,7 +64,7 @@ body {
   display: flex;
   align-items: center;
   gap: 4px;
-  padding: 0 20px;
+  padding: 0;
 }
 
 .hero-nav a {
@@ -485,12 +489,12 @@ body {
 }
 
 @media (max-width: 520px) {
-  .hero-top {
-    padding: 8px 14px 6px;
+  .hero {
+    padding-inline: 12px;
   }
 
-  .hero-nav {
-    padding: 0 8px;
+  .hero-top {
+    padding: 8px 0 6px;
   }
 
   .hero-nav a {
