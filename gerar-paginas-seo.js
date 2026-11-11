@@ -44,13 +44,13 @@ const TEXTO_AVISO_HEADER =
 const ESTILO_AVISO_HEADER = [
   "background: #FFF9C4",
   "color: #333",
-  "margin: 16px 24px 20px 24px",
-  "padding: 12px 20px",
-  "border-radius: 8px",
+  "margin: 6px 24px 8px 24px",
+  "padding: 6px 14px",
+  "border-radius: 6px",
   "border: 1px solid #F5E26B",
-  "font-size: 1.05rem",
+  "font-size: 0.85rem",
   "font-weight: 600",
-  "line-height: 1.4",
+  "line-height: 1.3",
   "text-align: center",
 ].join("; ");
 
