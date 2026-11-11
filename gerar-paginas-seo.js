@@ -15,6 +15,12 @@
  *
  * Este script não altera o produtos.json -- ele só LÊ os dados e GERA
  * arquivos HTML estáticos a partir deles.
+ *
+ * NOTA: o link "Produtos testados" foi DESABILITADO do cabeçalho (nav)
+ * tanto da página inicial quanto das páginas de produto. Para reativar,
+ * basta adicionar de volta, dentro do <nav class="hero-nav">:
+ *   - na página de produto:  <a href="${URL_BASE}/produtos-testados">Produtos testados</a>
+ *   - na página inicial:     <a href="/produtos-testados">Produtos testados</a>
  */
 
 const fs = require("fs");
@@ -149,7 +155,6 @@ function gerarHtmlProduto(produto, slug) {
     </div>
     <nav class="hero-nav">
       <a href="${URL_BASE}/">Melhores Ofertas</a>
-      <a href="${URL_BASE}/produtos-testados">Produtos testados</a>
     </nav>
   </header>
 
@@ -273,7 +278,6 @@ function gerarHtmlCatalogo(produtos, slugsPorId) {
     </div>
     <nav class="hero-nav">
       <a class="active" href="/">Melhores Ofertas</a>
-      <a href="/produtos-testados">Produtos testados</a>
     </nav>
   </header>
 
