@@ -31,6 +31,30 @@ const PASTA_SAIDA = path.join(__dirname, "produto");
 const URL_BASE = "https://biroscaafiliado.netlify.app";
 
 /**
+ * Aviso exibido no cabeçalho, entre o título e o menu.
+ * O estilo está aqui mesmo (inline), então não precisa mexer no estilo.css.
+ * Para ajustar o visual, mude só os valores abaixo:
+ *   - background: cor de fundo (amarelo claro)
+ *   - margin: espaço fora da caixa (topo / lados / fundo)
+ *   - padding: espaço dentro da caixa
+ */
+const TEXTO_AVISO_HEADER =
+  "Essa página não vende nada. Clique em “Comprar” para ser direcionado para o Mercado Livre.";
+
+const ESTILO_AVISO_HEADER = [
+  "background: #FFF9C4",
+  "color: #333",
+  "margin: 16px 24px 20px 24px",
+  "padding: 12px 20px",
+  "border-radius: 8px",
+  "border: 1px solid #F5E26B",
+  "font-size: 1.05rem",
+  "font-weight: 600",
+  "line-height: 1.4",
+  "text-align: center",
+].join("; ");
+
+/**
  * Transforma o nome do produto em um "slug": texto simples, em minúsculas,
  * sem acentos, sem caracteres especiais, com palavras separadas por hífen.
  * Exemplo: "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g"
@@ -153,6 +177,7 @@ function gerarHtmlProduto(produto, slug) {
     <div class="hero-top">
       <h1 class="hero-title">Pagina de afiliado do Mercado Livre.</h1>
     </div>
+    <p class="hero-aviso" style="${ESTILO_AVISO_HEADER}">${TEXTO_AVISO_HEADER}</p>
     <nav class="hero-nav">
       <a href="${URL_BASE}/">Melhores Ofertas</a>
     </nav>
@@ -276,6 +301,7 @@ function gerarHtmlCatalogo(produtos, slugsPorId) {
     <div class="hero-top">
       <h1 class="hero-title">Pagina de afiliado do Mercado Livre.</h1>
     </div>
+    <p class="hero-aviso" style="${ESTILO_AVISO_HEADER}">${TEXTO_AVISO_HEADER}</p>
     <nav class="hero-nav">
       <a class="active" href="/">Melhores Ofertas</a>
     </nav>
