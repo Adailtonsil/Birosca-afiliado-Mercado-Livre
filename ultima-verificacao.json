@@ -1,19 +1,7 @@
 {
-  "executadoEm": "2026-11-11T17:15:31.078Z",
+  "executadoEm": "2026-11-11T17:29:33.970Z",
   "totalProdutos": 12,
   "relatorio": [
-    {
-      "id": 5,
-      "nome": "Jogo De Cama Casal Padrão 3 Peças Fronha Ponto Palito C/ Elástico 400 Fios Toque Acetinado",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 44,98",
-          "para": "R$ 42,73"
-        }
-      ]
-    },
     {
       "id": 10,
       "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
@@ -21,8 +9,8 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 49,29",
-          "para": "R$ 57,99"
+          "de": "R$ 57,99",
+          "para": "R$ 49,29"
         }
       ]
     }
