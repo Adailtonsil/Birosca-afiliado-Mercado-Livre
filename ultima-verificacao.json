@@ -1,16 +1,16 @@
 {
-  "executadoEm": "2026-11-11T17:29:33.970Z",
+  "executadoEm": "2026-11-11T17:42:49.239Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 10,
-      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
+      "id": 11,
+      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "precoPor",
-          "de": "R$ 57,99",
-          "para": "R$ 49,29"
+          "campo": "precoDe",
+          "de": "R$ 199,00",
+          "para": null
         }
       ]
     }
