@@ -1,5 +1,18 @@
 {
-  "executadoEm": "2026-11-11T16:30:13.579Z",
+  "executadoEm": "2026-11-11T16:56:54.111Z",
   "totalProdutos": 12,
-  "relatorio": []
+  "relatorio": [
+    {
+      "id": 5,
+      "nome": "Jogo De Cama Casal Padrão 3 Peças Fronha Ponto Palito C/ Elástico 400 Fios Toque Acetinado",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 42,73",
+          "para": "R$ 44,98"
+        }
+      ]
+    }
+  ]
 }
