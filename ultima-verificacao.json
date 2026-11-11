@@ -1,18 +1,5 @@
 {
-  "executadoEm": "2026-11-11T21:57:45.054Z",
+  "executadoEm": "2026-11-11T22:08:29.836Z",
   "totalProdutos": 12,
-  "relatorio": [
-    {
-      "id": 11,
-      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoDe",
-          "de": "R$ 199,00",
-          "para": "R$ 179,98"
-        }
-      ]
-    }
-  ]
+  "relatorio": []
 }
