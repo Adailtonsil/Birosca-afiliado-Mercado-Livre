@@ -1,5 +1,47 @@
 {
-  "executadoEm": "2026-11-11T22:19:46.079Z",
+  "executadoEm": "2026-11-12T19:44:30.535Z",
   "totalProdutos": 12,
-  "relatorio": []
+  "relatorio": [
+    {
+      "id": 2,
+      "nome": "Console Playstation®5 Slim Digital - Pacote Astro Bot E Gran Turismo 7 - Branco",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 4369,00",
+          "para": "R$ 4559,00"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 4599,00",
+          "para": "R$ 4799,00"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "nome": "Kit 3 Camisas Regatas Dry-fit Masculina Sandrini Academia",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 54,99",
+          "para": "R$ 49,99"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoDe",
+          "de": "R$ 179,98",
+          "para": "R$ 199,00"
+        }
+      ]
+    }
+  ]
 }
