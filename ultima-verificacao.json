@@ -1,33 +1,16 @@
 {
-  "executadoEm": "2026-11-13T19:26:26.771Z",
+  "executadoEm": "2026-11-14T17:50:29.526Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 1,
-      "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
+      "id": 3,
+      "nome": "Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 34,90",
-          "para": "R$ 39,90"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "nome": "Console Playstation®5 Slim Digital - Pacote Astro Bot E Gran Turismo 7 - Branco",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 4559,00",
-          "para": "R$ 4369,00"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 4799,00",
-          "para": "R$ 4599,00"
+          "de": "R$ 56,98",
+          "para": "R$ 61,99"
         }
       ]
     },
@@ -38,8 +21,20 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 932,20",
-          "para": "R$ 1008,00"
+          "de": "R$ 1008,00",
+          "para": "R$ 957,81"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 599,99",
+          "para": "R$ 589,59"
         }
       ]
     }
