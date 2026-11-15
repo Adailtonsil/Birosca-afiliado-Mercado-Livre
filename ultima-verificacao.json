@@ -1,40 +1,16 @@
 {
-  "executadoEm": "2026-11-14T17:50:29.526Z",
+  "executadoEm": "2026-11-15T18:40:46.843Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 3,
-      "nome": "Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável",
+      "id": 11,
+      "nome": "Gel De Limpeza Principia Ácido Salicílico + Glicerina 350g",
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "precoPor",
-          "de": "R$ 56,98",
-          "para": "R$ 61,99"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "nome": "Sofá Retrátil Reclinável 3 Lugares C Molas 1,80m Vegas Suede Cor Preto",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 1008,00",
-          "para": "R$ 957,81"
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 599,99",
-          "para": "R$ 589,59"
+          "campo": "precoDe",
+          "de": "R$ 199,00",
+          "para": "R$ 74,00"
         }
       ]
     }
