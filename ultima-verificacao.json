@@ -1,19 +1,7 @@
 {
-  "executadoEm": "2026-11-20T19:50:39.559Z",
+  "executadoEm": "2026-11-21T18:56:45.082Z",
   "totalProdutos": 12,
   "relatorio": [
-    {
-      "id": 1,
-      "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoDe",
-          "de": null,
-          "para": "R$ 64,90"
-        }
-      ]
-    },
     {
       "id": 2,
       "nome": "Console Playstation®5 Slim Digital - Pacote Astro Bot E Gran Turismo 7 - Branco",
@@ -21,25 +9,13 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 4799,00",
-          "para": "R$ 4369,00"
+          "de": "R$ 4369,00",
+          "para": "R$ 5431,00"
         },
         {
           "campo": "precoDe",
-          "de": null,
-          "para": "R$ 4599,00"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "nome": "Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoDe",
-          "de": null,
-          "para": "R$ 109,99"
+          "de": "R$ 4599,00",
+          "para": null
         }
       ]
     },
@@ -50,107 +26,8 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 907,40",
-          "para": "R$ 957,81"
-        },
-        {
-          "campo": "precoDe",
-          "de": null,
-          "para": "R$ 1599,00"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "nome": "Jogo De Cama Casal Padrão 3 Peças Fronha Ponto Palito C/ Elástico 400 Fios Toque Acetinado",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoDe",
-          "de": null,
-          "para": "R$ 78,98"
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "nome": "Kit 2 Travesseiros 45x65 Antialérgico Lavável Fibra Siliconada Toque de Pluma",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoDe",
-          "de": null,
-          "para": "R$ 63,20"
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "nome": "Kit 3 Camisas Regatas Dry-fit Masculina Sandrini Academia",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoDe",
-          "de": null,
-          "para": "R$ 128,91"
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "nome": "Kit 2 Capas Impermeável Protetora Banco Carro Mecânico",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 56,48",
-          "para": "R$ 60,95"
-        },
-        {
-          "campo": "precoDe",
-          "de": null,
-          "para": "R$ 89,12"
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 636,49",
-          "para": "R$ 599,00"
-        },
-        {
-          "campo": "precoDe",
-          "de": null,
-          "para": "R$ 669,99"
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "nome": "Kit 5 Camisa Masculina Termica Academia Dry Fit Malha Fria",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoDe",
-          "de": null,
-          "para": "R$ 159,00"
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoDe",
-          "de": null,
-          "para": "R$ 109,99"
+          "de": "R$ 957,81",
+          "para": "R$ 907,40"
         }
       ]
     }
