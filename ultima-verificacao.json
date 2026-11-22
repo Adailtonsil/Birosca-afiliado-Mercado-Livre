@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-11-21T18:56:45.082Z",
+  "executadoEm": "2026-11-22T19:17:02.198Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -9,13 +9,8 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 4369,00",
-          "para": "R$ 5431,00"
-        },
-        {
-          "campo": "precoDe",
-          "de": "R$ 4599,00",
-          "para": null
+          "de": "R$ 5431,00",
+          "para": "R$ 5199,00"
         }
       ]
     },
@@ -26,8 +21,8 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 957,81",
-          "para": "R$ 907,40"
+          "de": "R$ 907,40",
+          "para": "R$ 957,81"
         }
       ]
     }
