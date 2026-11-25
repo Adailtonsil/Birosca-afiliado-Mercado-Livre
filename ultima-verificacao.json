@@ -1,16 +1,21 @@
 {
-  "executadoEm": "2026-11-24T22:10:44.173Z",
+  "executadoEm": "2026-11-25T21:26:55.367Z",
   "totalProdutos": 12,
   "relatorio": [
     {
-      "id": 1,
-      "nome": "Creatina Monohidratada 250g Growth Supplements - Sem sabor em Pó",
+      "id": 2,
+      "nome": "Console Playstation®5 Slim Digital - Pacote Astro Bot E Gran Turismo 7 - Branco",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 39,90",
-          "para": "R$ 37,90"
+          "de": "R$ 5431,00",
+          "para": "R$ 4369,00"
+        },
+        {
+          "campo": "precoDe",
+          "de": null,
+          "para": "R$ 4599,00"
         }
       ]
     },
@@ -21,8 +26,20 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 881,91",
-          "para": "R$ 685,93"
+          "de": "R$ 685,93",
+          "para": "R$ 881,91"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "nome": "Kit 3 Camisas Regatas Dry-fit Masculina Sandrini Academia",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 49,99",
+          "para": "R$ 48,49"
         }
       ]
     },
@@ -33,8 +50,8 @@
       "mudancas": [
         {
           "campo": "precoDe",
-          "de": null,
-          "para": "R$ 69,90"
+          "de": "R$ 69,90",
+          "para": "R$ 145,25"
         }
       ]
     }
