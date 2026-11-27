@@ -1,5 +1,5 @@
 {
-  "executadoEm": "2026-11-26T21:13:34.526Z",
+  "executadoEm": "2026-11-27T20:56:40.479Z",
   "totalProdutos": 12,
   "relatorio": [
     {
@@ -9,20 +9,25 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 37,90",
-          "para": "R$ 29,61"
+          "de": "R$ 29,61",
+          "para": "R$ 28,62"
         }
       ]
     },
     {
-      "id": 3,
-      "nome": "Sacos A Vácuo Kit 10 Unidades Com Bomba Reutilizável",
+      "id": 2,
+      "nome": "Console Playstation®5 Slim Digital - Pacote Astro Bot E Gran Turismo 7 - Branco",
       "status": "atualizado",
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 61,99",
-          "para": "R$ 56,98"
+          "de": "R$ 4369,00",
+          "para": "R$ 5980,00"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 4599,00",
+          "para": null
         }
       ]
     },
@@ -33,20 +38,8 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 881,91",
-          "para": "R$ 852,51"
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "nome": "Kit 2 Travesseiros 45x65 Antialérgico Lavável Fibra Siliconada Toque de Pluma",
-      "status": "atualizado",
-      "mudancas": [
-        {
-          "campo": "precoPor",
-          "de": "R$ 35,90",
-          "para": "R$ 34,10"
+          "de": "R$ 852,51",
+          "para": "R$ 864,81"
         }
       ]
     },
@@ -57,8 +50,25 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 48,49",
-          "para": "R$ 56,99"
+          "de": "R$ 56,99",
+          "para": "R$ 52,24"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "Ventilador Teto Arno Branco 3 Pás Contro. Remoto Vx13",
+      "status": "atualizado",
+      "mudancas": [
+        {
+          "campo": "precoPor",
+          "de": "R$ 636,49",
+          "para": "R$ 669,99"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 669,99",
+          "para": null
         }
       ]
     },
@@ -69,8 +79,8 @@
       "mudancas": [
         {
           "campo": "precoPor",
-          "de": "R$ 67,90",
-          "para": "R$ 45,60"
+          "de": "R$ 45,60",
+          "para": "R$ 39,36"
         }
       ]
     },
@@ -80,21 +90,14 @@
       "status": "atualizado",
       "mudancas": [
         {
-          "campo": "precoDe",
-          "de": "R$ 145,25",
-          "para": "R$ 59,36"
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "nome": "Calça Jeans Wide Leg Feminina Cintura Alta Sem Lycra Stillge",
-      "status": "atualizado",
-      "mudancas": [
-        {
           "campo": "precoPor",
-          "de": "R$ 64,90",
-          "para": "R$ 54,05"
+          "de": "R$ 54,00",
+          "para": "R$ 48,60"
+        },
+        {
+          "campo": "precoDe",
+          "de": "R$ 59,36",
+          "para": "R$ 54,00"
         }
       ]
     }
